@@ -1,0 +1,678 @@
+manifest_version: "1.0"
+project: "COSMOS HUB BM IMPROVEMENT"
+task_id: "COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829"
+generated_at_kst: "2026-08-29T04:34:21+09:00"
+source_ingest_mode: "ALLOWLIST ONLY / BYTE-PRESERVING / HASHED / PUBLICATION-GUARDED"
+source_count: 26
+imported_count: 26
+missing_count: 0
+held_count: 0
+derived_file_count: 0
+scope_note: >-
+  This manifest covers only packet-allowlisted source IDs A01 through E02.
+  The unrelated File Library-root SHA256SUMS.txt is a PMO package manifest and
+  is intentionally not imported or classified as C11.
+sources:
+  - source_id: "A01"
+    title: "Cosmos_Hub_BM_Improvement_Proposal_v1.1_CANDIDATE.docx"
+    original_filename: "Cosmos_Hub_BM_Improvement_Proposal_v1.1_CANDIDATE.docx"
+    canonical_repo_path: "sources/raw/v1.1/Cosmos_Hub_BM_Improvement_Proposal_v1.1_CANDIDATE.docx"
+    origin_class: "File Library"
+    origin_file_id: "libfile_6253395dbcd08191b368b707b1158ee5"
+    sha256: "19f948efcc43987213bb5f71157dd17ac98fb1a88e5acc2b474bd1cc1a966610"
+    bytes: 371203
+    mime_type: "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    source_status: "OWNER-REVIEWED CANDIDATE / NOT OFFICIAL HUB POLICY"
+    authority_class: "CANDIDATE_SOURCE"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS — creator fields blank; no identifying metadata found"
+    archive_members: []
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash: []
+    caution: "Independent v1.1 Candidate proposal; not official Cosmos Hub policy and grants no production authority."
+
+  - source_id: "A02"
+    title: "Cosmos_Hub_BM_Improvement_Proposal_v1.1_CANDIDATE.pdf"
+    original_filename: "Cosmos_Hub_BM_Improvement_Proposal_v1.1_CANDIDATE.pdf"
+    canonical_repo_path: "sources/raw/v1.1/Cosmos_Hub_BM_Improvement_Proposal_v1.1_CANDIDATE.pdf"
+    origin_class: "File Library"
+    origin_file_id: "libfile_39d31492d04c8191bb67abed39fdfe05"
+    sha256: "d71c4dea192db1facde65fce5dbc164d8586bc386438253b0b4126a13a99622b"
+    bytes: 1347806
+    mime_type: "application/pdf"
+    source_status: "RENDERED COMPANION / CANDIDATE"
+    authority_class: "CANDIDATE_RENDERED_COMPANION"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS — generic Creator=Writer; no identifying metadata found"
+    archive_members: []
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash: []
+    caution: "Rendered companion to the independent v1.1 Candidate; not an official policy or production artifact."
+
+  - source_id: "A03"
+    title: "Cosmos_Hub_BM_Improvement_Proposal_v1.1_CANDIDATE.txt"
+    original_filename: "Cosmos_Hub_BM_Improvement_Proposal_v1.1_CANDIDATE.txt"
+    canonical_repo_path: "sources/raw/v1.1/Cosmos_Hub_BM_Improvement_Proposal_v1.1_CANDIDATE.txt"
+    origin_class: "File Library"
+    origin_file_id: "libfile_7936b388e3108191aee3cf19b4114a06"
+    sha256: "b298db88356148798f57be5f8ea4335959c3e79d499860bd2fd81dc3f8545105"
+    bytes: 113568
+    mime_type: "text/plain"
+    source_status: "TEXT COMPANION / CANDIDATE"
+    authority_class: "CANDIDATE_TEXT_COMPANION"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS"
+    archive_members: []
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash: []
+    caution: "Text companion is an independent v1.1 Candidate and is not official Cosmos Hub policy."
+
+  - source_id: "A04"
+    title: "REVISION_CHANGELOG_v1.0_to_v1.1.md"
+    original_filename: "REVISION_CHANGELOG_v1.0_to_v1.1.md"
+    canonical_repo_path: "sources/raw/v1.1/REVISION_CHANGELOG_v1.0_to_v1.1.md"
+    origin_class: "File Library"
+    origin_file_id: "libfile_f30b4a32ceb08191958544713ddc64c8"
+    sha256: "da3cf6bd1036d0b48f4fd7105c71c779b8e5455da76082aa095d0ae781502900"
+    bytes: 4916
+    mime_type: "text/plain"
+    source_status: "REVISION CHANGELOG / CANDIDATE SUPPORT"
+    authority_class: "CANDIDATE_SUPPORTING_RECORD"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS"
+    archive_members: []
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash: []
+    caution: "Supporting revision record only; it does not independently promote Candidate content."
+
+  - source_id: "A05"
+    title: "CROSS_VALIDATION_CLOSURE_NOTE.md"
+    original_filename: "CROSS_VALIDATION_CLOSURE_NOTE.md"
+    canonical_repo_path: "sources/raw/v1.1/CROSS_VALIDATION_CLOSURE_NOTE.md"
+    origin_class: "File Library"
+    origin_file_id: "libfile_e9cf52b2e5c4819194b967a30a844289"
+    sha256: "984f98e050322e76994002de5f6d439a33d5b7b1e0b091a6d04be520ab633107"
+    bytes: 3867
+    mime_type: "text/plain"
+    source_status: "CROSS-VALIDATION CLOSURE NOTE / CANDIDATE SUPPORT"
+    authority_class: "CANDIDATE_SUPPORTING_RECORD"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS"
+    archive_members: []
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash: []
+    caution: "Supporting closure note only; task validation remains separately bound to a frozen Git SHA."
+
+  - source_id: "A06"
+    title: "COSMOS HUB BM v1.2 개념 통합 로드맵 — 프로모드 딥리서치 실행 패킷"
+    original_filename: "붙여넣은 마크다운(1).md"
+    canonical_repo_path: "sources/raw/v1.2-roadmap/COSMOS_HUB_BM_v1.2_DEEP_RESEARCH_ROADMAP_HANDOFF_PACKET_2026-08-29.md"
+    origin_class: "File Library"
+    origin_file_id: "libfile_ecfb9fd040ec8191836cfc024149c63c"
+    sha256: "01ccb69383774365825f2e14c268ce434658f25f2a0fd7a93f66af7fd3a5abaa"
+    bytes: 50747
+    mime_type: "text/plain"
+    source_status: "DEEP-RESEARCH ROADMAP HANDOFF / CANDIDATE"
+    authority_class: "CANDIDATE_HANDOFF_SOURCE"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS"
+    archive_members: []
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash: []
+    caution: "Canonical rename applied only after the packet-fixed source hash was verified; roadmap content remains Candidate."
+
+  - source_id: "B01"
+    title: "00_OWNER_REVIEW_INDEX.md"
+    original_filename: "00_OWNER_REVIEW_INDEX(1).md"
+    canonical_repo_path: "sources/raw/v1.2-step3-5/00_OWNER_REVIEW_INDEX.md"
+    origin_class: "project source"
+    origin_file_id: "libfile_ae6d6ab7bb44819192baa87508bce698"
+    sha256: "c70dfbc6a4686be23fdf1b56ce32f57c3fdf538dde147e704044894d1b5a5bd1"
+    bytes: 2408
+    mime_type: "text/plain"
+    source_status: "STEP 3–5 OWNER-REVIEW CANDIDATE"
+    authority_class: "OWNER_REVIEW_CANDIDATE_SOURCE"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS"
+    archive_members: []
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash:
+      - "E01 member 00_OWNER_REVIEW_INDEX.md"
+    caution: "Owner-review index; no OR-01 through OR-09 decision is auto-inferred."
+
+  - source_id: "B02"
+    title: "V1.2_6G_PRIOR_ART_EVIDENCE_LEDGER.md"
+    original_filename: "V1.2_6G_PRIOR_ART_EVIDENCE_LEDGER(1).md"
+    canonical_repo_path: "sources/raw/v1.2-step3-5/V1.2_6G_PRIOR_ART_EVIDENCE_LEDGER.md"
+    origin_class: "project source"
+    origin_file_id: "libfile_33c862b37d5c8191b9759ad75311b1ee"
+    sha256: "1e4397684d8c8fabc139b9a47843066a2c142ec0da277c6d7199c3f0a656f75a"
+    bytes: 34599
+    mime_type: "text/plain"
+    source_status: "STEP 3–5 OWNER-REVIEW CANDIDATE"
+    authority_class: "OWNER_REVIEW_CANDIDATE_SOURCE"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS"
+    archive_members: []
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash:
+      - "E01 member V1.2_6G_PRIOR_ART_EVIDENCE_LEDGER.md"
+    caution: "Evidence ledger is a Candidate input and does not authorize formal 6G conformity claims."
+
+  - source_id: "B03"
+    title: "V1.2_6G_CONCEPT_SELECTION_MATRIX.md"
+    original_filename: "V1.2_6G_CONCEPT_SELECTION_MATRIX(1).md"
+    canonical_repo_path: "sources/raw/v1.2-step3-5/V1.2_6G_CONCEPT_SELECTION_MATRIX.md"
+    origin_class: "project source"
+    origin_file_id: "libfile_af33f6a6c514819181c2d9f186550835"
+    sha256: "b4c0829a71726cea5997ebd7927863979f1c34178cab51acae9e807155565dfc"
+    bytes: 24232
+    mime_type: "text/plain"
+    source_status: "STEP 3–5 OWNER-REVIEW CANDIDATE"
+    authority_class: "OWNER_REVIEW_CANDIDATE_SOURCE"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS"
+    archive_members: []
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash:
+      - "E01 member V1.2_6G_CONCEPT_SELECTION_MATRIX.md"
+    caution: "Selection labels remain Candidate until exact Owner decisions are recorded."
+
+  - source_id: "B04"
+    title: "V1.2_PARALLEL_TRACK_ROADMAP_CANDIDATE.md"
+    original_filename: "V1.2_PARALLEL_TRACK_ROADMAP_CANDIDATE(1).md"
+    canonical_repo_path: "sources/raw/v1.2-step3-5/V1.2_PARALLEL_TRACK_ROADMAP_CANDIDATE.md"
+    origin_class: "project source"
+    origin_file_id: "libfile_b30cee9726048191860bb10adb705aaa"
+    sha256: "e7455c86a0382b846a8cd5034ea2215068217231beebb0eded7b63ff3e9026bc"
+    bytes: 53862
+    mime_type: "text/plain"
+    source_status: "STEP 3–5 OWNER-REVIEW CANDIDATE"
+    authority_class: "OWNER_REVIEW_CANDIDATE_SOURCE"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS"
+    archive_members: []
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash:
+      - "E01 member V1.2_PARALLEL_TRACK_ROADMAP_CANDIDATE.md"
+    caution: "Roadmap remains an Owner-review Candidate; full v1.2 rewrite is not authorized."
+
+  - source_id: "B05"
+    title: "SHA256SUMS.txt"
+    original_filename: "SHA256SUMS(1).txt"
+    canonical_repo_path: "sources/raw/v1.2-step3-5/SHA256SUMS.txt"
+    origin_class: "project source"
+    origin_file_id: "libfile_3512dabeef988191b3fcaa627b224bac"
+    sha256: "03299a04fc7f139ae72da0feeac0d9a24f3da959090b39dc91e04ee6dd48f405"
+    bytes: 403
+    mime_type: "text/plain"
+    source_status: "STEP 3–5 PACKAGE CHECKSUM MANIFEST"
+    authority_class: "PACKAGE_MEMBER_CHECKSUM_RECORD"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS"
+    archive_members: []
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash:
+      - "E01 member SHA256SUMS.txt"
+    caution: "This manifest applies to the STEP 3–5 package member set only."
+
+  - source_id: "C01"
+    title: "00_CH00_INTEGRATION_OWNER_DECISIONS_PACKET.md"
+    original_filename: "00_CH00_INTEGRATION_OWNER_DECISIONS_PACKET.md"
+    canonical_repo_path: "sources/raw/channel-policy-packets/v1.0/00_CH00_INTEGRATION_OWNER_DECISIONS_PACKET.md"
+    origin_class: "File Library"
+    origin_file_id: "libfile_23b969277ae48191adc8ed0f3beb32bb"
+    sha256: "1364b6e649a91d8c1449cc709e0dbcf6cc462ccc92f110520622207d5f082eb8"
+    bytes: 12119
+    mime_type: "text/plain"
+    source_status: "CHANNEL POLICY PACKET / CANDIDATE SOURCE"
+    authority_class: "CHANNEL_POLICY_SOURCE_CANDIDATE"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS"
+    archive_members: []
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash:
+      - "E02 member 00_CH00_INTEGRATION_OWNER_DECISIONS_PACKET.md"
+    caution: "Exact standalone policy source; authority applies only through the project precedence rules."
+
+  - source_id: "C02"
+    title: "01_CH01_BM1_DISTRIBUTION_REVENUE_PACKET.md"
+    original_filename: "01_CH01_BM1_DISTRIBUTION_REVENUE_PACKET.md"
+    canonical_repo_path: "sources/raw/channel-policy-packets/v1.0/01_CH01_BM1_DISTRIBUTION_REVENUE_PACKET.md"
+    origin_class: "File Library"
+    origin_file_id: "libfile_319ad630a82881918e241626214d5fac"
+    sha256: "18203214a65639f5d07b498a41f03774c6849402d3cb46f05d5a371ca048b064"
+    bytes: 11969
+    mime_type: "text/plain"
+    source_status: "CHANNEL POLICY PACKET / CANDIDATE SOURCE"
+    authority_class: "CHANNEL_POLICY_SOURCE_CANDIDATE"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS"
+    archive_members: []
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash:
+      - "E02 member 01_CH01_BM1_DISTRIBUTION_REVENUE_PACKET.md"
+    caution: "Exact standalone policy source; it does not independently promote Candidate state."
+
+  - source_id: "C03"
+    title: "02_CH02_BM2_OBSERVABILITY_SLO_SLA_PACKET.md"
+    original_filename: "02_CH02_BM2_OBSERVABILITY_SLO_SLA_PACKET.md"
+    canonical_repo_path: "sources/raw/channel-policy-packets/v1.0/02_CH02_BM2_OBSERVABILITY_SLO_SLA_PACKET.md"
+    origin_class: "File Library"
+    origin_file_id: "libfile_d6590bf0fbd48191b8fec54ab64fa319"
+    sha256: "4263407306475bf124a5da4e61c1d692662dcf02e64827ab725c1ce9af543ec8"
+    bytes: 12323
+    mime_type: "text/plain"
+    source_status: "CORRECTED STANDALONE CHANNEL POLICY PACKET / CANDIDATE SOURCE"
+    authority_class: "CHANNEL_POLICY_SOURCE_CANDIDATE"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS"
+    archive_members: []
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash: []
+    caution: "Corrected standalone source; E02 preserves an earlier divergent member and must not overwrite this file."
+
+  - source_id: "C04"
+    title: "03_CH03_BM2_AI_SKIP_GO_ROUTING_PACKET.md"
+    original_filename: "03_CH03_BM2_AI_SKIP_GO_ROUTING_PACKET.md"
+    canonical_repo_path: "sources/raw/channel-policy-packets/v1.0/03_CH03_BM2_AI_SKIP_GO_ROUTING_PACKET.md"
+    origin_class: "File Library"
+    origin_file_id: "libfile_425133bbbec08191bcad2e32883e8451"
+    sha256: "8b38aa15d914f0ca95e83a337da027139d000795372f7f5cdcba6ccd25ceb7ef"
+    bytes: 12234
+    mime_type: "text/plain"
+    source_status: "CORRECTED STANDALONE CHANNEL POLICY PACKET / CANDIDATE SOURCE"
+    authority_class: "CHANNEL_POLICY_SOURCE_CANDIDATE"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS"
+    archive_members: []
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash: []
+    caution: "Corrected standalone source; E02 preserves an earlier divergent member and must not overwrite this file."
+
+  - source_id: "C05"
+    title: "04_CH04_BM2_MULTIPATH_FAILOVER_RECOVERY_PACKET.md"
+    original_filename: "04_CH04_BM2_MULTIPATH_FAILOVER_RECOVERY_PACKET.md"
+    canonical_repo_path: "sources/raw/channel-policy-packets/v1.0/04_CH04_BM2_MULTIPATH_FAILOVER_RECOVERY_PACKET.md"
+    origin_class: "File Library"
+    origin_file_id: "libfile_265ca2f1e2b4819192288c9b77934b7d"
+    sha256: "1a5b466485fb19c44da66250c8399ad996a50ef08f2755c7e4e3b4a3d142b506"
+    bytes: 12560
+    mime_type: "text/plain"
+    source_status: "CORRECTED STANDALONE CHANNEL POLICY PACKET / CANDIDATE SOURCE"
+    authority_class: "CHANNEL_POLICY_SOURCE_CANDIDATE"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS"
+    archive_members: []
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash: []
+    caution: "Corrected standalone source; E02 preserves an earlier divergent member and must not overwrite this file."
+
+  - source_id: "C06"
+    title: "05_CH05_BM3_ENTERPRISE_GATEWAY_INTENT_PACKET.md"
+    original_filename: "05_CH05_BM3_ENTERPRISE_GATEWAY_INTENT_PACKET.md"
+    canonical_repo_path: "sources/raw/channel-policy-packets/v1.0/05_CH05_BM3_ENTERPRISE_GATEWAY_INTENT_PACKET.md"
+    origin_class: "File Library"
+    origin_file_id: "libfile_47dc0643a1a08191813863e48f23072d"
+    sha256: "ff46c3d8f1d2cc07e36f86559c4ed2afee728aaeb6c72e514719b632008860e2"
+    bytes: 12426
+    mime_type: "text/plain"
+    source_status: "CORRECTED STANDALONE CHANNEL POLICY PACKET / CANDIDATE SOURCE"
+    authority_class: "CHANNEL_POLICY_SOURCE_CANDIDATE"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS"
+    archive_members: []
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash: []
+    caution: "Corrected standalone source; E02 preserves an earlier divergent member and must not overwrite this file."
+
+  - source_id: "C07"
+    title: "06_CH06_BM4_REGISTRY_PROVIDER_MARKET_PACKET.md"
+    original_filename: "06_CH06_BM4_REGISTRY_PROVIDER_MARKET_PACKET.md"
+    canonical_repo_path: "sources/raw/channel-policy-packets/v1.0/06_CH06_BM4_REGISTRY_PROVIDER_MARKET_PACKET.md"
+    origin_class: "File Library"
+    origin_file_id: "libfile_f048b10087548191b611d2a49aa2af80"
+    sha256: "17cb30af452ec3eb38b878d20503fccc01766b5bed189730f41e317600a7c437"
+    bytes: 12915
+    mime_type: "text/plain"
+    source_status: "CORRECTED STANDALONE CHANNEL POLICY PACKET / CANDIDATE SOURCE"
+    authority_class: "CHANNEL_POLICY_SOURCE_CANDIDATE"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS"
+    archive_members: []
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash: []
+    caution: "Corrected standalone source; E02 preserves an earlier divergent member and must not overwrite this file."
+
+  - source_id: "C08"
+    title: "07_CH07_LEGAL_GOVERNANCE_ECONOMICS_CLAIMS_PACKET.md"
+    original_filename: "07_CH07_LEGAL_GOVERNANCE_ECONOMICS_CLAIMS_PACKET.md"
+    canonical_repo_path: "sources/raw/channel-policy-packets/v1.0/07_CH07_LEGAL_GOVERNANCE_ECONOMICS_CLAIMS_PACKET.md"
+    origin_class: "File Library"
+    origin_file_id: "libfile_8c07e411eeb48191927a3a3d4dbe6d56"
+    sha256: "fc27c08c370ebcd181b23f17300da954e430efa7a8f9b2f933f626e3cc1ab151"
+    bytes: 13496
+    mime_type: "text/plain"
+    source_status: "CORRECTED STANDALONE CHANNEL POLICY PACKET / CANDIDATE SOURCE"
+    authority_class: "CHANNEL_POLICY_SOURCE_CANDIDATE"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS"
+    archive_members: []
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash: []
+    caution: "Corrected standalone source; E02 preserves an earlier divergent member and must not overwrite this file."
+
+  - source_id: "C09"
+    title: "COSMOS_HUB_BM_v1.2_CHANNEL_POLICY_PACKETS_8_COMBINED.md"
+    original_filename: "COSMOS_HUB_BM_v1.2_CHANNEL_POLICY_PACKETS_8_COMBINED.md"
+    canonical_repo_path: "sources/raw/channel-policy-packets/v1.0/COSMOS_HUB_BM_v1.2_CHANNEL_POLICY_PACKETS_8_COMBINED.md"
+    origin_class: "File Library"
+    origin_file_id: "libfile_6ed78775f2088191aa69cf2d0385159c"
+    sha256: "9458b52582c1ec28a33ccf62119f352a2594207b2adfe7cee9ad0468d1111a2d"
+    bytes: 100726
+    mime_type: "text/plain"
+    source_status: "CORRECTED STANDALONE COMBINED CHANNEL POLICY PACKET / CANDIDATE SOURCE"
+    authority_class: "CHANNEL_POLICY_SOURCE_CANDIDATE"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS"
+    archive_members: []
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash: []
+    caution: "Corrected standalone combined source; E02 preserves an earlier divergent combined member."
+
+  - source_id: "C10"
+    title: "README_CHANNEL_PACKET_INDEX.md"
+    original_filename: "README_CHANNEL_PACKET_INDEX.md"
+    canonical_repo_path: "sources/raw/channel-policy-packets/v1.0/README_CHANNEL_PACKET_INDEX.md"
+    origin_class: "File Library"
+    origin_file_id: "libfile_20722e5fa0bc8191a45ddfde57b7d16b"
+    sha256: "4f470fa25a0afc332e7c7c813ba511854455145216b0ee883b16370a6ffef44f"
+    bytes: 1508
+    mime_type: "text/plain"
+    source_status: "CORRECTED STANDALONE CHANNEL PACKET INDEX / CANDIDATE SOURCE"
+    authority_class: "CHANNEL_POLICY_SOURCE_CANDIDATE"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS"
+    archive_members: []
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash:
+      - "E02 member README_CHANNEL_PACKET_INDEX.md"
+    caution: "Standalone index is byte-identical to the E02 member, although E02 as a package contains earlier divergent C03–C09 content."
+
+  - source_id: "C11"
+    title: "SHA256SUMS.txt"
+    original_filename: "SHA256SUMS.txt"
+    canonical_repo_path: "sources/raw/channel-policy-packets/v1.0/SHA256SUMS.txt"
+    origin_class: "File Library"
+    origin_file_id: "libfile_6bfe87f6ead88191a9b7b78d6cbf3385"
+    origin_container: "E02 — COSMOS_HUB_BM_v1.2_CHANNEL_POLICY_PACKETS_8_2026-08-29.zip"
+    archive_member_path: "SHA256SUMS.txt"
+    sha256: "dd7a159501c38a4ec143c30d9027f5a6610b9bfc5366dd1b29808ee60b5629fd"
+    bytes: 1118
+    mime_type: "text/plain"
+    source_status: "ARCHIVE-MEMBER MANIFEST / HISTORICAL PACKAGE SCOPE"
+    authority_class: "ARCHIVE_MEMBER_CHECKSUM_RECORD"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS"
+    archive_members: []
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash:
+      - "E02 member SHA256SUMS.txt (extraction source)"
+    caution: >-
+      ARCHIVE-MEMBER MANIFEST. This file applies only to E02 archive members.
+      It does not describe or validate the corrected standalone C01–C10 folder
+      set. It is not the unrelated File Library-root PMO package manifest.
+
+  - source_id: "D01"
+    title: "Cosmos_Hub_BM_Improvement_Proposal_v1.0_2026-08-27.docx"
+    original_filename: "Cosmos_Hub_BM_Improvement_Proposal_v1.0_2026-08-27.docx"
+    canonical_repo_path: "sources/raw/v1.0/Cosmos_Hub_BM_Improvement_Proposal_v1.0_2026-08-27.docx"
+    origin_class: "project source"
+    origin_file_id: "libfile_096e199f38148191993cd6d2ac05af5e"
+    sha256: "d474900471d1b5db0acd1c4e5f8ae701db5b34b097bc2e1d45d670f611c9d022"
+    bytes: 343997
+    mime_type: "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    source_status: "HISTORICAL BASELINE v1.0"
+    authority_class: "HISTORICAL_SOURCE"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS — creator fields blank; no identifying metadata found"
+    archive_members: []
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash: []
+    caution: "Historical v1.0 baseline; superseded by v1.1 Candidate for current proposal work."
+
+  - source_id: "D02"
+    title: "Cosmos_Hub_BM_Improvement_Proposal_v1.0_2026-08-27-1.txt"
+    original_filename: "Cosmos_Hub_BM_Improvement_Proposal_v1.0_2026-08-27-1.txt"
+    canonical_repo_path: "sources/raw/v1.0/Cosmos_Hub_BM_Improvement_Proposal_v1.0_2026-08-27.txt"
+    origin_class: "project source"
+    origin_file_id: "libfile_5b6cb5dafe38819194508321477daa9d"
+    sha256: "205c983fc34fe0c04542c5e738c16fee8742bc3be9e487c95b5c9b5983620584"
+    bytes: 88275
+    mime_type: "text/plain"
+    source_status: "HISTORICAL BASELINE v1.0 / TEXT COMPANION"
+    authority_class: "HISTORICAL_SOURCE"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS"
+    archive_members: []
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash: []
+    caution: "Original uploaded filename is retained here; canonical repository filename removes the upload-copy suffix only."
+
+  - source_id: "E01"
+    title: "COSMOS_HUB_BM_v1.2_STEP3-5_OWNER_REVIEW_PACKAGE_2026-08-29.zip"
+    original_filename: "COSMOS_HUB_BM_v1.2_STEP3-5_OWNER_REVIEW_PACKAGE_2026-08-29.zip"
+    canonical_repo_path: "sources/packages/COSMOS_HUB_BM_v1.2_STEP3-5_OWNER_REVIEW_PACKAGE_2026-08-29.zip"
+    origin_class: "File Library"
+    origin_file_id: "libfile_263d791dbbe48191b70c184a720925d5"
+    sha256: "664efedadfd4f98b1c739cbec7d21b66614e3b168643da494f5694a5027469d5"
+    bytes: 42525
+    mime_type: "application/zip"
+    source_status: "EXACT STEP 3–5 OWNER-REVIEW PACKAGE ARCHIVE"
+    authority_class: "CANDIDATE_PACKAGE_ARCHIVE"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS"
+    archive_members:
+      - name: "V1.2_6G_PRIOR_ART_EVIDENCE_LEDGER.md"
+        sha256: "1e4397684d8c8fabc139b9a47843066a2c142ec0da277c6d7199c3f0a656f75a"
+        bytes: 34599
+      - name: "V1.2_6G_CONCEPT_SELECTION_MATRIX.md"
+        sha256: "b4c0829a71726cea5997ebd7927863979f1c34178cab51acae9e807155565dfc"
+        bytes: 24232
+      - name: "V1.2_PARALLEL_TRACK_ROADMAP_CANDIDATE.md"
+        sha256: "e7455c86a0382b846a8cd5034ea2215068217231beebb0eded7b63ff3e9026bc"
+        bytes: 53862
+      - name: "SHA256SUMS.txt"
+        sha256: "03299a04fc7f139ae72da0feeac0d9a24f3da959090b39dc91e04ee6dd48f405"
+        bytes: 403
+      - name: "00_OWNER_REVIEW_INDEX.md"
+        sha256: "c70dfbc6a4686be23fdf1b56ce32f57c3fdf538dde147e704044894d1b5a5bd1"
+        bytes: 2408
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash: []
+    caution: "Exact package archive; all five members match B01–B05 byte-for-byte and remain Owner-review Candidate."
+
+  - source_id: "E02"
+    title: "COSMOS_HUB_BM_v1.2_CHANNEL_POLICY_PACKETS_8_2026-08-29.zip"
+    original_filename: "COSMOS_HUB_BM_v1.2_CHANNEL_POLICY_PACKETS_8_2026-08-29.zip"
+    canonical_repo_path: "sources/packages/COSMOS_HUB_BM_v1.2_CHANNEL_POLICY_PACKETS_8_2026-08-29.zip"
+    origin_class: "File Library"
+    origin_file_id: "libfile_6bfe87f6ead88191a9b7b78d6cbf3385"
+    sha256: "6be65985ab90bf4fced2cc36de5309dfae5b47abef8db259517874ead7321b5d"
+    bytes: 71385
+    mime_type: "application/zip"
+    source_status: "HISTORICAL EXACT CHANNEL POLICY PACKAGE ARCHIVE"
+    authority_class: "HISTORICAL_PACKAGE_ARCHIVE"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS"
+    archive_members:
+      - name: "00_CH00_INTEGRATION_OWNER_DECISIONS_PACKET.md"
+        sha256: "1364b6e649a91d8c1449cc709e0dbcf6cc462ccc92f110520622207d5f082eb8"
+        bytes: 12119
+      - name: "01_CH01_BM1_DISTRIBUTION_REVENUE_PACKET.md"
+        sha256: "18203214a65639f5d07b498a41f03774c6849402d3cb46f05d5a371ca048b064"
+        bytes: 11969
+      - name: "02_CH02_BM2_OBSERVABILITY_SLO_SLA_PACKET.md"
+        sha256: "4b9c2d9814718b6fc22b6f7b052c7319d60dac079dfc68bc4ed9269ccee58711"
+        bytes: 12324
+      - name: "03_CH03_BM2_AI_SKIP_GO_ROUTING_PACKET.md"
+        sha256: "b695ab2269d12fc62cea356eb3c8f72ea3a9a25e05bd928e13f77b1afaaf8c29"
+        bytes: 12235
+      - name: "04_CH04_BM2_MULTIPATH_FAILOVER_RECOVERY_PACKET.md"
+        sha256: "19b6089083b4e7c6550bb7c5af85902c824901657010e6a4ae027cc8e4f3ce88"
+        bytes: 12561
+      - name: "05_CH05_BM3_ENTERPRISE_GATEWAY_INTENT_PACKET.md"
+        sha256: "3e1c95709ccec70d810a5563828e4dd6c655af8ee8473e03bb0f02d2d2f42594"
+        bytes: 12427
+      - name: "06_CH06_BM4_REGISTRY_PROVIDER_MARKET_PACKET.md"
+        sha256: "4d1293ba2a9983590ec778eb4faa7b1e5a927be4df3ee28a027bede7d2db3454"
+        bytes: 12916
+      - name: "07_CH07_LEGAL_GOVERNANCE_ECONOMICS_CLAIMS_PACKET.md"
+        sha256: "7a3094b92f4f213321251b21914c4519dee5b52a8c09be9ea816e5b8abbf6da9"
+        bytes: 13497
+      - name: "COSMOS_HUB_BM_v1.2_CHANNEL_POLICY_PACKETS_8_COMBINED.md"
+        sha256: "f8f24753c484f337973e074b74f45649ac1da39f9b986553bb312ba1b9f38e7c"
+        bytes: 100734
+      - name: "README_CHANNEL_PACKET_INDEX.md"
+        sha256: "4f470fa25a0afc332e7c7c813ba511854455145216b0ee883b16370a6ffef44f"
+        bytes: 1508
+      - name: "SHA256SUMS.txt"
+        sha256: "dd7a159501c38a4ec143c30d9027f5a6610b9bfc5366dd1b29808ee60b5629fd"
+        bytes: 1118
+    imported_at_kst: "2026-08-29T04:34:21+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash: []
+    caution: >-
+      Preserve unchanged as the historical exact package. Its C03–C09 member
+      bytes diverge from the corrected standalone C03–C09 sources; the C10
+      index member is byte-identical. The archive and its C11 member manifest
+      must never overwrite or be used to validate the corrected standalone set.
