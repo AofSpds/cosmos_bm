@@ -6,10 +6,12 @@ task_id: "COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829"
 base_main_sha: "a3b18e231e5e3c7c053d3a838e4047ea218e4aa2"
 integration_branch: "task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829"
 candidate_authoring_branch: null
-planned_stage: "S5_PR_MERGE_AND_POST_MERGE_READBACK"
+planned_stage: "PERSISTENCE_COMPLETE"
 d0_commit: "7de27f727582c4626c76728fbdf4196b40007591"
 d1_disposition: "NOT_REQUIRED_NO_CORRECTION"
 validation_claim: "PASS_EXACT_D0_ONLY"
+task_content_merge_commit: "996d4ce5625047376b3837f98ee986a1a6c4348d"
+post_merge_readback: "PASS_S01_S18_18_OF_18"
 lane_integration_head: "f482e23980d91d04a26e83e25157dc9966f4cf7a"
 lane_commits:
   governance_core: "63a3afb267d2dace3d28a945f903c5ef4d7e6e51"

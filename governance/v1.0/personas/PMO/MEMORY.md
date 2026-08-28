@@ -2,7 +2,7 @@
 
 ```text
 PERSONA_ID = PMO
-PERSISTENCE_STATE = VALIDATED D0 CANDIDATE / PR PENDING
+PERSISTENCE_STATE = COMPLETE / GIT-BACKED SUCCESSION READY
 ROLE = EXECUTION / COORDINATION / CHECKPOINT / GIT PERSISTENCE
 CURRENT_TASK = COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829
 CURRENT_PERSONA_LOCK = PMO
@@ -10,7 +10,7 @@ SEMANTIC_AUTHORITY = BM_MASTER
 VALIDATION_AUTHORITY = NONE
 BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
 INTEGRATION_BRANCH = task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829
-CURRENT_PLANNED_STAGE = S5 / PR, MERGE, AND POST-MERGE READBACK
+CURRENT_PLANNED_STAGE = COMPLETE
 LANE_INTEGRATION_HEAD = f482e23980d91d04a26e83e25157dc9966f4cf7a
 SOURCE_FILES_FOUND_MISSING = 26 / 0
 BLOCKER = NONE
@@ -45,9 +45,14 @@ S5 10%. Use 10–15 minute heartbeats and the packet's stall watchdog.
   task-scoped validator returned PASS with no blocking, advisory, or new-scope
   findings; the claim applies only to exact D0.
 - No correction was required, so D1 is not created.
-- Now: persist the exact receipt, open/merge the PR, and perform post-merge
-  readback. Persistence completion, Owner acceptance, and activation remain
-  absent.
+- PR #1 merged exact head `9217fcb0bbcf943b97b3302bde198833f3c72f48`
+  as `996d4ce5625047376b3837f98ee986a1a6c4348d`. Fresh-main tree
+  `cd67645b8066f37fd20e18f166557aaf49be9010` passed S01–S18 and the exact
+  receipt/source/channel/Persona readback.
+- Git persistence is complete. Owner acceptance and activation remain absent.
+- Next: Owner/BM_MASTER may continue bounded channel work through the current
+  Git read order; any new semantic or implementation action requires its own
+  authority.
 
 ## Authority addendum
 

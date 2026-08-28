@@ -1,15 +1,21 @@
-# Integration Status — Validated D0 Candidate
+# Integration Status — Persistence Complete
 
 ```text
 PROJECT = COSMOS HUB BM IMPROVEMENT
 TASK_ID = COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829
 BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
 INTEGRATION_BRANCH = task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829
-CURRENT_STAGE = S5 / PR, MERGE, AND POST-MERGE READBACK
+CURRENT_STAGE = COMPLETE / GIT PERSISTENCE CLOSED
 LANE_INTEGRATION_HEAD = f482e23980d91d04a26e83e25157dc9966f4cf7a
 D0 = 7de27f727582c4626c76728fbdf4196b40007591
 D1 = NOT REQUIRED / NO CORRECTION
 VALIDATION = PASS / EXACT D0 ONLY
+PR = 1 / MERGED
+PRE_MERGE_HEAD = 9217fcb0bbcf943b97b3302bde198833f3c72f48
+TASK_CONTENT_MERGE_COMMIT = 996d4ce5625047376b3837f98ee986a1a6c4348d
+POST_MERGE_TREE = cd67645b8066f37fd20e18f166557aaf49be9010
+POST_MERGE_READBACK = PASS / S01-S18 18 OF 18
+PERSISTENCE_COMPLETE = TRUE
 OWNER_ACCEPTED = FALSE
 ACTIVATED = FALSE
 ```
@@ -57,5 +63,7 @@ administrative metadata commits.
 
 ## Next exact action
 
-Persist the byte-identical independent receipt, open the integration PR, merge
-only at the exact reviewed head, and perform the required post-merge readback.
+Owner/BM_MASTER may continue bounded channel work through the Git-backed read
+order and handoffs. A new semantic decision, Owner choice, pilot,
+implementation, production step, license, or activation requires its own exact
+authority; this completed bootstrap creates none.

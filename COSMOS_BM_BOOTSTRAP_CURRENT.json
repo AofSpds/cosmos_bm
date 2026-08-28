@@ -4,8 +4,8 @@
   "project": "COSMOS HUB BM IMPROVEMENT",
   "repository": "https://github.com/AofSpds/cosmos_bm.git",
   "task_id": "COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829",
-  "pointer_state": "VALIDATED_CANDIDATE_READY_FOR_PR",
-  "planned_stage": "S5_PR_MERGE_AND_POST_MERGE_READBACK",
+  "pointer_state": "BOOTSTRAP_PERSISTENCE_COMPLETE_CANDIDATE",
+  "planned_stage": "PERSISTENCE_COMPLETE",
   "base_main_sha": "a3b18e231e5e3c7c053d3a838e4047ea218e4aa2",
   "integration_branch": "task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829",
   "lane_integration_head": "f482e23980d91d04a26e83e25157dc9966f4cf7a",
@@ -58,8 +58,14 @@
   "d0_commit": "7de27f727582c4626c76728fbdf4196b40007591",
   "d1_commit": null,
   "d1_disposition": "NOT_REQUIRED_NO_CORRECTION",
+  "pr_number": 1,
+  "pr_url": "https://github.com/AofSpds/cosmos_bm/pull/1",
+  "pre_merge_head": "9217fcb0bbcf943b97b3302bde198833f3c72f48",
+  "task_content_merge_commit": "996d4ce5625047376b3837f98ee986a1a6c4348d",
+  "post_merge_readback": "PASS_S01_S18_18_OF_18",
+  "persistence_complete": true,
   "activation_authorized": false,
   "owner_acceptance_recorded": false,
   "production_authorized": false,
-  "caution": "Independent PASS applies only to exact D0 7de27f727582c4626c76728fbdf4196b40007591. Receipt persistence metadata does not inherit or enlarge validation, and no main merge, Owner acceptance, production authorization, or activation is yet claimed."
+  "caution": "Bootstrap Git persistence is complete at task content merge 996d4ce5625047376b3837f98ee986a1a6c4348d. Independent PASS remains bound only to exact D0 7de27f727582c4626c76728fbdf4196b40007591; no Owner acceptance, semantic promotion, production authorization, or activation is claimed."
 }
