@@ -5,53 +5,43 @@ PROJECT = COSMOS HUB BM IMPROVEMENT
 CHANNEL = CH-03 — AI-ASSISTED SKIP GO ROUTING
 PERSONA = BM_MASTER
 STATUS = CANDIDATE / SELECT-LIMITED RESEARCH / NOT CHANNEL-SEALED
-DECISION_ID = BM2-AI-D-0002
-EFFECTIVE_SCOPE = CH-03 discussion, memory and reporting protocol only
+OWNER_PROTOCOL_DECISION = BM2-AI-D-0002
 MODEL_SELECTED = FALSE
 LIVE_ROUTING_AUTHORIZED = FALSE
 ```
 
-This file is the durable topic map for CH-03. It does not promote any AI model,
-route policy, live pilot, production architecture, commercial SLA or v1.2 text.
-Exact Git state, Owner decisions, `CHANNEL.md`, the channel decision ledger and
-primary sources outrank this derived index.
+This is the durable CH-03 topic map. It does not promote a model, route policy,
+live pilot, production architecture, commercial SLA or v1.2 text. Exact Git
+state, Owner decisions, `CHANNEL.md`, `DECISIONS.jsonl` and primary sources
+outrank this derived index.
 
-## 1. Owner-directed discussion protocol
+## 1. Mandatory discussion protocol
 
-Every substantive CH-03 answer follows this order:
+Every substantive CH-03 answer must:
 
-1. explain the current item in plain language;
-2. enter the technical/hardcore treatment;
+1. explain the selected topic in plain language;
+2. continue with the technical/hardcore treatment;
 3. distinguish current implementation, evidence, inference and proposal;
-4. tag Owner locks, Owner questions and later decision points;
-5. end with a compact cumulative channel index.
+4. tag Owner locks, explicit decisions, deferred questions and dependencies;
+5. append the compact cumulative CH-03 index at the response bottom.
 
-The footer must show at least:
-
-```text
-CURRENT_TOPIC
-TOPIC_STATUS
-BM2-AI-01..06 PROGRESS
-OWNER_DECISIONS
-OWNER_QUESTIONS
-DEPENDENCIES
-MEMORY_UPDATE_REQUIRED
-NEXT_EXACT_TOPIC
-```
+Material discussion is reflected in `MEMORY.md`, append-only `WORKLOG.md`,
+`DECISIONS.jsonl` where applicable, `OPEN_QUESTIONS.md`, and regenerated
+`HANDOFF_CURRENT.md`.
 
 ## 2. Tag dictionary
 
 | Tag | Meaning |
 |---|---|
-| `[OWNER-LOCK]` | Current explicit Owner/project hard boundary. It is not reopened by channel inference. |
-| `[OWNER-DECIDED]` | Exact scope explicitly decided by the Owner and recorded with no wider implication. |
-| `[OWNER-QUESTION]` | A question requiring Owner judgment. The item remains open until answered. |
-| `[OWNER-DECISION-LATER]` | No answer is required now; a decision becomes necessary only after the listed evidence gate. |
-| `[CHANNEL-CANDIDATE]` | A CH-03 recommendation with no project-final effect. |
-| `[RESEARCH-OPEN]` | Evidence or analysis is incomplete. |
-| `[DEPENDENCY-CH-XX]` | Another channel owns a required object or decision. |
-| `[NO-OWNER-ACTION]` | Bounded research may continue without Owner action. |
-| `[HOLD]` | Do not promote or proceed past the named gate. |
+| `[OWNER-LOCK]` | Current explicit Owner/project boundary; channel inference cannot reopen it. |
+| `[OWNER-DECIDED]` | Exact scope explicitly decided by the Owner; no wider implication. |
+| `[OWNER-QUESTION]` | Owner judgment is required when the stated activation point is reached. |
+| `[OWNER-DECISION-LATER]` | No answer is required now; evidence must be prepared first. |
+| `[CHANNEL-CANDIDATE]` | CH-03 recommendation; not project-final. |
+| `[RESEARCH-OPEN]` | Evidence or analysis remains incomplete. |
+| `[DEPENDENCY-CH-XX]` | Another channel owns a required object or boundary. |
+| `[NO-OWNER-ACTION]` | Bounded research can continue without Owner action. |
+| `[HOLD]` | Do not proceed past the named gate. |
 | `[KILL]` | Stop this optional track without invalidating unrelated work. |
 
 ## 3. Deliverable mapping
@@ -62,456 +52,313 @@ NEXT_EXACT_TOPIC
 | `BM2-AI-02` Feature, label and data readiness | T06–T11 |
 | `BM2-AI-03` Shadow evaluation protocol | T12–T17 |
 | `BM2-AI-04` Calibration, drift, abstention and governance | T15–T18 |
-| `BM2-AI-05` Baseline comparison and net-value report | T19–T22 |
-| `BM2-AI-06` Promotion / Hold / Kill recommendation | T23–T24 |
+| `BM2-AI-05` Baseline comparison and net-value report | T17–T23 |
+| `BM2-AI-06` Promotion / Permanent Shadow / Hold / Kill | T24 |
 
 ## 4. Detailed topic map
 
 ### T01 — Mission, success definition and authority boundary
 
-**Plain meaning:** Decide what problem AI is allowed to help with and what it is
-never allowed to control. The channel succeeds even if AI remains permanently in
-Shadow, provided the evaluation proves that deterministic routing is the better
-choice.
+**Plain:** Determine what AI may assist and what it can never control. The
+channel can succeed with `PERMANENT_SHADOW` or `KILL` if evidence shows the
+frozen deterministic service is safer or more valuable.
 
-**Hardcore scope:**
+**Hardcore:** Primary/null hypotheses; prediction-only authority; prohibited key,
+signing, transaction, allowlist, exposure, minimum-receive, finality and
+compensation effects; success states `PROMOTE_BOUNDED`, `PERMANENT_SHADOW`,
+`HOLD`, `KILL`; C2 pre-PoC ceiling.
 
-- primary hypothesis: calibrated prediction may improve realized route outcomes;
-- null hypothesis: no material net gain over deterministic comparators;
-- allowed effects: prediction, anomaly detection, advisory ranking and draft explanation;
-- prohibited effects: key custody, signing, transaction approval, allowlist mutation,
-  exposure increase, minimum-receive reduction, finality weakening, compensation
-  adjudication and silent post-authorization route mutation;
-- success states: `PROMOTE_BOUNDED`, `PERMANENT_SHADOW`, `HOLD`, or `KILL`;
-- claim ceiling: C2 before a measured bounded PoC.
-
-**Tags:** `[OWNER-LOCK] [OWNER-DECIDED] [NO-OWNER-ACTION]`.
+**Tags:** `[OWNER-LOCK] [NO-OWNER-ACTION]`.
 
 ### T02 — Current Skip Go functional baseline
 
-**Plain meaning:** Document what Skip Go already does before calling anything new.
+**Plain:** Record what Skip Go already does before proposing an AI addition.
 
-**Hardcore scope:**
-
-- route-request inputs and outputs;
-- asset origin and denomination unwind;
-- direct-path, channel/client and liquidity selection;
-- multi-protocol route composition;
-- quote refresh, expiry and transaction tracking;
-- status, error, pending, abandoned and recovery-relevant states;
-- provider/API boundaries and externally delegated functions;
-- current implementation versus partial/undocumented behavior.
+**Hardcore:** Route-request I/O; asset-origin/denom unwind; direct path,
+client/channel and liquidity selection; multi-protocol composition; quote
+refresh/expiry; tracking, error, pending and abandoned states; provider/API
+boundaries; documented versus partial behavior.
 
 **Tags:** `[RESEARCH-OPEN] [NO-OWNER-ACTION]`.
 
 ### T03 — Route universe and candidate representation
 
-**Plain meaning:** Define exactly which possible routes are being compared and how
-each route is represented.
+**Plain:** Define which routes are eligible for comparison and how each route is
+represented.
 
-**Hardcore scope:**
-
-- route, leg, protocol, asset representation and provider identifiers;
-- source, intermediate and destination chain sequence;
-- route-plan hash and candidate-set timestamp;
-- swap, bridge, relay and transfer leg typing;
-- route feasibility and unsupported-comparator flags;
-- candidate-generation coverage and omission analysis;
-- distinction between route candidate, quote and authorized plan.
+**Hardcore:** Route/leg/protocol/provider IDs; source/intermediate/destination
+sequence; asset representations; route-plan hash; candidate-set time; leg types;
+feasibility; candidate omission; candidate versus quote versus authorized plan.
 
 **Tags:** `[CHANNEL-CANDIDATE] [DEPENDENCY-CH-04] [DEPENDENCY-CH-06]`.
 
 ### T04 — Mandatory deterministic comparator suite
 
-**Plain meaning:** AI must beat strong non-AI methods, not a weak strawman.
+**Plain:** AI must beat strong non-AI alternatives, not a weak strawman.
 
-**Hardcore scope:**
+**Hardcore:** Current Skip Go/default; shortest path; lowest quoted cost; maximum
+quoted output; minimum hop; rule-based weighted score; unsupported applicability;
+ties; same quote-time snapshot; versioned frozen configuration.
 
-- Current Skip Go / Default Route;
-- Shortest Path;
-- Lowest Quoted Cost;
-- Maximum Quoted Output;
-- Minimum Hop;
-- Rule-based Weighted Score;
-- unsupported-comparator treatment;
-- tie-breaking, quote-time consistency and reproducibility;
-- comparator version binding and frozen configuration.
-
-**Tags:** `[OWNER-DECIDED] [NO-OWNER-ACTION]`.
+**Tags:** `[OWNER-LOCK] [NO-OWNER-ACTION]`.
 
 ### T05 — Objective function and multi-objective trade-offs
 
-**Plain meaning:** A route can be cheaper but slower, or faster but riskier. The
-comparison must state what “better” means.
+**Plain:** A route can be cheaper but slower or faster but riskier; “better” must
+be defined explicitly.
 
-**Hardcore scope:**
-
-- realized output, cost, gas, slippage and completion-time distribution;
-- failure, recovery and tail-risk penalties;
-- deterministic eligibility constraints versus optimization preferences;
-- Pareto frontier before Owner/service-tier weights;
-- risk-adjusted utility and regret definitions;
-- sensitivity analysis for weight changes;
-- service-class-specific objective profiles.
+**Hardcore:** Realized output, fee, gas, slippage, latency distribution, failure,
+recovery and tail-risk penalties; eligibility constraints versus preferences;
+Pareto frontier; risk-adjusted utility/regret; sensitivity; service-class weights.
 
 **Tags:** `[RESEARCH-OPEN] [OWNER-DECISION-LATER]`.
 
 ### T06 — Evidence and provenance model
 
-**Plain meaning:** Every prediction and outcome must be traceable to where the data
-came from.
+**Plain:** Every input and outcome must be traceable to its source.
 
-**Hardcore scope:**
+**Hardcore:** Request/quote, source-chain, per-leg, destination and recovery
+evidence; tx/ack/proof/destination corroboration; provider feed versus independent
+indexer; source/version/hash/signature/freshness/confidence; missing-reason codes;
+self-report limits for breach and score decisions.
 
-- request/quote, source-chain, per-leg, destination and recovery evidence;
-- source transaction, acknowledgement/proof and destination-state corroboration;
-- provider feed versus independent indexer distinction;
-- evidence source, version, signature/hash, freshness and confidence;
-- missing evidence reason codes;
-- self-reported evidence limits for financial breach or provider scoring.
-
-**Tags:** `[DEPENDENCY-CH-02] [DEPENDENCY-CH-06] [RESEARCH-OPEN]`.
+**Tags:** `[RESEARCH-OPEN] [DEPENDENCY-CH-02] [DEPENDENCY-CH-06]`.
 
 ### T07 — Time, finality and event-order semantics
 
-**Plain meaning:** “How long did it take?” is meaningless unless start, end and
-finality are defined consistently.
+**Plain:** Completion time is meaningless unless start, end and finality are
+consistently defined.
 
-**Hardcore scope:**
+**Hardcore:** Request, quote, submission, inclusion, acknowledgement and
+destination-finality times; chain-specific finality profiles; clock source/skew;
+indexer delay; unfinished-route censoring; quote expiry; stale-feature cutoff;
+provider-controlled versus external-delay windows.
 
-- request, quote, submission, inclusion, acknowledgement and destination-finality time;
-- chain-specific finality profiles;
-- wall-clock source and clock-skew handling;
-- event confidence and delayed/indexer-observed timestamps;
-- censoring for unfinished routes;
-- quote expiry and stale-feature cutoffs;
-- provider-controlled versus external delay windows.
-
-**Tags:** `[DEPENDENCY-CH-02] [RESEARCH-OPEN]`.
+**Tags:** `[RESEARCH-OPEN] [DEPENDENCY-CH-02]`.
 
 ### T08 — Feature dictionary
 
-**Plain meaning:** List what the model is allowed to know at decision time.
+**Plain:** List only information available when a route decision is made.
 
-**Hardcore scope:**
-
-- route topology, hop/leg count and protocol type;
-- liquidity, quoted output, fee, gas and slippage indicators;
-- client/channel, chain, relayer, bridge and provider health features;
-- market volatility and congestion features available at quote time;
-- historical provider performance with freshness and confidence;
-- missingness indicators and source disagreement;
-- prohibited future information and private/sensitive fields.
+**Hardcore:** Topology/hops/legs; liquidity, quote, fee, gas and slippage;
+client/channel, chain, relayer, bridge and provider health; quote-time volatility
+and congestion; historical performance with freshness/confidence; missingness;
+source disagreement; prohibited future/private fields.
 
 **Tags:** `[RESEARCH-OPEN] [DEPENDENCY-CH-02] [DEPENDENCY-CH-06]`.
 
 ### T09 — Label and outcome taxonomy
 
-**Plain meaning:** Define what counts as success, failure and recovery before
-training anything.
+**Plain:** Define success, failure and recovery before training anything.
 
-**Hardcore scope:**
+**Hardcore:** Completion, realized output, latency/censoring, failure cause and
+controllability, recovery probability/location/duration/cost, provider incidents,
+label delay/revision/uncertainty and adjudication source. Preserve:
+`COMPLETED`, `REFUNDED_TO_SOURCE`, `RECOVERED_AT_SWAP_CHAIN`,
+`RECOVERED_AT_INTERMEDIATE`, `COMPENSATION_PENDING`,
+`MANUAL_RECOVERY_REQUIRED`, `EXEMPT_EXTERNAL_EVENT`, `UNRESOLVED`.
 
-- completion and realized-output labels;
-- latency distribution and censoring;
-- failure cause and controllability;
-- recovery probability, location, duration and cost;
-- preserved recovery states: `COMPLETED`, `REFUNDED_TO_SOURCE`,
-  `RECOVERED_AT_SWAP_CHAIN`, `RECOVERED_AT_INTERMEDIATE`,
-  `COMPENSATION_PENDING`, `MANUAL_RECOVERY_REQUIRED`,
-  `EXEMPT_EXTERNAL_EVENT`, `UNRESOLVED`;
-- provider-health incident labels;
-- label delay, revision, uncertainty and adjudication source.
-
-**Tags:** `[DEPENDENCY-CH-02] [DEPENDENCY-CH-04] [DEPENDENCY-CH-07] [RESEARCH-OPEN]`.
+**Tags:** `[RESEARCH-OPEN] [DEPENDENCY-CH-02] [DEPENDENCY-CH-04] [DEPENDENCY-CH-07]`.
 
 ### T10 — Data readiness, quality and leakage control
 
-**Plain meaning:** Check whether the data is good enough before choosing a model.
+**Plain:** Decide whether data is good enough before considering a model.
 
-**Hardcore scope:**
+**Hardcore:** Coverage, freshness, completeness, provenance, rare failures,
+class imbalance, survivorship/success bias, future/label leakage, segment
+coverage, source disagreement, reproducibility, licensing/access, explicit
+`READY`, `HOLD`, `NOT_MEASURABLE` dispositions.
 
-- coverage, freshness, completeness and provenance;
-- rare-failure and class-imbalance treatment;
-- survivorship and success-only sampling bias;
-- future-information leakage and label leakage;
-- provider, route, asset and regime segmentation;
-- source disagreement and independent corroboration;
-- reproducibility and licensing/access constraints;
-- explicit `READY`, `HOLD` and `NOT_MEASURABLE` outcomes.
+**Tags:** `[OWNER-LOCK] [RESEARCH-OPEN] [NO-OWNER-ACTION]`.
 
-**Tags:** `[OWNER-DECIDED] [RESEARCH-OPEN] [NO-OWNER-ACTION]`.
+### T11 — Dataset split, route-universe freeze and replay set
 
-### T11 — Dataset split, route universe freeze and replay set
+**Plain:** Freeze the exam before seeing its answers.
 
-**Plain meaning:** Freeze the exam before seeing the answers.
-
-**Hardcore scope:**
-
-- chronological train/validation/test split;
-- out-of-provider, out-of-route and out-of-regime tests;
-- route-universe and inclusion/exclusion criteria;
-- incident and tail-event holdout;
-- no post-result threshold tuning;
-- versioned dataset manifest and feature-time integrity;
-- replay dataset limitations and fidelity claims.
+**Hardcore:** Chronological train/validation/test; out-of-provider, route and
+regime tests; inclusion/exclusion; incident/tail holdout; no post-result threshold
+tuning; dataset manifest; feature-time integrity; replay-fidelity limitations.
 
 **Tags:** `[CHANNEL-CANDIDATE] [OWNER-DECISION-LATER]`.
 
-### T12 — Prediction targets and output contracts
+### T12 — Prediction targets and output contract
 
-**Plain meaning:** Define exactly what AI may predict and the format of every
-prediction.
+**Plain:** Define what AI is allowed to predict and the exact shape of its output.
 
-**Hardcore scope:**
-
-- completion-time distribution;
-- realized-output/slippage estimate;
-- failure probability;
-- recovery probability and expected duration;
-- provider-health/anomaly signal;
-- risk-adjusted candidate score;
-- confidence interval, model version, feature time and abstention field;
-- explanation draft separated from the authoritative decision record.
+**Hardcore:** Completion-time distribution; realized-output/slippage; failure and
+recovery probabilities; expected recovery duration; provider anomaly/health;
+risk-adjusted candidate score; model version, feature time, confidence,
+abstention and explanation-draft fields.
 
 **Tags:** `[OWNER-LOCK] [CHANNEL-CANDIDATE]`.
 
 ### T13 — Model hypotheses, not model selection
 
-**Plain meaning:** Compare plausible model families only after the data and task
-are fixed. No model is selected now.
+**Plain:** Model families are considered only after the problem and data are
+frozen. No model is selected now.
 
-**Hardcore scope:**
+**Hardcore:** Transparent statistical/rule baselines; tree/gradient, survival,
+quantile and probabilistic candidates; graph/sequence models only if justified;
+ensembles versus latency/ops cost; per-target versus multi-task; ablation; null
+result; interpretability/deployment burden.
 
-- transparent statistical and rule-augmented baselines;
-- gradient/tree, survival, quantile and probabilistic candidates;
-- graph or sequence models only if route representation justifies them;
-- ensemble value versus latency/operations cost;
-- per-target versus multi-task hypotheses;
-- model-capacity, interpretability and deployment-complexity trade-offs;
-- ablation plan and model-free null result.
-
-**Tags:** `[OWNER-DECIDED] [RESEARCH-OPEN] [HOLD]` until BM2-AI-01 and BM2-AI-02 close.
+**Tags:** `[OWNER-LOCK] [RESEARCH-OPEN] [HOLD]` until AI-01/02 close.
 
 ### T14 — Deterministic optimizer and hard-policy interface
 
-**Plain meaning:** AI supplies estimates; deterministic code applies rules and
-chooses among eligible candidates.
+**Plain:** AI supplies estimates; deterministic code enforces rules and selects
+among eligible routes.
 
-**Hardcore scope:**
-
-- prediction schema consumed by optimizer;
-- deterministic eligibility before ranking;
-- allowlist, exposure, minimum receive and finality constraints;
-- stale/absent prediction behavior;
-- published tie-breaking and audit trace;
-- model rank separated from factual provider eligibility;
-- explicit wallet/institution authorization after disclosure.
+**Hardcore:** Prediction schema; eligibility before ranking; allowlist, exposure,
+minimum receive and finality constraints; stale/absent prediction behavior;
+published ties/rejections/audit; rank separated from eligibility; explicit
+wallet/institution authorization.
 
 **Tags:** `[OWNER-LOCK] [DEPENDENCY-CH-05] [DEPENDENCY-CH-06]`.
 
 ### T15 — Calibration and uncertainty
 
-**Plain meaning:** A 10% failure prediction should fail about 10% of the time.
+**Plain:** A 10% predicted failure rate should correspond to roughly 10% actual
+failures.
 
-**Hardcore scope:**
-
-- reliability curves and expected calibration error;
-- Brier/log score and calibration by segment;
-- latency quantile coverage and tail error;
-- confidence intervals and prediction sets;
-- low-support and out-of-distribution flags;
-- calibration decay and recalibration governance;
-- calibration thresholds frozen before promotion analysis.
+**Hardcore:** Reliability curves, ECE, Brier/log score, segment calibration,
+quantile coverage, p95/p99 tail error, confidence intervals/prediction sets,
+low-support/OOD flags, calibration decay and frozen promotion thresholds.
 
 **Tags:** `[RESEARCH-OPEN] [OWNER-DECISION-LATER]`.
 
 ### T16 — Abstention and deterministic fallback
 
-**Plain meaning:** When uncertain, the AI must say “I do not know” and return
-control to the frozen baseline.
+**Plain:** When uncertain, AI must decline and return control to a known baseline.
 
-**Hardcore scope:**
-
-- abstention trigger and coverage-risk curve;
-- missing/stale feature and source-disagreement triggers;
-- out-of-distribution and drift-triggered abstention;
-- fallback route identity and version;
-- fallback-success and fallback-regret measurement;
-- no silent degraded mode;
-- manual pause and incident escalation interfaces.
+**Hardcore:** Coverage-risk curve; missing/stale/disagreement/OOD/drift triggers;
+fallback identity/version; fallback success/regret; no silent degraded mode;
+manual pause and incident escalation.
 
 **Tags:** `[OWNER-LOCK] [CHANNEL-CANDIDATE] [OWNER-DECISION-LATER]`.
 
 ### T17 — Shadow evaluation protocol
 
-**Plain meaning:** Let AI make recommendations without affecting real transfers,
-then compare what would have happened.
+**Plain:** AI makes recommendations without affecting transfers, and its
+counterfactual performance is measured.
 
-**Hardcore scope:**
+**Hardcore:** Pre-registered route universe, metrics and thresholds; every
+applicable comparator; realized output, latency, failure, recovery and regret;
+p50/p95/p99 and subgroup results; counterfactual bias; API latency/reliability;
+exact data/code/model binding; no live-actuation claim.
 
-- pre-registered metrics, thresholds and route universe;
-- every applicable comparator;
-- realized output, latency, failure, recovery and regret;
-- p50/p95/p99 and subgroup reporting;
-- counterfactual limitations and selection bias;
-- shadow API latency and operational reliability;
-- exact code/data/model/version binding;
-- no live actuation or production claim.
-
-**Tags:** `[OWNER-DECIDED] [NO-OWNER-ACTION]` for protocol design; promotion requires later Owner action.
+**Tags:** `[OWNER-LOCK] [NO-OWNER-ACTION]` for protocol design.
 
 ### T18 — Drift, robustness and adversarial testing
 
-**Plain meaning:** Test what happens when the market, chains or providers change,
-or when data is bad or manipulated.
+**Plain:** Test changing markets, chain/provider incidents and manipulated or bad
+data before trusting predictions.
 
-**Hardcore scope:**
-
-- feature, label and performance drift;
-- provider outage, chain halt and congestion shocks;
-- stale liquidity/quote and sharp price movement;
-- missing/corrupted telemetry and source disagreement;
-- provider gaming and strategic reporting;
-- anomaly false positives/negatives;
-- rollback, quarantine and release governance;
-- adversarial scenarios bounded to Shadow/replay first.
+**Hardcore:** Feature/label/performance drift; provider outage; chain halt;
+congestion, stale quotes and price shocks; missing/corrupt telemetry; source
+disagreement; provider gaming; anomaly errors; rollback/quarantine/release rules;
+Shadow/replay-first adversarial tests.
 
 **Tags:** `[RESEARCH-OPEN] [DEPENDENCY-CH-07]`.
 
 ### T19 — Provider health, rank, neutrality and concentration
 
-**Plain meaning:** A good model must not turn the largest provider into an
-unavoidable monopoly.
+**Plain:** Prediction must not turn the largest provider into an unavoidable
+monopoly.
 
-**Hardcore scope:**
-
-- factual eligibility versus predictive rank;
-- confidence-adjusted provider score;
-- self-report dependence and evidence freshness;
-- top-provider share and concentration trends;
-- newcomer exploration and cold-start treatment;
-- switching friction and quote comparability;
-- discrimination and feedback-loop audit;
-- open schema and no proprietary mandatory Hub router.
+**Hardcore:** Eligibility versus rank; confidence-adjusted score; self-report
+share; evidence freshness; top-provider concentration; newcomer cold start and
+exploration; switching/quote comparability; discrimination and feedback loops;
+open schema; no mandatory proprietary Hub router.
 
 **Tags:** `[OWNER-LOCK] [DEPENDENCY-CH-06] [DEPENDENCY-CH-07] [OWNER-DECISION-LATER]`.
 
 ### T20 — Provider conflict detection and deterministic arbitration
 
-**Plain meaning:** When providers or models disagree, resolve the conflict by a
-published rule rather than a hidden super-agent.
+**Plain:** Provider/model disagreements are resolved by published rules, not a
+hidden super-agent.
 
-**Hardcore scope:**
-
-- conflicting signed quotes or capability claims;
-- stale/incompatible asset representations;
-- policy and intent conflicts;
-- model disagreement beyond confidence threshold;
-- deterministic priorities, rejection reasons and audit trail;
-- no model mutation of eligibility;
-- escalation to manual review where rules cannot resolve.
+**Hardcore:** Conflicting signed quotes/capabilities; stale or incompatible asset
+representations; policy/intent conflicts; model disagreement beyond confidence;
+deterministic priorities/reasons/audit; no eligibility mutation; manual review
+for unresolved collisions.
 
 **Tags:** `[CHANNEL-CANDIDATE] [DEPENDENCY-CH-05] [DEPENDENCY-CH-06] [DEPENDENCY-CH-07]`.
 
 ### T21 — Existing route diversity and Smart-Swap split routing
 
-**Plain meaning:** Treat these as existing/partial capabilities and measure them,
-not as new AI inventions.
+**Plain:** Measure these existing/partial capabilities; do not call them new AI
+or 6G inventions.
 
-**Hardcore scope:**
+**Hardcore:** Candidate coverage and trust paths; split allocation/per-leg result;
+partial completion; fee/gas/liquidity/recovery burden; aggregate completion and
+accounting; current implementation versus broader extension; comparator role.
 
-- candidate diversity coverage and trust-path differences;
-- split allocation, per-leg result and partial completion;
-- extra fee/gas, liquidity impact and recovery surface;
-- aggregate completion and accounting;
-- current implementation versus proposed broader extension;
-- comparator role and no novelty overclaim.
-
-**Tags:** `[OWNER-DECIDED] [EXISTING-ASSESS] [DEPENDENCY-CH-04]`.
+**Tags:** `[OWNER-LOCK] [EXISTING-ASSESS] [DEPENDENCY-CH-04]`.
 
 ### T22 — Sequential failover boundary
 
-**Plain meaning:** Start by replacing an unhealthy route before execution; do not
-jump directly to arbitrary mid-flight rerouting.
+**Plain:** First replace an unhealthy route before execution; arbitrary mid-flight
+rerouting is not the starting point.
 
-**Hardcore scope:**
+**Hardcore:** Pre-execution health check; replacement quote/disclosure; approval
+boundary; route-plan hash; unique execution ID; idempotency/duplicate suppression;
+last-known asset location; expired commitments; post-authorization retry only
+where provable; mid-flight remains unverified.
 
-- pre-execution provider/client/channel health check;
-- new quote and disclosure after route replacement;
-- authorization boundary and route-plan hash;
-- unique execution ID, idempotency and duplicate suppression;
-- last-known asset location and expired commitment handling;
-- post-authorization retry only where provably safe;
-- mid-flight mechanisms remain separate and unproven.
-
-**Tags:** `[OWNER-DECIDED] [DEPENDENCY-CH-04] [OWNER-DECISION-LATER]`.
+**Tags:** `[OWNER-LOCK] [DEPENDENCY-CH-04] [OWNER-DECISION-LATER]`.
 
 ### T23 — Net route value and operating economics
 
-**Plain meaning:** Better predictions are useless if API, compute, support and
-recovery costs exceed the benefit.
+**Plain:** Intelligence is not valuable when compute, API, support and recovery
+costs exceed its benefit.
 
-**Hardcore scope:**
-
-- incremental output/success/tail-latency benefit;
-- added provider fee, gas and price impact;
-- inference/API latency and direct compute cost;
-- monitoring, incident, support and model-governance cost;
-- recovery and locked-capital cost;
-- concentration/exploration cost;
-- segment-specific net value and willingness-to-pay link;
-- average-only improvement prohibited.
+**Hardcore:** Incremental output/success/tail-latency; provider fee, gas and price
+impact; inference/API cost and delay; monitoring, incident, support and governance
+cost; recovery and locked capital; exploration/concentration cost; segment net
+value; willingness to pay; average-only improvement prohibited.
 
 **Tags:** `[RESEARCH-OPEN] [DEPENDENCY-CH-07] [OWNER-DECISION-LATER]`.
 
-### T24 — Promotion, permanent Shadow, Hold or Kill; claims and integration
+### T24 — Promotion, Permanent Shadow, Hold or Kill; claims and integration
 
-**Plain meaning:** At the end, decide whether AI advances, stays advisory forever,
-pauses for better data, or is stopped.
+**Plain:** Decide whether AI advances, remains advisory forever, pauses for better
+data, or stops.
 
-**Hardcore scope:**
-
-- reproducible out-of-sample comparator improvement;
-- calibration and p95/p99 tail bounds;
-- safe abstention/fallback;
-- positive net value after all added cost;
-- provider-neutrality and concentration controls;
-- model/version/evidence auditability;
-- claim ladder C0–C4 and C2 current maximum;
-- CH-00 handoff with exact evidence and dependencies;
-- no automatic v1.2 rewrite, live pilot or production promotion.
+**Hardcore:** Reproducible out-of-sample gain; calibration/tail bounds; safe
+abstention/fallback; positive net value; neutrality/concentration; model/evidence
+auditability; claim ladder C0–C4 with current C2 maximum; CH-00 handoff; no
+automatic rewrite, live pilot or production promotion.
 
 **Tags:** `[OWNER-QUESTION] [OWNER-DECISION-LATER] [DEPENDENCY-CH-00]`.
 
-## 5. Owner questions and decision schedule
+## 5. Deferred Owner questions and activation schedule
 
-No immediate answer is required to continue BM2-AI-01 and BM2-AI-02. These
-questions become active only at the listed gate.
+No immediate answer is required for `BM2-AI-01` or `BM2-AI-02`.
 
-| ID | Owner question | Activation point | Current state |
+| ID | Owner question | Activation point | State |
 |---|---|---|---|
-| `BM2-AI-OQ-01` | Which service-objective trade-off should be preferred: output, cost, latency, failure risk or recovery? | after T04 comparator freeze and T05 Pareto analysis | DEFERRED |
-| `BM2-AI-OQ-02` | Which assets, chains, protocols and providers define the bounded Shadow route universe? | after T06–T10 data inventory | DEFERRED |
-| `BM2-AI-OQ-03` | What minimum evidence/label coverage is acceptable to enter M2 Shadow? | with BM2-AI-02 readiness report | DEFERRED |
-| `BM2-AI-OQ-04` | What calibration and p95/p99 tail-risk thresholds are acceptable? | before BM2-AI-03 protocol freeze | DEFERRED |
-| `BM2-AI-OQ-05` | How conservative must abstention be, and which frozen fallback is authoritative? | before BM2-AI-03/04 freeze | DEFERRED |
-| `BM2-AI-OQ-06` | What concentration limit and newcomer-exploration policy are acceptable? | before any provider-weighting promotion | DEFERRED |
-| `BM2-AI-OQ-07` | What added latency/cost and minimum positive net-value hurdle are acceptable? | before BM2-AI-05 conclusion | DEFERRED |
-| `BM2-AI-OQ-08` | Promote bounded advisory use, keep permanent Shadow, Hold, or Kill? | BM2-AI-06 | DEFERRED |
-| `BM2-AI-OQ-09` | What exact public claim and document placement is approved? | CH-00 integration / revision-scope decision | DEFERRED |
+| `BM2-AI-OQ-01` | Preferred trade-off among output, cost, latency, failure risk and recovery? | after T04/T05 evidence | DEFERRED |
+| `BM2-AI-OQ-02` | Which assets, chains, protocols and providers form the bounded Shadow universe? | after T06–T10 inventory | DEFERRED |
+| `BM2-AI-OQ-03` | Minimum evidence/label/provenance coverage to enter M2? | with AI-02 report | DEFERRED |
+| `BM2-AI-OQ-04` | Acceptable calibration and p95/p99 tail thresholds? | before AI-03 freeze | DEFERRED |
+| `BM2-AI-OQ-05` | Abstention strictness and authoritative frozen fallback? | before AI-03/04 freeze | DEFERRED |
+| `BM2-AI-OQ-06` | Provider concentration limit and newcomer-exploration policy? | before weighting promotion | DEFERRED |
+| `BM2-AI-OQ-07` | Acceptable added latency/cost and minimum positive net-value hurdle? | before AI-05 conclusion | DEFERRED |
+| `BM2-AI-OQ-08` | Promote bounded advisory use, Permanent Shadow, Hold or Kill? | AI-06 | DEFERRED |
+| `BM2-AI-OQ-09` | Approved public claim and document placement? | CH-00/revision scope | DEFERRED |
 
-## 6. Current Owner-decided operating points
+## 6. Decision-status readback
 
-- `BM2-AI-D-0001`: deterministic baseline and data readiness before model choice;
-  M2 Shadow/advisory only; calibrated confidence, abstention and frozen fallback;
-  deterministic policy and explicit authorization remain authoritative.
-- `BM2-AI-D-0002`: use this detailed topic taxonomy; explain each selected item
-  plain-first then hardcore; tag Owner questions and decisions; append the compact
-  cumulative channel index to every substantive response; preserve material
-  discussion state in channel memory.
+- `BM2-AI-D-0001` = `[CHANNEL-CANDIDATE]`: deterministic baseline and data
+  readiness before model choice; M2 Shadow/advisory; calibrated confidence,
+  abstention and frozen fallback; deterministic policy and explicit
+  authorization remain authoritative.
+- `BM2-AI-D-0002` = `[OWNER-DECIDED]`: use this durable taxonomy; explain each
+  topic plain-first then technically; tag Owner decisions/questions; append the
+  cumulative footer; persist material discussion state.
 
-Neither decision selects a model, authorizes live routing, seals the channel,
+Neither record selects a model, authorizes live routing, seals the channel,
 approves a commercial SLA or promotes a v1.2 revision.
 
 ## 7. Compact footer template
@@ -521,9 +368,9 @@ approves a commercial SLA or promotes a v1.2 revision.
 CURRENT_TOPIC = Txx — ...
 TOPIC_STATUS = NOT_STARTED / ACTIVE / DRAFTED / FROZEN_CANDIDATE / HOLD / KILL
 DELIVERABLE_PROGRESS = AI-01 ... | AI-02 ... | AI-03 ... | AI-04 ... | AI-05 ... | AI-06 ...
-OWNER_DECISIONS = D-0001 ... ; D-0002 ...
-OWNER_QUESTIONS = OQ-xx DEFERRED/OPEN/ANSWERED
-DEPENDENCIES = CH-02 ... ; CH-04 ... ; CH-06 ... ; CH-07 ... ; CH-00 ...
-MEMORY_UPDATE_REQUIRED = TRUE/FALSE
+OWNER_DECISIONS = D-0001 CANDIDATE ; D-0002 OWNER_DECIDED
+OWNER_QUESTIONS = OQ-xx DEFERRED / OPEN / ANSWERED
+DEPENDENCIES = CH-02 ... ; CH-04 ... ; CH-05 ... ; CH-06 ... ; CH-07 ... ; CH-00 ...
+MEMORY_UPDATE_REQUIRED = TRUE / FALSE
 NEXT_EXACT_TOPIC = ...
 ```
