@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "project": "COSMOS HUB BM IMPROVEMENT",
+  "index_state": "CANDIDATE_RESOLVED_FOR_D0",
+  "task_id": "COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829",
+  "base_main_sha": "a3b18e231e5e3c7c053d3a838e4047ea218e4aa2",
+  "lane_integration_head": "f482e23980d91d04a26e83e25157dc9966f4cf7a",
+  "memory_semantics": "COMPRESSED_CURRENT_STATE",
+  "worklog_semantics": "APPEND_ONLY",
+  "decision_semantics": "APPEND_ONLY_JSONL",
+  "handoff_semantics": "DERIVED_CONTEXT_ONLY",
+  "persistent_personas": [
+    {
+      "persona_id": "BM_MASTER",
+      "authority": "SEMANTIC_AND_BM_INTEGRATION",
+      "memory_path": "governance/v1.0/personas/BM_MASTER/MEMORY.md",
+      "worklog_path": "governance/v1.0/personas/BM_MASTER/WORKLOG.md",
+      "resolution_state": "RESOLVED_AT_GOVERNANCE_LANE_COMMIT",
+      "resolution_commit": "63a3afb267d2dace3d28a945f903c5ef4d7e6e51"
+    },
+    {
+      "persona_id": "PMO",
+      "authority": "EXECUTION_COORDINATION_AND_PERSISTENCE",
+      "memory_path": "governance/v1.0/personas/PMO/MEMORY.md",
+      "worklog_path": "governance/v1.0/personas/PMO/WORKLOG.md",
+      "resolution_state": "RESOLVED_AT_GOVERNANCE_LANE_COMMIT",
+      "resolution_commit": "63a3afb267d2dace3d28a945f903c5ef4d7e6e51"
+    }
+  ],
+  "persistent_validator_persona": null,
+  "channel_memories": [
+    {"channel_id": "CH-00", "memory_path": "channels/integration-owner/MEMORY.md", "handoff_path": "channels/integration-owner/HANDOFF_CURRENT.md", "resolution_state": "RESOLVED_AT_CHANNEL_LANE_COMMIT", "resolution_commit": "05467f1592432ec8367c58c51a4db9ea9a061ae2"},
+    {"channel_id": "CH-01", "memory_path": "channels/distribution-market-revenue/MEMORY.md", "handoff_path": "channels/distribution-market-revenue/HANDOFF_CURRENT.md", "resolution_state": "RESOLVED_AT_CHANNEL_LANE_COMMIT", "resolution_commit": "05467f1592432ec8367c58c51a4db9ea9a061ae2"},
+    {"channel_id": "CH-02", "memory_path": "channels/observability-slo-sla/MEMORY.md", "handoff_path": "channels/observability-slo-sla/HANDOFF_CURRENT.md", "resolution_state": "RESOLVED_AT_CHANNEL_LANE_COMMIT", "resolution_commit": "05467f1592432ec8367c58c51a4db9ea9a061ae2"},
+    {"channel_id": "CH-03", "memory_path": "channels/ai-assisted-skip-go-routing/MEMORY.md", "handoff_path": "channels/ai-assisted-skip-go-routing/HANDOFF_CURRENT.md", "resolution_state": "RESOLVED_AT_CHANNEL_LANE_COMMIT", "resolution_commit": "05467f1592432ec8367c58c51a4db9ea9a061ae2"},
+    {"channel_id": "CH-04", "memory_path": "channels/failover-recovery-design/MEMORY.md", "handoff_path": "channels/failover-recovery-design/HANDOFF_CURRENT.md", "resolution_state": "RESOLVED_AT_CHANNEL_LANE_COMMIT", "resolution_commit": "85461bb61f5434da866df2565524e1e2c6664b18"},
+    {"channel_id": "CH-05", "memory_path": "channels/enterprise-gateway-structured-intent/MEMORY.md", "handoff_path": "channels/enterprise-gateway-structured-intent/HANDOFF_CURRENT.md", "resolution_state": "RESOLVED_AT_CHANNEL_LANE_COMMIT", "resolution_commit": "85461bb61f5434da866df2565524e1e2c6664b18"},
+    {"channel_id": "CH-06", "memory_path": "channels/asset-service-registry/MEMORY.md", "handoff_path": "channels/asset-service-registry/HANDOFF_CURRENT.md", "resolution_state": "RESOLVED_AT_CHANNEL_LANE_COMMIT", "resolution_commit": "85461bb61f5434da866df2565524e1e2c6664b18"},
+    {"channel_id": "CH-07", "memory_path": "channels/legal-governance-economics/MEMORY.md", "handoff_path": "channels/legal-governance-economics/HANDOFF_CURRENT.md", "resolution_state": "RESOLVED_AT_CHANNEL_LANE_COMMIT", "resolution_commit": "85461bb61f5434da866df2565524e1e2c6664b18"}
+  ],
+  "caution": "Resolved paths remain Candidate memory projections. Git current state and exact sources outrank stale memory or handoff content; resolution does not confer validation or Owner authority."
+}
