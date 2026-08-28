@@ -49,3 +49,18 @@ CH-01 roles/performance; CH-02 evidence/history; CH-03 confidence/version; CH-04
 - Validate only affected claims/objects/interfaces; absent evidence is `UNKNOWN` or `HOLD`.
 - `DECISIONS.jsonl` is append-only and source-derived at bootstrap.
 - `HANDOFF_CURRENT.md` mirrors memory/decisions and must be regenerated after material change.
+
+## Owner communication and continuity rule — 2026-08-29 KST
+
+The Owner directed that every CH-06 subject be handled with persistent structure and explicit tags.
+
+- Detailed navigation file: `TOPIC_INDEX.md`.
+- Every substantive response begins with an intuitive explanation and then enters the technical/object/policy/state-machine detail.
+- Owner questions use `BM4-OQ-###`.
+- Pending selectable decisions use `BM4-DP-###`; a decision point does not itself create an Owner decision.
+- Existing `BM4-REG-D-0001` through `BM4-REG-D-0003` remain Candidate records, not Owner decisions.
+- Each substantive response appends the CH-06 topic-index footer showing current topic, status, open Owner questions, pending decisions, dependencies, memory state, and next exact action.
+- The footer may be compact, but it must preserve the complete topic map through the persistent `TOPIC_INDEX.md` reference.
+- No Owner answer is inferred from silence, discussion, or a default recommendation.
+
+Current topic map contains TOPIC 00 through TOPIC 24, covering role/boundary; Asset/Issuer; Provider/Capability; quote; evidence; freshness; incident; revocation; eligibility; ranking; entry; switching; concentration; conflict; arbitration; data placement; API/UX; security; legal; economics; governance; cross-channel interfaces; MVP; and KPI/gates.
