@@ -5,12 +5,12 @@ PROJECT = COSMOS HUB BM IMPROVEMENT
 TASK_ID = COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829
 TASK_CLASS = FULL-BOUNDED PUBLIC REPOSITORY / MEMORY BOOTSTRAP
 OWNER_DECISION = APPROVE AND EXECUTE EXACT BOUNDED TASK
-TASK_STATE = IN_PROGRESS / S3 STRUCTURAL PASS / D0 PENDING
+TASK_STATE = IN_PROGRESS / S5 VALIDATED D0 / PR PENDING
 CURRENT_PERSONA_LOCK = PMO
 SEMANTIC_AUTHORITY = BM_MASTER
 BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
 INTEGRATION_BRANCH = task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829
-VALIDATION_CLAIM = NONE
+VALIDATION_CLAIM = PASS / EXACT D0 ONLY
 OWNER_ACTION_REQUIRED = FALSE
 ```
 
@@ -157,15 +157,20 @@ the default.
 
 Keep `AUTHORING_COMPLETE`, `STRUCTURAL_CHECK_COMPLETE`,
 `VALIDATION_COMPLETE`, `COMMITTED`, `MERGED`, `PERSISTENCE_COMPLETE`,
-`OWNER_ACCEPTED`, and `ACTIVATED` separate. At this task state D0/D1, validation
-PASS, persistence completion, Owner acceptance, and activation are all absent.
+`OWNER_ACCEPTED`, and `ACTIVATED` separate. Exact-D0 validation PASS exists;
+main merge, persistence completion, Owner acceptance, and activation remain
+absent.
 
 ## Current exact checkpoint
 
 - `AUTHORING_COMPLETE = TRUE` — exact lane commits are recorded in
   `governance/v1.0/INTEGRATION_STATUS.md`.
 - `STRUCTURAL_CHECK_COMPLETE = TRUE` — final pre-freeze S01–S18 passed 18/18.
-- `VALIDATION_COMPLETE = FALSE`; `D0 = NOT CREATED`; `D1 = NOT CREATED`.
+- `VALIDATION_COMPLETE = TRUE` for exact D0
+  `7de27f727582c4626c76728fbdf4196b40007591`; no findings required correction,
+  so `D1 = NOT REQUIRED`.
+- `COMMITTED = TRUE` for exact D0 and validation-receipt persistence is the
+  current administrative step.
 - `MERGED = FALSE` for main; repository lane merge is only integration-branch
   lineage.
 - `PERSISTENCE_COMPLETE = FALSE`, `OWNER_ACCEPTED = FALSE`, and

@@ -1,17 +1,19 @@
-# Project Current State — Pre-D0 Bootstrap Candidate
+# Project Current State — Validated D0 Candidate
 
 ```text
 PROJECT = COSMOS HUB BM IMPROVEMENT
 GOVERNANCE_VERSION = v1.0
 TASK_ID = COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829
-STATE = CANDIDATE / STRUCTURAL PASS / D0 PENDING
-PLANNED_STAGE = S3 / BOUNDED READBACK AND D0 FREEZE
+STATE = VALIDATED CANDIDATE / PR PENDING
+PLANNED_STAGE = S5 / PR, MERGE, AND POST-MERGE READBACK
 BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
 INTEGRATION_BRANCH = task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829
 LANE_INTEGRATION_HEAD = f482e23980d91d04a26e83e25157dc9966f4cf7a
 CURRENT_PERSONA_LOCK_FOR_TASK = PMO
 SEMANTIC_AUTHORITY = BM_MASTER
-VALIDATION_CLAIM = NONE
+VALIDATION_CLAIM = PASS / EXACT D0 ONLY
+D0 = 7de27f727582c4626c76728fbdf4196b40007591
+D1 = NOT REQUIRED / NO CORRECTION
 OWNER_ACCEPTED = FALSE
 ACTIVATED = FALSE
 ```
@@ -44,6 +46,7 @@ authorization, or activation.
 | Channels CH-00–CH-03 | `05467f1592432ec8367c58c51a4db9ea9a061ae2` | four seven-file sets merged |
 | Channels CH-04–CH-07 | `85461bb61f5434da866df2565524e1e2c6664b18` | four seven-file sets merged |
 | Ordered lane merge head | `f482e23980d91d04a26e83e25157dc9966f4cf7a` | local/remote tree matched |
+| Validated D0 | `7de27f727582c4626c76728fbdf4196b40007591` | independent PASS; exact target only |
 
 The source manifest records the historical E02 archive/member divergence: E02
 is preserved byte-identically, while corrected standalone C03–C09 files remain
@@ -104,9 +107,10 @@ not answer an OR item or authorize proposal/product promotion.
   reconciled for the pre-D0 Candidate.
 - Structural checks S01–S18 passed 18/18 on the final pre-freeze tree. D0 freeze
   is the next gate.
-- D0/D1 do not yet exist; independent validation has not begun.
-- No PR merge, persistence completion, Owner acceptance, or activation is
-  claimed.
+- Independent validation returned PASS with no blocking, advisory, or new-scope
+  findings for exact D0 only. No correction was required, so D1 is not created.
+- PR/merge and post-merge readback remain pending. No persistence completion,
+  Owner acceptance, or activation is claimed.
 
 Keep `AUTHORING_COMPLETE`, `STRUCTURAL_CHECK_COMPLETE`,
 `VALIDATION_COMPLETE`, `COMMITTED`, `MERGED`, `PERSISTENCE_COMPLETE`,

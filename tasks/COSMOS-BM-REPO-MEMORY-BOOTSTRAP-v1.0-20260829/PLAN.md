@@ -4,13 +4,13 @@
 TASK_ID = COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829
 BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
 INTEGRATION_BRANCH = task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829
-CURRENT_PLANNED_STAGE = S3 / STRUCTURAL PASS AND D0 FREEZE
+CURRENT_PLANNED_STAGE = S5 / PR, MERGE, AND POST-MERGE READBACK
 PLANNED_AUTHORING_WORKERS = 4
 PLANNED_VALIDATING_WORKERS = 1 TASK-SCOPED AFTER D0
 EXPECTED_ACTIVE_WALL = 90–180 MINUTES
 OWNER_CHECK_LIMIT = 240 MINUTES PROJECTED ACTIVE WALL
 DEFAULT_CORRECTION_LOOP = ONE BOUNDED BATCH + AFFECTED-DIFF RECHECK
-VALIDATION_CLAIM = NONE
+VALIDATION_CLAIM = PASS / EXACT D0 ONLY
 ```
 
 ## Stage plan
@@ -20,9 +20,9 @@ VALIDATION_CLAIM = NONE
 | S0 — admission, Git/source readback | 10% | 10–20 min | **Complete**; base and 26/26 source allowlist resolved |
 | S1 — genesis, branches, worktrees | 10% | 10–20 min | **Complete**; genesis and branch map read back |
 | S2 — parallel Wave 1 authoring | 40% | 30–60 min | **Complete**; four Candidate lane commits merged A → B → C → D |
-| S3 — PMO integration and structural checks | 20% | 20–40 min | **Exit gate**; reconciliation complete, S01–S18 PASS, D0 pending |
-| S4 — independent task-scoped validation | 10% | 15–30 min | Pending exact D0 freeze |
-| S5 — correction/recheck/PR/merge/readback | 10% | 15–30 min | Pending validation disposition |
+| S3 — PMO integration and structural checks | 20% | 20–40 min | **Complete**; reconciliation and S01–S18 PASS; D0 frozen |
+| S4 — independent task-scoped validation | 10% | 15–30 min | **Complete**; PASS exact D0, no findings |
+| S5 — correction/recheck/PR/merge/readback | 10% | 15–30 min | **Current stage**; no correction/D1 required |
 
 Ranges are anomaly detectors, not deadlines. Heartbeat every 10–15 minutes.
 After about 20 minutes without material progress, diagnose once and retry once;
@@ -106,21 +106,21 @@ explicit HOLD.
 ## Current progress snapshot
 
 ```text
-PROGRESS = [████████░░] 80% AT S3 EXIT GATE
-CURRENT_STAGE = S3 / STRUCTURAL PASS / D0 FREEZE
-COMPLETED = S0/S1 / FOUR LANES / ORDERED MERGE / SHARED RECONCILIATION / S01-S18 18-OF-18 PASS
-NOW = D0 COMMIT
-REMAINING = D0 / INDEPENDENT VALIDATION / CORRECTION IF ANY / PR-MERGE-READBACK
-ACTIVE_WORKERS = PMO SINGLE WRITER; READ-ONLY CROSS-CHECKS MAY RUN IN PARALLEL
-ACTIVE_VALIDATOR = NONE; ONE PLANNED ONLY AFTER D0
+PROGRESS = [█████████░] 90% AT S5 ENTRY
+CURRENT_STAGE = S5 / PR / MERGE / POST-MERGE READBACK
+COMPLETED = S0-S4 / D0 7de27f7 / INDEPENDENT PASS / NO CORRECTION REQUIRED
+NOW = RECEIPT PERSISTENCE / PR / MERGE / READBACK
+REMAINING = PR-MERGE / POST-MERGE COMPLETION CLOSE
+ACTIVE_WORKERS = PMO SINGLE WRITER
+ACTIVE_VALIDATOR = COMPLETED / NON-PERSISTENT / PASS EXACT D0 ONLY
 BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
-CURRENT_BRANCH_HEAD = f482e23980d91d04a26e83e25157dc9966f4cf7a BEFORE PMO RECONCILIATION COMMIT
+CURRENT_BRANCH_HEAD = 7de27f727582c4626c76728fbdf4196b40007591 BEFORE RECEIPT METADATA COMMIT
 SOURCE_FILES_FOUND / MISSING = 26 / 0
 BLOCKER = NONE
 SCOPE_EXPANSION = NONE
 OWNER_ACTION_REQUIRED = FALSE
-NEXT_EXACT_ACTION = FREEZE EXACT D0
+NEXT_EXACT_ACTION = PERSIST RECEIPT; OPEN AND MERGE PR; POST-MERGE READBACK
 ```
 
-This snapshot records the pre-D0 Candidate only; it does not claim validation,
-main merge, persistence completion, Owner acceptance, or activation.
+This snapshot records validation PASS for exact D0 only. It does not claim main
+merge, persistence completion, Owner acceptance, or activation.

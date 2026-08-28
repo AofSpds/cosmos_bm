@@ -4,8 +4,8 @@
   "project": "COSMOS HUB BM IMPROVEMENT",
   "repository": "https://github.com/AofSpds/cosmos_bm.git",
   "task_id": "COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829",
-  "pointer_state": "CANDIDATE_READY_FOR_D0_FREEZE",
-  "planned_stage": "S3_STRUCTURAL_CHECKS_AND_D0_FREEZE",
+  "pointer_state": "VALIDATED_CANDIDATE_READY_FOR_PR",
+  "planned_stage": "S5_PR_MERGE_AND_POST_MERGE_READBACK",
   "base_main_sha": "a3b18e231e5e3c7c053d3a838e4047ea218e4aa2",
   "integration_branch": "task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829",
   "lane_integration_head": "f482e23980d91d04a26e83e25157dc9966f4cf7a",
@@ -34,6 +34,8 @@
   "structural_check_path": "tasks/COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829/STRUCTURAL_CHECKS.md",
   "outputs_path": "tasks/COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829/OUTPUTS.md",
   "completion_path": "tasks/COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829/COMPLETION.md",
+  "validation_receipt_path": "tasks/COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829/validation/VALIDATION_RECEIPT.md",
+  "validation_receipt_sha256": "05b5547d4ffa7ff8616d42a4b411baa96c829c47bff00c4b30fd025fcd2df3f7",
   "persistent_personas": ["BM_MASTER", "PMO"],
   "persistent_validator_persona": null,
   "bootstrap_order": [
@@ -52,11 +54,12 @@
   "common_guard_scope": "BM_MASTER_AND_PMO",
   "persona_lock_does_not_create_authority": true,
   "conflict_rule": "GIT_CURRENT_STATE_CONFLICT=>REVIEW_REQUIRED",
-  "validation_claim": "NONE_UNTIL_EXACT_D0_RECEIPT_EXISTS",
-  "d0_commit": null,
+  "validation_claim": "PASS_EXACT_D0_ONLY",
+  "d0_commit": "7de27f727582c4626c76728fbdf4196b40007591",
   "d1_commit": null,
+  "d1_disposition": "NOT_REQUIRED_NO_CORRECTION",
   "activation_authorized": false,
   "owner_acceptance_recorded": false,
   "production_authorized": false,
-  "caution": "All four lane trees are resolved on the integration branch. This pointer remains Candidate and makes no validation, merge, Owner-acceptance, or activation claim before exact downstream evidence exists."
+  "caution": "Independent PASS applies only to exact D0 7de27f727582c4626c76728fbdf4196b40007591. Receipt persistence metadata does not inherit or enlarge validation, and no main merge, Owner acceptance, production authorization, or activation is yet claimed."
 }

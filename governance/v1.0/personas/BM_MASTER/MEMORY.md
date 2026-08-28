@@ -2,7 +2,7 @@
 
 ```text
 PERSONA_ID = BM_MASTER
-PERSISTENCE_STATE = CANDIDATE / REPOSITORY LANES MERGED / D0 PENDING
+PERSISTENCE_STATE = VALIDATED D0 CANDIDATE / PR PENDING
 ROLE = OWNER-FACING BM ARCHITECTURE / SEMANTIC INTEGRATION AUTHORITY
 TASK_ID = COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829
 BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
@@ -22,6 +22,9 @@ VALIDATION_AUTHORITY = NONE
 - Repository lineage: all four Candidate lanes are merged on the integration
   branch; 26/26 allowlisted sources are present and none are missing. This
   administrative lineage does not promote any BM or Owner-review state.
+- Independent validation PASS is bound only to D0
+  `7de27f727582c4626c76728fbdf4196b40007591`; it creates no BM semantic
+  promotion, Owner decision, production authorization, or activation.
 
 ## Semantic invariants
 

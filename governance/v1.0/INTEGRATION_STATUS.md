@@ -1,15 +1,15 @@
-# Integration Status — Pre-D0 Candidate
+# Integration Status — Validated D0 Candidate
 
 ```text
 PROJECT = COSMOS HUB BM IMPROVEMENT
 TASK_ID = COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829
 BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
 INTEGRATION_BRANCH = task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829
-CURRENT_STAGE = S3 / STRUCTURAL PASS / D0 FREEZE
+CURRENT_STAGE = S5 / PR, MERGE, AND POST-MERGE READBACK
 LANE_INTEGRATION_HEAD = f482e23980d91d04a26e83e25157dc9966f4cf7a
-D0 = NOT CREATED
-D1 = NOT CREATED
-VALIDATION = NOT STARTED
+D0 = 7de27f727582c4626c76728fbdf4196b40007591
+D1 = NOT REQUIRED / NO CORRECTION
+VALIDATION = PASS / EXACT D0 ONLY
 OWNER_ACCEPTED = FALSE
 ACTIVATED = FALSE
 ```
@@ -52,9 +52,10 @@ The phrase “lane merged” describes repository lineage only. No specialist
 Candidate is `OWNER_DECIDED` or semantically `INTEGRATED`; OR-01–OR-09 remain
 undecided. No validation, production, live routing, commercial promise, native
 module, formal 6G claim, Owner acceptance, or activation follows from this
-status.
+status. Independent PASS is bound only to D0 and does not transfer to later
+administrative metadata commits.
 
 ## Next exact action
 
-Create exact D0 from the read-back final tree. Only then dispatch the one
-independent task-scoped validator.
+Persist the byte-identical independent receipt, open the integration PR, merge
+only at the exact reviewed head, and perform the required post-merge readback.

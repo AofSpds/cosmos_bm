@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "project": "COSMOS HUB BM IMPROVEMENT",
-  "registry_state": "CURRENT_PRE_D0",
+  "registry_state": "CURRENT_VALIDATED_D0_PR_PENDING",
   "as_of_kst_date": "2026-08-29",
   "base_main_sha": "a3b18e231e5e3c7c053d3a838e4047ea218e4aa2",
   "active_tasks": [
@@ -9,7 +9,7 @@
       "task_id": "COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829",
       "task_class": "FULL_BOUNDED_PUBLIC_REPOSITORY_MEMORY_BOOTSTRAP",
       "status": "IN_PROGRESS",
-      "planned_stage": "S3_STRUCTURAL_PASS_AND_D0_FREEZE",
+      "planned_stage": "S5_PR_MERGE_AND_POST_MERGE_READBACK",
       "current_persona_lock": "PMO",
       "semantic_authority": "BM_MASTER",
       "integration_branch": "task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829",
@@ -19,17 +19,15 @@
       "blocking_items": [],
       "blocking_item_count": 0,
       "remaining_gate_sequence": [
-        "D0 exact freeze",
-        "task-scoped independent validation",
-        "bounded correction/recheck if required",
         "PR merge and post-merge readback"
       ],
-      "validation_claim": "NONE",
-      "d0_commit": null,
+      "validation_claim": "PASS_EXACT_D0_ONLY",
+      "d0_commit": "7de27f727582c4626c76728fbdf4196b40007591",
       "d1_commit": null,
+      "d1_disposition": "NOT_REQUIRED_NO_CORRECTION",
       "owner_action_required": false,
       "scope_expansion": "NONE",
-      "next_exact_action": "Freeze the read-back final pre-D0 tree as exact D0 before independent validation."
+      "next_exact_action": "Persist the exact validation receipt, open and merge the integration PR at the reviewed head, then perform post-merge readback."
     }
   ],
   "registry_caution": "A pending gate is not a blocker. No later state is inferred from lane completion or progress."

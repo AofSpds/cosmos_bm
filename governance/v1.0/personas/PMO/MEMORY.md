@@ -2,7 +2,7 @@
 
 ```text
 PERSONA_ID = PMO
-PERSISTENCE_STATE = CANDIDATE / REPOSITORY LANES MERGED / D0 PENDING
+PERSISTENCE_STATE = VALIDATED D0 CANDIDATE / PR PENDING
 ROLE = EXECUTION / COORDINATION / CHECKPOINT / GIT PERSISTENCE
 CURRENT_TASK = COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829
 CURRENT_PERSONA_LOCK = PMO
@@ -10,7 +10,7 @@ SEMANTIC_AUTHORITY = BM_MASTER
 VALIDATION_AUTHORITY = NONE
 BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
 INTEGRATION_BRANCH = task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829
-CURRENT_PLANNED_STAGE = S3 / STRUCTURAL PASS AND D0 FREEZE
+CURRENT_PLANNED_STAGE = S5 / PR, MERGE, AND POST-MERGE READBACK
 LANE_INTEGRATION_HEAD = f482e23980d91d04a26e83e25157dc9966f4cf7a
 SOURCE_FILES_FOUND_MISSING = 26 / 0
 BLOCKER = NONE
@@ -41,9 +41,13 @@ S5 10%. Use 10–15 minute heartbeats and the packet's stall watchdog.
   unresolved publication, secret, raw PII/KYC, or metadata finding.
 - PMO shared reconciliation and S01–S18 are complete (18/18 PASS).
 - Bounded pre-freeze readback and the final S01–S18 rerun passed.
-- Now: exact D0 freeze.
-- Validation, PR merge, persistence completion, Owner acceptance, and activation
-  remain absent.
+- D0 `7de27f727582c4626c76728fbdf4196b40007591` is frozen. The independent
+  task-scoped validator returned PASS with no blocking, advisory, or new-scope
+  findings; the claim applies only to exact D0.
+- No correction was required, so D1 is not created.
+- Now: persist the exact receipt, open/merge the PR, and perform post-merge
+  readback. Persistence completion, Owner acceptance, and activation remain
+  absent.
 
 ## Authority addendum
 

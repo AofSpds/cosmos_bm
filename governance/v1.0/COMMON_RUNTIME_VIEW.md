@@ -3,13 +3,13 @@
 ```text
 PROJECT = COSMOS HUB BM IMPROVEMENT
 TASK_ID = COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829
-STATE = CANDIDATE / S3 STRUCTURAL CHECKS / D0 PENDING
+STATE = VALIDATED D0 CANDIDATE / S5 PR AND READBACK
 CURRENT_TASK_PERSONA_LOCK = PMO
 SEMANTIC_AUTHORITY = BM_MASTER
 BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
 INTEGRATION_BRANCH = task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829
 LANE_INTEGRATION_HEAD = f482e23980d91d04a26e83e25157dc9966f4cf7a
-VALIDATION_CLAIM = NONE
+VALIDATION_CLAIM = PASS / EXACT D0 ONLY
 OWNER_ACTION_REQUIRED = FALSE
 ```
 
@@ -69,12 +69,12 @@ rerun.
 | Task class | Full-bounded public repository/memory bootstrap |
 | Authoring lanes | 4 isolated lanes, all repository-merged as Candidate inputs |
 | Planned validation lanes | 1 task-scoped independent lane after D0 |
-| Current planned stage | S3 / structural PASS / bounded readback and D0 freeze |
+| Current planned stage | S5 / receipt persistence, PR/merge, and post-merge readback |
 | Source intake | 26/26 allowlisted; 0 missing or held |
 | Expected active wall | 90–180 minutes for the overall task |
 | Owner check limit | 240 minutes projected active wall |
 | Default correction loop | One bounded batch plus affected-diff recheck |
-| Current blocker | None; validation cannot begin before exact D0 |
+| Current blocker | None; D0 PASS complete, PR/merge/readback pending |
 | Scope expansion | None |
 
 PMO is the integration-branch single writer. Repository lane merge is distinct
