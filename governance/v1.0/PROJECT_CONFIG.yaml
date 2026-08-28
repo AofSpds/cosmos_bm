@@ -1,0 +1,80 @@
+schema_version: "1.0"
+project: "COSMOS HUB BM IMPROVEMENT"
+repository: "https://github.com/AofSpds/cosmos_bm.git"
+governance_version: "v1.0"
+task_id: "COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829"
+base_main_sha: "a3b18e231e5e3c7c053d3a838e4047ea218e4aa2"
+integration_branch: "task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829"
+candidate_authoring_branch: "task/bootstrap/governance-core-20260829"
+planned_stage: "S2_WAVE_1_PARALLEL_AUTHORING_LANE_A"
+
+authority:
+  semantic_authority: "BM_MASTER"
+  execution_persistence_authority: "PMO"
+  persistent_personas:
+    - "BM_MASTER"
+    - "PMO"
+  persistent_validator_persona: null
+  validation_role: "TASK_SCOPED_INDEPENDENT_AFTER_D0"
+
+program_state:
+  proposal_baseline:
+    version: "v1.1"
+    status: "CANDIDATE"
+    official_hub_policy: false
+  roadmap_baseline:
+    name: "STEP 3-5"
+    status: "OWNER_REVIEW_CANDIDATE"
+  overall_classification: "B_SELECTIVE_FIT_CANDIDATE"
+  owner_review_questions_or_01_through_or_09: "UNDECIDED"
+
+business_models:
+  - order: 1
+    name: "Interchain Asset Distribution Market"
+  - order: 2
+    name: "Assured Interchain Delivery SLA"
+  - order: 3
+    name: "Enterprise One-Connection Gateway"
+  - order: 4
+    name: "Asset & Service Registry"
+
+hard_locks:
+  - "Thin Core, Rich Edges"
+  - "No forced Hub toll on base IBC"
+  - "No Hub customer-principal custody"
+  - "No mandatory ATOM payment"
+  - "No Hub-owned DEX, bridge, stablecoin, lending, perp, or proprietary mandatory router"
+  - "No raw KYC/PII on public chain"
+  - "No AI private-key custody"
+  - "No AI transaction authorization"
+  - "No AI hard-policy mutation"
+  - "No AI unilateral compensation decision"
+  - "No global atomic-revert or principal-guarantee claim"
+  - "Open provider competition, switching, and public specification"
+  - "Contracts, data, and small audited CosmWasm before any native module"
+  - "No 6G-compliant, certified, or implemented claim"
+
+authorizations:
+  bounded_repository_memory_bootstrap: true
+  exact_allowlisted_source_publication: true
+  parallel_authoring_lanes: true
+  task_scoped_independent_validation_after_d0: true
+  full_v1_2_rewrite: false
+  new_business_model: false
+  production: false
+  live_routing_or_financial_execution: false
+  commercial_sla_or_compensation: false
+  native_module: false
+  formal_6g_conformity_claim: false
+  persistent_validator_persona: false
+
+memory_policy:
+  memory_md: "COMPRESSED_CURRENT_STATE"
+  worklog_md: "APPEND_ONLY"
+  decisions_jsonl: "APPEND_ONLY"
+  handoff_current_md: "DERIVED_CONTEXT_ONLY"
+
+source_policy:
+  intake: "ALLOWLIST_ONLY_BYTE_PRESERVING_HASHED_PUBLICATION_GUARDED"
+  raw_authority: "AUTHORITATIVE_BYTE_PRESERVED_INPUT"
+  derived_text: "NON_AUTHORITATIVE_WITH_PROVENANCE"

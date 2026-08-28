@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "project": "COSMOS HUB BM IMPROVEMENT",
+  "registry_state": "CANDIDATE_PENDING_INTEGRATION",
+  "as_of_kst_date": "2026-08-29",
+  "base_main_sha": "a3b18e231e5e3c7c053d3a838e4047ea218e4aa2",
+  "active_tasks": [
+    {
+      "task_id": "COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829",
+      "task_class": "FULL_BOUNDED_PUBLIC_REPOSITORY_MEMORY_BOOTSTRAP",
+      "status": "IN_PROGRESS",
+      "planned_stage": "S2_WAVE_1_PARALLEL_AUTHORING",
+      "current_persona_lock": "PMO",
+      "semantic_authority": "BM_MASTER",
+      "integration_branch": "task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829",
+      "lane_a_branch": "task/bootstrap/governance-core-20260829",
+      "task_path": "tasks/COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829/TASK.md",
+      "plan_path": "tasks/COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829/PLAN.md",
+      "blocking_items": [],
+      "blocking_item_count": 0,
+      "dependencies_pending_integration": [
+        "source-ingest lane output",
+        "channels-00-03 lane output",
+        "channels-04-07 lane output",
+        "PMO shared-index reconciliation",
+        "D0 freeze and task-scoped independent validation"
+      ],
+      "dependencies_are_current_blockers": false,
+      "validation_claim": "NONE",
+      "d0_commit": null,
+      "d1_commit": null,
+      "owner_action_required": false,
+      "scope_expansion": "NONE",
+      "next_exact_action": "Complete Lane A scoped checks and local candidate commit, then return the exact commit and changed-file list to PMO."
+    }
+  ],
+  "registry_caution": "This Lane A candidate records only blockers known within its scope. PMO must reconcile overall blockers on the integration branch."
+}
