@@ -66,6 +66,45 @@ The evaluation order is baseline diversity → pre-execution health → pre-auth
 - CH-02 supplies evidence semantics; CH-03 advisory risk/health; CH-06 capability/history; CH-07 liability/accounting/exposure.
 - CH-05 receives disclosure requirements; CH-00 receives independent mechanism decisions.
 
+## Owner-directed conversation and response protocol — 2026-08-29 KST
+
+This is an `OWNER_EXPLICIT_OPERATIONAL_DIRECTION`, not a BM semantic decision and not a mechanism PASS.
+
+- Every substantive CH-04 answer explains the active item first in plain language, then in technical/hardcore depth.
+- Owner questions and Owner decision points are visibly tagged and kept separate from design questions, source gaps, Candidate recommendations and hard locks.
+- Every substantive answer ends with a compact `[CH-04 TOPIC TRACKER]` covering the stable topic IDs below, current status, Owner tags and next exact item.
+- A topic is not marked complete merely because it was discussed. Completion requires the closure evidence defined for its BM2-MP deliverable.
+- Material changes are summarized in the channel checkpoint. Git persistence remains branch-bounded and does not imply Owner acceptance or integration.
+
+### Stable topic IDs
+
+```text
+MP-00  Authority, scope and claim boundary
+MP-01  Four-mechanism taxonomy and existing baseline
+MP-02  Route universe, comparability and independence
+MP-03  Request, quote, route-plan and leg objects
+MP-04  Route/leg/recovery state machine
+MP-05  Exact failover points and authorization boundary
+MP-06  Idempotency, replay and duplicate suppression
+MP-07  Per-leg amount, exposure and aggregate completion
+MP-08  Last-known asset location and asset lineage
+MP-09  Recovery actions, owner, deadline and terminal states
+MP-10  Capital lock, release, bond and compensation references
+MP-11  Evidence, timestamps, finality and source corroboration
+MP-12  Failure taxonomy and controllability classification
+MP-13  Quote/policy/finality/recovery revalidation
+MP-14  Split-routing partial completion and accounting
+MP-15  Hedged-execution safety and default-off test
+MP-16  Net Route Value and mechanism-specific economics
+MP-17  Provider neutrality and architecture placement
+MP-18  Legal, accounting, liability and disclosure interfaces
+MP-19  Replay, simulation, adversarial and PoC test design
+MP-20  Per-mechanism Go/Hold/Kill and CH-00 handoff
+MP-21  Cross-channel dependencies and interface contracts
+MP-22  Claim language and communication ceiling
+MP-23  BM2-MP-01 through BM2-MP-06 progress and memory maintenance
+```
+
 ## Succession rule
 
 - Validate only changed claims/objects/interfaces; missing evidence is `UNKNOWN` or `HOLD`.
