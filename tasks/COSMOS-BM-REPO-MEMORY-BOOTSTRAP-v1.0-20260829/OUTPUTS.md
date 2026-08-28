@@ -1,4 +1,4 @@
-# Task Outputs — Validated D0 / PR-Ready Index
+# Task Outputs — Persistence-Complete Index
 
 This index records the bounded bootstrap Candidate outputs. Exact completion,
 validation, PR/merge, and post-merge evidence are added only when they exist.
@@ -21,11 +21,13 @@ validation, PR/merge, and post-merge evidence are added only when they exist.
 | Source manifest/checksums | `sources/SOURCE_MANIFEST.yaml`, `sources/SHA256SUMS.txt` | 26 imports recorded |
 | Structural checks | `STRUCTURAL_CHECKS.md` | S01–S18 PASS on final pre-D0 tree |
 | Validation receipt | `validation/VALIDATION_RECEIPT.md` | PASS; SHA-256 `05b5547d4ffa7ff8616d42a4b411baa96c829c47bff00c4b30fd025fcd2df3f7` |
+| PR | `https://github.com/AofSpds/cosmos_bm/pull/1` | merged exact head `9217fcb0bbcf943b97b3302bde198833f3c72f48` |
+| Task content merge | `996d4ce5625047376b3837f98ee986a1a6c4348d` | fresh-main readback PASS |
+| Post-merge tree | `cd67645b8066f37fd20e18f166557aaf49be9010` | matches PR head tree |
 
 ## Explicitly absent at this checkpoint
 
 - D1 (not required because there was no correction)
-- main PR/merge and post-merge readback
 - Owner acceptance or activation
 
 No absence above is silently inferred as a decision. Validation does not

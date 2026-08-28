@@ -3,7 +3,7 @@
 ```text
 PROJECT = COSMOS HUB BM IMPROVEMENT
 TASK_ID = COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829
-STATE = VALIDATED D0 CANDIDATE / S5 PR AND READBACK
+STATE = BOOTSTRAP PERSISTENCE COMPLETE / CANDIDATE
 CURRENT_TASK_PERSONA_LOCK = PMO
 SEMANTIC_AUTHORITY = BM_MASTER
 BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
@@ -69,12 +69,12 @@ rerun.
 | Task class | Full-bounded public repository/memory bootstrap |
 | Authoring lanes | 4 isolated lanes, all repository-merged as Candidate inputs |
 | Planned validation lanes | 1 task-scoped independent lane after D0 |
-| Current planned stage | S5 / receipt persistence, PR/merge, and post-merge readback |
+| Current planned stage | Complete / Git-backed succession ready |
 | Source intake | 26/26 allowlisted; 0 missing or held |
 | Expected active wall | 90–180 minutes for the overall task |
 | Owner check limit | 240 minutes projected active wall |
 | Default correction loop | One bounded batch plus affected-diff recheck |
-| Current blocker | None; D0 PASS complete, PR/merge/readback pending |
+| Current blocker | None |
 | Scope expansion | None |
 
 PMO is the integration-branch single writer. Repository lane merge is distinct

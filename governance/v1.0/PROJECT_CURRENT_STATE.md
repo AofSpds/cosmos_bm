@@ -1,11 +1,11 @@
-# Project Current State — Validated D0 Candidate
+# Project Current State — Persistence-Complete Bootstrap Candidate
 
 ```text
 PROJECT = COSMOS HUB BM IMPROVEMENT
 GOVERNANCE_VERSION = v1.0
 TASK_ID = COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829
-STATE = VALIDATED CANDIDATE / PR PENDING
-PLANNED_STAGE = S5 / PR, MERGE, AND POST-MERGE READBACK
+STATE = BOOTSTRAP PERSISTENCE COMPLETE / CANDIDATE
+PLANNED_STAGE = COMPLETE
 BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
 INTEGRATION_BRANCH = task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829
 LANE_INTEGRATION_HEAD = f482e23980d91d04a26e83e25157dc9966f4cf7a
@@ -14,6 +14,9 @@ SEMANTIC_AUTHORITY = BM_MASTER
 VALIDATION_CLAIM = PASS / EXACT D0 ONLY
 D0 = 7de27f727582c4626c76728fbdf4196b40007591
 D1 = NOT REQUIRED / NO CORRECTION
+PR = 1 / MERGED
+TASK_CONTENT_MERGE_COMMIT = 996d4ce5625047376b3837f98ee986a1a6c4348d
+POST_MERGE_READBACK = PASS / S01-S18 18 OF 18
 OWNER_ACCEPTED = FALSE
 ACTIVATED = FALSE
 ```
@@ -109,8 +112,13 @@ not answer an OR item or authorize proposal/product promotion.
   is the next gate.
 - Independent validation returned PASS with no blocking, advisory, or new-scope
   findings for exact D0 only. No correction was required, so D1 is not created.
-- PR/merge and post-merge readback remain pending. No persistence completion,
-  Owner acceptance, or activation is claimed.
+- PR #1 merged exact head `9217fcb0bbcf943b97b3302bde198833f3c72f48`
+  as task content merge `996d4ce5625047376b3837f98ee986a1a6c4348d`.
+- Fresh-main readback matched tree `cd67645b8066f37fd20e18f166557aaf49be9010`,
+  receipt SHA-256, 26/26 sources, 8 × 7 channel files, 2 Personas, and S01–S18
+  PASS. Git persistence is complete.
+- Owner acceptance and activation remain false; no semantic Candidate was
+  promoted by the repository merge.
 
 Keep `AUTHORING_COMPLETE`, `STRUCTURAL_CHECK_COMPLETE`,
 `VALIDATION_COMPLETE`, `COMMITTED`, `MERGED`, `PERSISTENCE_COMPLETE`,

@@ -5,7 +5,7 @@ PROJECT = COSMOS HUB BM IMPROVEMENT
 TASK_ID = COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829
 TASK_CLASS = FULL-BOUNDED PUBLIC REPOSITORY / MEMORY BOOTSTRAP
 OWNER_DECISION = APPROVE AND EXECUTE EXACT BOUNDED TASK
-TASK_STATE = IN_PROGRESS / S5 VALIDATED D0 / PR PENDING
+TASK_STATE = COMPLETE / GIT PERSISTENCE CLOSED
 CURRENT_PERSONA_LOCK = PMO
 SEMANTIC_AUTHORITY = BM_MASTER
 BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
@@ -170,9 +170,9 @@ absent.
   `7de27f727582c4626c76728fbdf4196b40007591`; no findings required correction,
   so `D1 = NOT REQUIRED`.
 - `COMMITTED = TRUE` for exact D0 and validation-receipt persistence is the
-  current administrative step.
-- `MERGED = FALSE` for main; repository lane merge is only integration-branch
-  lineage.
-- `PERSISTENCE_COMPLETE = FALSE`, `OWNER_ACCEPTED = FALSE`, and
-  `ACTIVATED = FALSE`.
+  recorded administrative step.
+- `MERGED = TRUE` through PR #1 at task content merge
+  `996d4ce5625047376b3837f98ee986a1a6c4348d`.
+- `PERSISTENCE_COMPLETE = TRUE`; fresh-main S01–S18 and exact readback passed.
+- `OWNER_ACCEPTED = FALSE` and `ACTIVATED = FALSE`.
 - Source intake is 26/26 allowlisted files with 0 missing or held.
