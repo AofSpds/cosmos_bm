@@ -4,9 +4,10 @@
 > regenerated when `MEMORY.md`, `DECISIONS.jsonl`, `OPEN_QUESTIONS.md` or the
 > durable topic map materially changes.
 
-GENERATION_STAGE = `CH03_TOPIC_TAXONOMY_MEMORY_PROTOCOL_CANDIDATE`
+GENERATION_STAGE = `CH03_TOPIC_TAXONOMY_MEMORY_PROTOCOL_CANDIDATE_FINAL_READBACK`
 BASE_MAIN_SHA = `562850c0639cdf04462f9520166be1e6f9880aab`
 AUTHORING_BRANCH = `task/ch03/topic-taxonomy-memory-protocol-20260829`
+PRE_HANDOFF_AUTHORING_HEAD = `4b1428933ae609fa59f7d78d0ed335f874b25bc1`
 DERIVED_INPUTS = `TOPIC_INDEX.md + MEMORY.md + DECISIONS.jsonl + OPEN_QUESTIONS.md + WORKLOG.md`
 
 FROM_CHANNEL = `CH-03 — AI-ASSISTED SKIP GO ROUTING`
@@ -27,7 +28,16 @@ LEGAL_SAFETY_ECONOMIC_EFFECT = None authorized; no live inference, financial exe
 CLAIM_CEILING = `C2 — shadow/research, pre-PoC maximum`
 OWNER_ACTION_REQUIRED = `FALSE` for BM2-AI-01/02; `TRUE` only when a deferred Owner question activates or Shadow/Promotion choice is ready
 PROPOSED_INTEGRATION = None until `BM2-AI-01`–`06` close and the channel submits a sealed handoff
-SUPERSEDES = Previous `HANDOFF_CURRENT.md` generated during bootstrap reconciliation
+SUPERSEDES = Previous `HANDOFF_CURRENT.md` generated before final topic-index status correction
+
+## Decision-status readback
+
+- `BM2-AI-D-0001` remains `CHANNEL CANDIDATE / SOURCE-DERIVED`; it is not an
+  Owner semantic approval or channel seal.
+- `BM2-AI-D-0002` is `OWNER_DECIDED` only for CH-03 discussion, reporting and
+  memory maintenance.
+- Neither record selects a model, authorizes live routing, approves commercial
+  SLA terms or promotes v1.2 content.
 
 ## Durable topic map
 
@@ -58,6 +68,15 @@ SUPERSEDES = Previous `HANDOFF_CURRENT.md` generated during bootstrap reconcilia
 23. net route value/economics;
 24. Promotion/Permanent Shadow/Hold/Kill, claims and integration.
 
+## Deliverable mapping
+
+- `BM2-AI-01` = T02–T05.
+- `BM2-AI-02` = T06–T11.
+- `BM2-AI-03` = T12–T17.
+- `BM2-AI-04` = T15–T18.
+- `BM2-AI-05` = T17–T23.
+- `BM2-AI-06` = T24.
+
 ## Deferred Owner questions
 
 `BM2-AI-OQ-01` through `BM2-AI-OQ-09` cover objective trade-offs, route universe,
@@ -72,6 +91,5 @@ public claim/document placement. All are `DEFERRED`; none blocks `BM2-AI-01` or
 - Portfolio: bounded AI/provider health `SELECT-LIMITED — CANDIDATE`; route diversity and Smart-Swap split `EXISTING / ASSESS`.
 - Model selected: `FALSE`.
 - Live/production authority: `FALSE`.
-- Ledger: `BM2-AI-D-0001` remains source-derived Candidate; `BM2-AI-D-0002` is an exact Owner decision limited to discussion/reporting/memory protocol.
 - Mandatory response order: plain explanation → technical/hardcore treatment → status/evidence distinction → Owner tags → cumulative footer index.
 - Next exact action: `BM2-AI-01` current Skip Go plus deterministic comparator suite, then `BM2-AI-02` data readiness. Do not select or deploy a model.
