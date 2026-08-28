@@ -4,14 +4,16 @@
 
 Regenerate from current Git, `MEMORY.md`, `DECISIONS.jsonl`, and `OPEN_QUESTIONS.md` after a material change. Higher-authority Owner, CH-00, and charter records prevail.
 
-GENERATION_STAGE = `PRE_D0_INTEGRATION_RECONCILIATION`
+GENERATION_STAGE = `OWNER_DIRECTED_CHANNEL_TOPIC_CURRENTIZATION_CANDIDATE`
+CURRENTIZATION_CLASS = `CHANNEL MEMORY MAINTENANCE / RESPONSE PROTOCOL`
 TASK_ID = `COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829`
-INTEGRATION_BRANCH = `task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829`
+BASE_MAIN_SHA = `562850c0639cdf04462f9520166be1e6f9880aab`
+CANDIDATE_BRANCH = `bm-master/ch04-topic-map-response-protocol-20260829`
 DERIVED_INPUTS = `MEMORY.md + DECISIONS.jsonl + OPEN_QUESTIONS.md`
 
 FROM_CHANNEL = `CH-04 — FAILOVER RECOVERY DESIGN`
 DECISION_ID = `BM2-MP-D-0001`
-STATUS = `CANDIDATE / NOT CHANNEL-SEALED / NO OWNER DECISION`
+STATUS = `CANDIDATE / NOT CHANNEL-SEALED / NO OWNER BM DECISION`
 QUESTION = How should route diversity, sequential failover, split routing, and hedged execution remain separately defined and evaluated?
 RECOMMENDED_DECISION = Keep the four mechanisms distinct; evaluate sequential failover as pre-execution-first and keep hedged execution WATCH/default-off.
 ALTERNATIVES_CONSIDERED = Generic multi-path reliability, live hedge activation, global atomic revert, and principal protection; excluded by evidence and hard-lock boundaries.
@@ -67,6 +69,22 @@ No generic `multi-path reliability`, global atomic-revert, or principal-guarante
 
 No channel-sealed, CH-00-reviewed, Owner-decided, or integrated BM2-MP decision exists.
 
+## Owner-directed response and memory protocol
+
+The Owner issued a process instruction, effective immediately:
+
+1. Divide CH-04 into stable, detailed topic IDs.
+2. Explain the active topic in plain language first, then in technical/hardcore depth.
+3. Tag Owner questions and decision points separately from design questions, source gaps, Candidate recommendations, and hard locks.
+4. Append a compact CH-04 topic tracker to every substantive response.
+5. Preserve material changes in channel memory without converting discussion into completion or semantic approval.
+
+This is `OWNER_EXPLICIT_OPERATIONAL_DIRECTION`; it is not a new `BM2-MP-D` mechanism decision.
+
+Stable topic range: `MP-00` through `MP-23`.
+Tagged question/decision range: `OQ-MP-01` through `OQ-MP-13`.
+The full topic index is in `MEMORY.md`; the full tagged register is in `OPEN_QUESTIONS.md`.
+
 ## Mandatory invariants
 
 Unique execution ID; route-plan hash; per-leg amount/exposure cap; leg states; aggregate-completion rule; last-known asset location; duplicate suppression; recovery owner/deadline; capital release; compensation reference.
@@ -79,3 +97,10 @@ Unique execution ID; route-plan hash; per-leg amount/exposure cap; leg states; a
 4. Ask for independent Go/Hold/Kill at `BM2-MP-06` only after evidence exists.
 
 Do not begin implementation, pilot, live failover, or hedge execution. CH-00 receives only the structured handoff fields defined in `CHANNEL.md`, with a new Decision ID and exact evidence.
+
+## Persistence status
+
+- Candidate authoring branch only: `bm-master/ch04-topic-map-response-protocol-20260829`.
+- No direct main push.
+- `DECISIONS.jsonl` unchanged.
+- PMO integration/persistence is required only if this operating-memory update is to become current main state.
