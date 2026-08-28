@@ -4,6 +4,30 @@
 
 Regenerate from current Git, `MEMORY.md`, `DECISIONS.jsonl`, and `OPEN_QUESTIONS.md` after a material change. Higher-authority Owner, CH-00, and charter records prevail.
 
+GENERATION_STAGE = `PRE_D0_INTEGRATION_RECONCILIATION`
+TASK_ID = `COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829`
+INTEGRATION_BRANCH = `task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829`
+DERIVED_INPUTS = `MEMORY.md + DECISIONS.jsonl + OPEN_QUESTIONS.md`
+
+FROM_CHANNEL = `CH-04 — FAILOVER RECOVERY DESIGN`
+DECISION_ID = `BM2-MP-D-0001`
+STATUS = `CANDIDATE / NOT CHANNEL-SEALED / NO OWNER DECISION`
+QUESTION = How should route diversity, sequential failover, split routing, and hedged execution remain separately defined and evaluated?
+RECOMMENDED_DECISION = Keep the four mechanisms distinct; evaluate sequential failover as pre-execution-first and keep hedged execution WATCH/default-off.
+ALTERNATIVES_CONSIDERED = Generic multi-path reliability, live hedge activation, global atomic revert, and principal protection; excluded by evidence and hard-lock boundaries.
+EVIDENCE = Exact CH-04 packet SHA-256 `1a5b466485fb19c44da66250c8399ad996a50ef08f2755c7e4e3b4a3d142b506`; current source hashes in `SOURCES.md`.
+RATIONALE = The mechanisms have different capital, duplicate-execution, recovery, and observability risks and cannot share an undifferentiated reliability claim.
+IMPACTED_CHANNELS = CH-02 evidence, CH-03 prediction, CH-05 disclosure, CH-06 provider facts, CH-07 responsibility/economics, CH-00 promotion
+IMPACTED_BM = BM2 directly; supporting interfaces for BM3 and BM4
+IMPACTED_TRACK = Pre-PoC mechanism taxonomy, state machine, recovery, and net-value evidence
+HARD_LOCK_CHECK = Preserved; no live authority, global atomic revert, principal guarantee, insurance, custody, or proprietary mandatory router
+DEPENDENCIES = CH-02 event/finality/recovery semantics; route and leg state; idempotency; provider evidence; legal responsibility and exposure bounds
+LEGAL_SAFETY_ECONOMIC_EFFECT = None authorized; compensation, reserve, recovery liability, and commercial commitment remain unresolved
+CLAIM_CEILING = `C2 — pre-PoC maximum`
+OWNER_ACTION_REQUIRED = `FALSE` now; `TRUE` only when a bounded Go/Hold/Kill or pilot choice is ready
+PROPOSED_INTEGRATION = None until `BM2-MP-01`–`06` close and a channel-sealed handoff is submitted
+SUPERSEDES = None
+
 ## Identity and read order
 
 - Channel: `CH-04 FAILOVER RECOVERY DESIGN`

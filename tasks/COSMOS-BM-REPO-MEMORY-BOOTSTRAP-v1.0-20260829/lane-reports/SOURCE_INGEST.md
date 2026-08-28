@@ -65,9 +65,9 @@ All packet-mapped A01–E02 sources were available and imported byte-identically
 
 ## Archive inventory and divergence
 
-E01 contains exactly B01–B05. Its five members pass the archive's internal checksum manifest and are byte-identical to the standalone B01–B05 files.
+E01 contains exactly B01–B05. B01–B04 are verified by archive member B05 and are byte-identical to the standalone files. B05 itself is verified by the top-level `sources/SHA256SUMS.txt` and `SOURCE_MANIFEST.yaml`; the complete five-member inventory matches the recorded package contents.
 
-E02 contains exactly C01–C11 and passes its own internal member manifest. It is preserved unchanged as a historical exact package. The relationship to the corrected standalone folder is:
+E02 contains exactly C01–C11. C01–C10 are verified by archive member C11. C11 itself is verified by the top-level `sources/SHA256SUMS.txt` and `SOURCE_MANIFEST.yaml`; the complete eleven-member inventory matches the recorded package contents. E02 is preserved unchanged as a historical exact package. The relationship to the corrected standalone folder is:
 
 | Source | Corrected standalone SHA-256 | E02 member SHA-256 | Relationship |
 |---|---|---|---|
@@ -92,7 +92,7 @@ C11 was extracted byte-identically from E02. It is explicitly an **ARCHIVE-MEMBE
 | Hash and byte preservation | PASS | All packet-fixed hashes match; every copied file matches its origin; 26 entries in repository checksum list. |
 | MIME / type | PASS | DOCX, PDF, ZIP and UTF-8 text types match extensions and target expectations. |
 | Openability / corruption | PASS | Both DOCX files and both ZIP archives pass container tests; PDF parses as 24-page unencrypted PDF 1.7; all text files decode as UTF-8. |
-| ZIP member inventory | PASS | E01 has exactly five expected B members; E02 has exactly eleven expected C members; no path traversal names; both internal manifests verify. |
+| ZIP member inventory | PASS | E01 has exactly five expected B members and B05 verifies B01–B04; E02 has exactly eleven expected C members and C11 verifies C01–C10. B05/C11 themselves match the top-level manifest/checksum records; no path traversal names exist. |
 | Duplicate-by-hash | PASS | No unintended duplicate committed top-level file; deliberate package-member equivalences are recorded in the manifest. |
 | Secrets / credentials | PASS | Scoped high-confidence credential scan found no key, token, private-key block, or credential material. |
 | PII / KYC | PASS | Scoped Korean RRN, phone and email scan found no raw PII/KYC record. |

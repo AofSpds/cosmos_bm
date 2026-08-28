@@ -4,7 +4,7 @@
 ARTIFACT_ID = COSMOS-BM-COMMON-EXECUTION-GUARD-v1.0
 PROJECT = COSMOS HUB BM IMPROVEMENT
 TASK_ID = COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829
-STATE = CANDIDATE / PENDING PMO INTEGRATION
+STATE = BOOTSTRAP CANDIDATE / REPOSITORY LANES MERGED / D0 PENDING
 SCOPE = BM_MASTER AND PMO
 VALIDATION_CLAIM = NONE
 AUTHORITY_CHANGE = NONE
@@ -60,7 +60,7 @@ material-global finding proves a wider recheck is necessary.
   race, or bootstrap source deletion is allowed.
 - Local lane commits are candidates, not activation or validation events.
 
-Lane A may write only `AGENTS.md`, the candidate root bootstrap pointer,
+During completed Wave 1 authoring, Lane A could write only `AGENTS.md`, the candidate root bootstrap pointer,
 `governance/v1.0/**`, and the current task's `TASK.md` and `PLAN.md`. It must not
 write sources, channels, README, lane reports, validation receipts, outputs, or
 completion artifacts.
@@ -88,7 +88,7 @@ hash mismatch, corruption, or sensitive content; do not reconstruct a missing
 original under the same identity.
 
 Raw inputs are authoritative bytes. Derived text is non-authoritative and must
-record source hash, extractor, and version. Lane A does not ingest sources.
+record source hash, extractor, and version. The completed Lane A did not ingest sources.
 
 ## 7. Memory and ledger discipline
 

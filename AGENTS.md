@@ -8,15 +8,18 @@ roadmap, governance decision, product release, or production system.
 
 Before substantive work, read:
 
-1. `COSMOS_BM_BOOTSTRAP_CURRENT.json`
-2. `governance/v1.0/PROJECT_CURRENT_STATE.md`
-3. `governance/v1.0/AUTHORITY_CONTRACT.md`
-4. `governance/v1.0/COMMON_EXECUTION_GUARD.md`
-5. `governance/v1.0/CURRENT_TASK_BLOCKER_REGISTRY.json`
-6. the current task `TASK.md` and `PLAN.md`
-7. the relevant channel `CHANNEL.md`, `MEMORY.md`, `DECISIONS.jsonl`, and
+1. the current Git branch and head
+2. `COSMOS_BM_BOOTSTRAP_CURRENT.json`
+3. `governance/v1.0/PROJECT_CURRENT_STATE.md` and `PROJECT_CONFIG.yaml`
+4. `governance/v1.0/AUTHORITY_CONTRACT.md`, `COMMON_RUNTIME_VIEW.md`, and
+   `COMMON_EXECUTION_GUARD.md`
+5. `governance/v1.0/CHANNEL_REGISTRY.json` and `MEMORY_INDEX.json`
+6. the selected `BM_MASTER` or `PMO` `MEMORY.md` and `WORKLOG.md`
+7. `governance/v1.0/CURRENT_TASK_BLOCKER_REGISTRY.json` and the current task
+   `TASK.md` and `PLAN.md`
+8. the relevant channel `CHANNEL.md`, `MEMORY.md`, `DECISIONS.jsonl`, and
    `HANDOFF_CURRENT.md`
-8. exact source files and hashes cited by the work
+9. exact source files and hashes cited by the work
 
 Git-persisted current state and exact source evidence outrank stale handoffs,
 memory summaries, or chat inference. A handoff is derived context only.

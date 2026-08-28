@@ -1,13 +1,12 @@
-# Integration Status — Lane A Candidate
+# Integration Status — Pre-D0 Candidate
 
 ```text
 PROJECT = COSMOS HUB BM IMPROVEMENT
 TASK_ID = COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829
 BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
 INTEGRATION_BRANCH = task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829
-LANE_A_BRANCH = task/bootstrap/governance-core-20260829
-CURRENT_PLANNED_STAGE = S2 / WAVE 1 / PARALLEL AUTHORING
-LANE_A_STATE = CANDIDATE / NOT YET MERGED
+CURRENT_STAGE = S3 / STRUCTURAL PASS / D0 FREEZE
+LANE_INTEGRATION_HEAD = f482e23980d91d04a26e83e25157dc9966f4cf7a
 D0 = NOT CREATED
 D1 = NOT CREATED
 VALIDATION = NOT STARTED
@@ -15,51 +14,47 @@ OWNER_ACCEPTED = FALSE
 ACTIVATED = FALSE
 ```
 
-## Lane view
+## Ordered lane result
 
-| Lane | Expected surface | Status visible to Lane A |
-|---|---|---|
-| A — governance core | Root agent/pointer, `governance/v1.0/**`, task `TASK.md` and `PLAN.md` | Authoring candidate on isolated branch |
-| B — source ingest | `sources/**`, source-ingest lane report | Not assessed from this lane |
-| C — channels 00–03 | Four channel directories and lane report | Not assessed from this lane |
-| D — channels 04–07 | Four channel directories and lane report | Not assessed from this lane |
+| Order | Lane | Exact remote commit | Candidate result |
+|---:|---|---|---|
+| 1 | A — governance core | `63a3afb267d2dace3d28a945f903c5ef4d7e6e51` | 18 scoped files; checks passed |
+| 2 | B — source ingest | `62945dbfeecb5dc37530870092890c7ef1651d2f` | 26/26 allowlisted; 0 missing/held |
+| 3 | C — CH-00–CH-03 | `05467f1592432ec8367c58c51a4db9ea9a061ae2` | 4 × 7 core files |
+| 4 | D — CH-04–CH-07 | `85461bb61f5434da866df2565524e1e2c6664b18` | 4 × 7 core files |
 
-Lane A does not infer the completion, source availability, publication safety,
-or commit state of another lane. PMO must read exact lane commits before
-changing these statuses.
+The remote ordered merge head is
+`f482e23980d91d04a26e83e25157dc9966f4cf7a`. Its tree
+`3584a9608b1fffe7f613465e3874c22787d002c5` matched the local ordered merge
+tree exactly. No merge conflict or lost update occurred.
 
-## Candidate governance outcome
+During Lane D, two unneeded nested helper workers were interrupted before they
+wrote any file. Lane D remained the sole writer for its surface. This bounded
+concurrency correction caused no content conflict, scope change, or lost update.
 
-Lane A prepares:
+## Source result
 
-- the narrow repository operating contract and candidate current pointer;
-- project config, current state, authority contract, runtime view, and execution
-  guard;
-- candidate channel registry and memory index;
-- current task/blocker and sole Owner authorization registers;
-- exactly two persistent Persona memory/worklog directories;
-- task definition and execution plan.
+- Manifested sources: 26 allowlisted files.
+- Missing or held: 0.
+- Hash/byte/top-level checksum result: pass at lane integration readback.
+- E01 inventory: B01–B05; B05 verifies B01–B04 and is itself top-level
+  manifest/checksum verified.
+- E02 inventory: C01–C11; C11 verifies C01–C10 and is itself top-level
+  manifest/checksum verified.
+- Historical E02 C03–C09 divergence is explicitly recorded; corrected
+  standalone channel packets are authoritative for current channel charters.
+- Secret, raw PII/KYC, unrelated Library export, and sensitive metadata findings:
+  none unresolved.
 
-The channel paths in the candidate indexes remain explicitly pending until the
-corresponding channel lanes are merged and PMO verifies every pointer.
+## State separation
 
-## PMO integration order
+The phrase “lane merged” describes repository lineage only. No specialist
+Candidate is `OWNER_DECIDED` or semantically `INTEGRATED`; OR-01–OR-09 remain
+undecided. No validation, production, live routing, commercial promise, native
+module, formal 6G claim, Owner acceptance, or activation follows from this
+status.
 
-1. Merge Lane A governance-core candidate.
-2. Merge Lane B source-ingest candidate.
-3. Merge Lane C channels 00–03 candidate.
-4. Merge Lane D channels 04–07 candidate.
-5. Reconcile all shared paths, hashes, source availability, registry resolution
-   states, current task status, and exact Git refs as a single writer.
-6. Run structural checks S01–S18 and record exact output.
-7. Freeze D0; only then dispatch the independent task-scoped validator.
-8. Classify frozen findings and, if needed, apply one bounded correction batch,
-   freeze D1, and request affected-diff recheck.
-9. Continue to PR/merge/readback only after the applicable gates pass.
+## Next exact action
 
-## Current next action
-
-Lane A runs format, content, path-scope, and Git-diff checks, creates one local
-candidate commit, and returns its exact SHA and changed-file list to PMO. A
-local Lane A commit does not constitute D0, integration, validation,
-persistence completion, Owner acceptance, or activation.
+Create exact D0 from the read-back final tree. Only then dispatch the one
+independent task-scoped validator.

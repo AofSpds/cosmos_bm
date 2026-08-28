@@ -2,6 +2,11 @@
 
 > Derived succession context only. It has no independent authority and must be regenerated when `MEMORY.md` or `DECISIONS.jsonl` changes.
 
+GENERATION_STAGE = `PRE_D0_INTEGRATION_RECONCILIATION`
+TASK_ID = `COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829`
+INTEGRATION_BRANCH = `task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829`
+DERIVED_INPUTS = `MEMORY.md + DECISIONS.jsonl + OPEN_QUESTIONS.md`
+
 FROM_CHANNEL = `CH-01 — DISTRIBUTION MARKET / REVENUE`
 DECISION_ID = `BM1-DIST-D-0001`
 STATUS = `CANDIDATE / NOT CHANNEL-SEALED / NO OWNER DECISION`

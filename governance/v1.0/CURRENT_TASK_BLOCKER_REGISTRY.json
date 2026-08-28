@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "project": "COSMOS HUB BM IMPROVEMENT",
-  "registry_state": "CANDIDATE_PENDING_INTEGRATION",
+  "registry_state": "CURRENT_PRE_D0",
   "as_of_kst_date": "2026-08-29",
   "base_main_sha": "a3b18e231e5e3c7c053d3a838e4047ea218e4aa2",
   "active_tasks": [
@@ -9,30 +9,28 @@
       "task_id": "COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829",
       "task_class": "FULL_BOUNDED_PUBLIC_REPOSITORY_MEMORY_BOOTSTRAP",
       "status": "IN_PROGRESS",
-      "planned_stage": "S2_WAVE_1_PARALLEL_AUTHORING",
+      "planned_stage": "S3_STRUCTURAL_PASS_AND_D0_FREEZE",
       "current_persona_lock": "PMO",
       "semantic_authority": "BM_MASTER",
       "integration_branch": "task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829",
-      "lane_a_branch": "task/bootstrap/governance-core-20260829",
+      "lane_integration_head": "f482e23980d91d04a26e83e25157dc9966f4cf7a",
       "task_path": "tasks/COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829/TASK.md",
       "plan_path": "tasks/COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829/PLAN.md",
       "blocking_items": [],
       "blocking_item_count": 0,
-      "dependencies_pending_integration": [
-        "source-ingest lane output",
-        "channels-00-03 lane output",
-        "channels-04-07 lane output",
-        "PMO shared-index reconciliation",
-        "D0 freeze and task-scoped independent validation"
+      "remaining_gate_sequence": [
+        "D0 exact freeze",
+        "task-scoped independent validation",
+        "bounded correction/recheck if required",
+        "PR merge and post-merge readback"
       ],
-      "dependencies_are_current_blockers": false,
       "validation_claim": "NONE",
       "d0_commit": null,
       "d1_commit": null,
       "owner_action_required": false,
       "scope_expansion": "NONE",
-      "next_exact_action": "Complete Lane A scoped checks and local candidate commit, then return the exact commit and changed-file list to PMO."
+      "next_exact_action": "Freeze the read-back final pre-D0 tree as exact D0 before independent validation."
     }
   ],
-  "registry_caution": "This Lane A candidate records only blockers known within its scope. PMO must reconcile overall blockers on the integration branch."
+  "registry_caution": "A pending gate is not a blocker. No later state is inferred from lane completion or progress."
 }

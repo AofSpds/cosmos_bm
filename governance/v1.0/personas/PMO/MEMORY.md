@@ -2,7 +2,7 @@
 
 ```text
 PERSONA_ID = PMO
-PERSISTENCE_STATE = CANDIDATE / PENDING INTEGRATION
+PERSISTENCE_STATE = CANDIDATE / REPOSITORY LANES MERGED / D0 PENDING
 ROLE = EXECUTION / COORDINATION / CHECKPOINT / GIT PERSISTENCE
 CURRENT_TASK = COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829
 CURRENT_PERSONA_LOCK = PMO
@@ -10,8 +10,10 @@ SEMANTIC_AUTHORITY = BM_MASTER
 VALIDATION_AUTHORITY = NONE
 BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
 INTEGRATION_BRANCH = task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829
-CURRENT_PLANNED_STAGE = S2 / WAVE 1 / PARALLEL AUTHORING
-BLOCKER = NONE RECORDED FOR LANE A
+CURRENT_PLANNED_STAGE = S3 / STRUCTURAL PASS AND D0 FREEZE
+LANE_INTEGRATION_HEAD = f482e23980d91d04a26e83e25157dc9966f4cf7a
+SOURCE_FILES_FOUND_MISSING = 26 / 0
+BLOCKER = NONE
 OWNER_ACTION_REQUIRED = FALSE
 ```
 
@@ -25,6 +27,23 @@ bounded correction/recheck loop by default, and persistence close.
 The overall active-wall estimate is 90–180 minutes with a 240-minute projected
 Owner check limit. Progress weights: S0 10%, S1 10%, S2 40%, S3 20%, S4 10%,
 S5 10%. Use 10–15 minute heartbeats and the packet's stall watchdog.
+
+## Current execution checkpoint
+
+- Genesis/base: `a3b18e231e5e3c7c053d3a838e4047ea218e4aa2`.
+- Candidate lane commits: governance `63a3afb267d2dace3d28a945f903c5ef4d7e6e51`;
+  sources `62945dbfeecb5dc37530870092890c7ef1651d2f`; CH-00–03
+  `05467f1592432ec8367c58c51a4db9ea9a061ae2`; CH-04–07
+  `85461bb61f5434da866df2565524e1e2c6664b18`.
+- Ordered remote lane merge head: `f482e23980d91d04a26e83e25157dc9966f4cf7a`;
+  local and remote trees matched.
+- Source intake: 26/26 exact allowlisted files; no missing/held file and no
+  unresolved publication, secret, raw PII/KYC, or metadata finding.
+- PMO shared reconciliation and S01–S18 are complete (18/18 PASS).
+- Bounded pre-freeze readback and the final S01–S18 rerun passed.
+- Now: exact D0 freeze.
+- Validation, PR merge, persistence completion, Owner acceptance, and activation
+  remain absent.
 
 ## Authority addendum
 

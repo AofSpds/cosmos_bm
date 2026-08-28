@@ -3,12 +3,12 @@
 ```text
 PROJECT = COSMOS HUB BM IMPROVEMENT
 TASK_ID = COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829
-STATE = CANDIDATE / S2 WAVE 1 AUTHORING
+STATE = CANDIDATE / S3 STRUCTURAL CHECKS / D0 PENDING
 CURRENT_TASK_PERSONA_LOCK = PMO
 SEMANTIC_AUTHORITY = BM_MASTER
 BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
 INTEGRATION_BRANCH = task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829
-LANE_A_BRANCH = task/bootstrap/governance-core-20260829
+LANE_INTEGRATION_HEAD = f482e23980d91d04a26e83e25157dc9966f4cf7a
 VALIDATION_CLAIM = NONE
 OWNER_ACTION_REQUIRED = FALSE
 ```
@@ -31,9 +31,10 @@ OWNER_ACTION_REQUIRED = FALSE
 
 ## Default runtime loadout
 
-1. Read repository-root `COSMOS_BM_BOOTSTRAP_CURRENT.json`.
+1. Read the current Git branch/head, then repository-root `COSMOS_BM_BOOTSTRAP_CURRENT.json`.
 2. Read `PROJECT_CURRENT_STATE.md` and `PROJECT_CONFIG.yaml`.
-3. Load this common runtime view and `COMMON_EXECUTION_GUARD.md`.
+3. Load `AUTHORITY_CONTRACT.md`, this common runtime view,
+   `COMMON_EXECUTION_GUARD.md`, `CHANNEL_REGISTRY.json`, and `MEMORY_INDEX.json`.
 4. Resolve the current Persona only to `BM_MASTER` or `PMO`.
 5. Load the selected Persona's `MEMORY.md` and `WORKLOG.md` through
    `MEMORY_INDEX.json`.
@@ -66,19 +67,18 @@ rerun.
 | Item | Current value |
 |---|---|
 | Task class | Full-bounded public repository/memory bootstrap |
-| Planned authoring lanes | 4 isolated lanes |
+| Authoring lanes | 4 isolated lanes, all repository-merged as Candidate inputs |
 | Planned validation lanes | 1 task-scoped independent lane after D0 |
-| Current planned stage | S2 / Wave 1 / parallel authoring |
-| Lane A surface | Root pointer, governance v1.0, TASK.md, PLAN.md |
+| Current planned stage | S3 / structural PASS / bounded readback and D0 freeze |
+| Source intake | 26/26 allowlisted; 0 missing or held |
 | Expected active wall | 90–180 minutes for the overall task |
 | Owner check limit | 240 minutes projected active wall |
 | Default correction loop | One bounded batch plus affected-diff recheck |
-| Current blocker | None recorded for Lane A |
+| Current blocker | None; validation cannot begin before exact D0 |
 | Scope expansion | None |
 
-The other authoring lanes and their source/channel outcomes are outside Lane A's
-write authority. PMO reconciles the actual overall status on the integration
-branch.
+PMO is the integration-branch single writer. Repository lane merge is distinct
+from semantic `INTEGRATED`, Owner acceptance, validation PASS, and activation.
 
 ## Progress checkpoint format
 

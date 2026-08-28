@@ -1,9 +1,14 @@
 {
   "schema_version": "1.0",
   "project": "COSMOS HUB BM IMPROVEMENT",
-  "registry_state": "CANDIDATE_PENDING_INTEGRATION",
+  "registry_state": "CANDIDATE_RESOLVED_FOR_D0",
   "task_id": "COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829",
   "base_main_sha": "a3b18e231e5e3c7c053d3a838e4047ea218e4aa2",
+  "resolution_evidence": {
+    "channels_00_03_commit": "05467f1592432ec8367c58c51a4db9ea9a061ae2",
+    "channels_04_07_commit": "85461bb61f5434da866df2565524e1e2c6664b18",
+    "lane_integration_head": "f482e23980d91d04a26e83e25157dc9966f4cf7a"
+  },
   "channels": [
     {
       "ordinal": 0,
@@ -13,7 +18,10 @@
       "slug": "integration-owner",
       "decision_prefix": "CH00-INT-D",
       "path": "channels/integration-owner",
-      "scope_class": "INTEGRATION_AND_OWNER_DECISIONS"
+      "scope_class": "INTEGRATION_AND_OWNER_DECISIONS",
+      "source_packet_path": "sources/raw/channel-policy-packets/v1.0/00_CH00_INTEGRATION_OWNER_DECISIONS_PACKET.md",
+      "source_packet_sha256": "1364b6e649a91d8c1449cc709e0dbcf6cc462ccc92f110520622207d5f082eb8",
+      "resolution_state": "RESOLVED_AT_CHANNEL_LANE_COMMIT"
     },
     {
       "ordinal": 1,
@@ -23,7 +31,10 @@
       "slug": "distribution-market-revenue",
       "decision_prefix": "BM1-DIST-D",
       "path": "channels/distribution-market-revenue",
-      "scope_class": "BM1"
+      "scope_class": "BM1",
+      "source_packet_path": "sources/raw/channel-policy-packets/v1.0/01_CH01_BM1_DISTRIBUTION_REVENUE_PACKET.md",
+      "source_packet_sha256": "18203214a65639f5d07b498a41f03774c6849402d3cb46f05d5a371ca048b064",
+      "resolution_state": "RESOLVED_AT_CHANNEL_LANE_COMMIT"
     },
     {
       "ordinal": 2,
@@ -33,7 +44,10 @@
       "slug": "observability-slo-sla",
       "decision_prefix": "BM2-EVID-D",
       "path": "channels/observability-slo-sla",
-      "scope_class": "BM2"
+      "scope_class": "BM2",
+      "source_packet_path": "sources/raw/channel-policy-packets/v1.0/02_CH02_BM2_OBSERVABILITY_SLO_SLA_PACKET.md",
+      "source_packet_sha256": "4263407306475bf124a5da4e61c1d692662dcf02e64827ab725c1ce9af543ec8",
+      "resolution_state": "RESOLVED_AT_CHANNEL_LANE_COMMIT"
     },
     {
       "ordinal": 3,
@@ -43,7 +57,10 @@
       "slug": "ai-assisted-skip-go-routing",
       "decision_prefix": "BM2-AI-D",
       "path": "channels/ai-assisted-skip-go-routing",
-      "scope_class": "BM2"
+      "scope_class": "BM2",
+      "source_packet_path": "sources/raw/channel-policy-packets/v1.0/03_CH03_BM2_AI_SKIP_GO_ROUTING_PACKET.md",
+      "source_packet_sha256": "8b38aa15d914f0ca95e83a337da027139d000795372f7f5cdcba6ccd25ceb7ef",
+      "resolution_state": "RESOLVED_AT_CHANNEL_LANE_COMMIT"
     },
     {
       "ordinal": 4,
@@ -53,7 +70,10 @@
       "slug": "failover-recovery-design",
       "decision_prefix": "BM2-MP-D",
       "path": "channels/failover-recovery-design",
-      "scope_class": "BM2"
+      "scope_class": "BM2",
+      "source_packet_path": "sources/raw/channel-policy-packets/v1.0/04_CH04_BM2_MULTIPATH_FAILOVER_RECOVERY_PACKET.md",
+      "source_packet_sha256": "1a5b466485fb19c44da66250c8399ad996a50ef08f2755c7e4e3b4a3d142b506",
+      "resolution_state": "RESOLVED_AT_CHANNEL_LANE_COMMIT"
     },
     {
       "ordinal": 5,
@@ -63,7 +83,10 @@
       "slug": "enterprise-gateway-structured-intent",
       "decision_prefix": "BM3-ENT-D",
       "path": "channels/enterprise-gateway-structured-intent",
-      "scope_class": "BM3"
+      "scope_class": "BM3",
+      "source_packet_path": "sources/raw/channel-policy-packets/v1.0/05_CH05_BM3_ENTERPRISE_GATEWAY_INTENT_PACKET.md",
+      "source_packet_sha256": "ff46c3d8f1d2cc07e36f86559c4ed2afee728aaeb6c72e514719b632008860e2",
+      "resolution_state": "RESOLVED_AT_CHANNEL_LANE_COMMIT"
     },
     {
       "ordinal": 6,
@@ -73,7 +96,10 @@
       "slug": "asset-service-registry",
       "decision_prefix": "BM4-REG-D",
       "path": "channels/asset-service-registry",
-      "scope_class": "BM4"
+      "scope_class": "BM4",
+      "source_packet_path": "sources/raw/channel-policy-packets/v1.0/06_CH06_BM4_REGISTRY_PROVIDER_MARKET_PACKET.md",
+      "source_packet_sha256": "17cb30af452ec3eb38b878d20503fccc01766b5bed189730f41e317600a7c437",
+      "resolution_state": "RESOLVED_AT_CHANNEL_LANE_COMMIT"
     },
     {
       "ordinal": 7,
@@ -83,7 +109,10 @@
       "slug": "legal-governance-economics",
       "decision_prefix": "LGEC-D",
       "path": "channels/legal-governance-economics",
-      "scope_class": "CROSS_CUTTING"
+      "scope_class": "CROSS_CUTTING",
+      "source_packet_path": "sources/raw/channel-policy-packets/v1.0/07_CH07_LEGAL_GOVERNANCE_ECONOMICS_CLAIMS_PACKET.md",
+      "source_packet_sha256": "fc27c08c370ebcd181b23f17300da954e430efa7a8f9b2f933f626e3cc1ab151",
+      "resolution_state": "RESOLVED_AT_CHANNEL_LANE_COMMIT"
     }
   ],
   "required_channel_files": [
@@ -95,5 +124,5 @@
     "SOURCES.md",
     "HANDOFF_CURRENT.md"
   ],
-  "caution": "Channel paths are populated by the two channel authoring lanes and must be resolved by PMO before D0 freeze."
+  "caution": "Resolution means only that the Candidate bootstrap paths and exact source packets exist at the recorded lane commits. It is not an Owner decision, semantic integration, validation PASS, production authorization, or activation."
 }

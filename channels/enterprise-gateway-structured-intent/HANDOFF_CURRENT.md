@@ -4,6 +4,30 @@
 
 Regenerate from current Git, memory, decisions, and open questions after material change. Higher-authority Owner, CH-00, and charter records prevail.
 
+GENERATION_STAGE = `PRE_D0_INTEGRATION_RECONCILIATION`
+TASK_ID = `COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829`
+INTEGRATION_BRANCH = `task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829`
+DERIVED_INPUTS = `MEMORY.md + DECISIONS.jsonl + OPEN_QUESTIONS.md`
+
+FROM_CHANNEL = `CH-05 — ENTERPRISE GATEWAY / STRUCTURED INTENT`
+DECISION_ID = `BM3-ENT-D-0001`
+STATUS = `CANDIDATE / NOT CHANNEL-SEALED / NO OWNER DECISION`
+QUESTION = What structured-intent and capability boundary makes an enterprise gateway deterministic, fail-closed, and non-custodial?
+RECOMMENDED_DECISION = Treat versioned structured fields as authoritative; keep natural-language assistance optional and draft-only with explicit institutional confirmation.
+ALTERNATIVES_CONSIDERED = Free-form intent authority, implicit approval, AI signing/execution, policy relaxation, and mandatory Hub gateway; excluded by hard locks.
+EVIDENCE = Exact CH-05 packet SHA-256 `ff46c3d8f1d2cc07e36f86559c4ed2afee728aaeb6c72e514719b632008860e2`; current source hashes in `SOURCES.md`.
+RATIONALE = Deterministic validation, conflict detection, risk disclosure, and explicit confirmation are required before construction or execution.
+IMPACTED_CHANNELS = CH-02 evidence, CH-03 bounded assistance, CH-04 route/recovery disclosure, CH-06 capability facts, CH-07 data/agency/liability, CH-00 promotion
+IMPACTED_BM = BM3 directly; evidence and provider interfaces with BM2/BM4
+IMPACTED_TRACK = Pre-PoC problem map, structured schema, mapping, disclosure, receipt, and economics
+HARD_LOCK_CHECK = Preserved; no custody, AI authority, public raw KYC/PII, mandatory router, live execution, or commercial promise
+DEPENDENCIES = Versioned intent schema; deterministic validation; capability registry; route/finality/recovery disclosures; privacy and contracting boundaries
+LEGAL_SAFETY_ECONOMIC_EFFECT = None authorized; agency, liability, data, commercial terms, and pilot economics remain unresolved
+CLAIM_CEILING = `C2 — pre-PoC maximum`
+OWNER_ACTION_REQUIRED = `FALSE` now; `TRUE` only when a bounded schema, pilot, or commercial choice is ready
+PROPOSED_INTEGRATION = None until `BM3-ENT-01`–`06` close and a channel-sealed handoff is submitted
+SUPERSEDES = None
+
 ## Identity and read order
 
 - Channel: `CH-05 ENTERPRISE GATEWAY / STRUCTURED INTENT`

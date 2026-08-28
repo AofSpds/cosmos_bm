@@ -4,6 +4,30 @@
 
 Regenerate this file from current Git, `MEMORY.md`, `DECISIONS.jsonl`, and `OPEN_QUESTIONS.md` after any material change. If it conflicts with an exact Owner decision, CH-00 integration record, or `CHANNEL.md`, the higher-authority source wins.
 
+GENERATION_STAGE = `PRE_D0_INTEGRATION_RECONCILIATION`
+TASK_ID = `COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829`
+INTEGRATION_BRANCH = `task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829`
+DERIVED_INPUTS = `MEMORY.md + DECISIONS.jsonl + OPEN_QUESTIONS.md`
+
+FROM_CHANNEL = `CH-07 — LEGAL / GOVERNANCE / ECONOMICS`
+DECISION_ID = `LGEC-D-0001`
+STATUS = `CANDIDATE / NOT CHANNEL-SEALED / NO OWNER DECISION`
+QUESTION = What legal, governance, economic, responsibility, data, and claim gates must close before any specialist Candidate can be promoted?
+RECOMMENDED_DECISION = Apply a C2 pre-PoC ceiling and require bounded responsibility, authority, exposure, data, competition, WTP, and unit-economics evidence before promotion.
+ALTERNATIVES_CONSIDERED = Narrative-only approval, implied insurance/compliance, unbounded compensation, premature counsel conclusion, and production authority; excluded by the charter.
+EVIDENCE = Exact CH-07 packet SHA-256 `fc27c08c370ebcd181b23f17300da954e430efa7a8f9b2f933f626e3cc1ab151`; current source hashes in `SOURCES.md`.
+RATIONALE = Cross-cutting objections require exact evidence, residual-risk classification, minimum closure evidence, and bounded Go/Hold/Kill treatment.
+IMPACTED_CHANNELS = CH-00 through CH-06
+IMPACTED_BM = All four BMs without changing their order or meaning
+IMPACTED_TRACK = Pre-PoC responsibility matrix, governance map, economics model, claim register, adversarial findings, and counsel/Owner queue
+HARD_LOCK_CHECK = Preserved; no semantic redesign, principal guarantee, insurance/compliance implication, production, live execution, native module, or formal 6G claim
+DEPENDENCIES = Exact specialist Candidates; actor/state responsibility; authority/pause/upgrade/dispute map; exposure/reserve; data treatment; WTP and received revenue evidence
+LEGAL_SAFETY_ECONOMIC_EFFECT = None authorized; all legal conclusions, commitments, payouts, fees, and implementation choices remain unresolved
+CLAIM_CEILING = `C2 — pre-PoC maximum`
+OWNER_ACTION_REQUIRED = `FALSE` for bounded bootstrap/design; `TRUE` for an actual approval, counsel engagement, pilot, implementation, or commercial commitment
+PROPOSED_INTEGRATION = None until `LGEC-01`–`06` close and a channel-sealed structured handoff is submitted
+SUPERSEDES = None
+
 ## Successor identity
 
 - Project: `COSMOS HUB BM IMPROVEMENT`

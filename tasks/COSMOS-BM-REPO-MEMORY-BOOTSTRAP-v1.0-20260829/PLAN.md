@@ -4,7 +4,7 @@
 TASK_ID = COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829
 BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
 INTEGRATION_BRANCH = task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829
-CURRENT_PLANNED_STAGE = S2 / WAVE 1 / PARALLEL AUTHORING
+CURRENT_PLANNED_STAGE = S3 / STRUCTURAL PASS AND D0 FREEZE
 PLANNED_AUTHORING_WORKERS = 4
 PLANNED_VALIDATING_WORKERS = 1 TASK-SCOPED AFTER D0
 EXPECTED_ACTIVE_WALL = 90–180 MINUTES
@@ -17,10 +17,10 @@ VALIDATION_CLAIM = NONE
 
 | Stage | Weight | Expected range | Current disposition |
 |---|---:|---:|---|
-| S0 — admission, Git/source readback | 10% | 10–20 min | Base and packet read back for Lane A; overall source result belongs to PMO/Lane B |
-| S1 — genesis, branches, worktrees | 10% | 10–20 min | Genesis base and Lane A branch/worktree verified; PMO owns overall branch map |
-| S2 — parallel Wave 1 authoring | 40% | 30–60 min | **Current planned stage** |
-| S3 — PMO integration and structural checks | 20% | 20–40 min | Pending all lane commits |
+| S0 — admission, Git/source readback | 10% | 10–20 min | **Complete**; base and 26/26 source allowlist resolved |
+| S1 — genesis, branches, worktrees | 10% | 10–20 min | **Complete**; genesis and branch map read back |
+| S2 — parallel Wave 1 authoring | 40% | 30–60 min | **Complete**; four Candidate lane commits merged A → B → C → D |
+| S3 — PMO integration and structural checks | 20% | 20–40 min | **Exit gate**; reconciliation complete, S01–S18 PASS, D0 pending |
 | S4 — independent task-scoped validation | 10% | 15–30 min | Pending exact D0 freeze |
 | S5 — correction/recheck/PR/merge/readback | 10% | 15–30 min | Pending validation disposition |
 
@@ -41,7 +41,7 @@ readback unexpectedly over about 30 minutes rather than spin silently.
 No lane writes another lane's path. PMO is the only integration-branch writer
 for final shared indexes and exact current pointers.
 
-## Lane A work plan
+## Historical Lane A work plan
 
 1. Read the complete sole execution packet and verify exact base, branch,
    worktree, and clean status.
@@ -106,21 +106,21 @@ explicit HOLD.
 ## Current progress snapshot
 
 ```text
-PROGRESS = [██░░░░░░░░] 20% OVERALL CHECKPOINT FLOOR AT S2 ENTRY
-CURRENT_STAGE = S2 / WAVE 1 / PARALLEL AUTHORING
-COMPLETED = S0/S1 BASE AND LANE A WORKTREE READBACK
-NOW = LANE A GOVERNANCE-CORE AUTHORING AND SCOPED CHECKS
-REMAINING = LANE COMMITS / PMO INTEGRATION / S01-S18 / D0 / VALIDATION / CORRECTION IF ANY / PERSISTENCE
-ACTIVE_WORKERS = 4 PLANNED AUTHORING LANES; ACTUAL OVERALL COUNT RECONCILED BY PMO
+PROGRESS = [████████░░] 80% AT S3 EXIT GATE
+CURRENT_STAGE = S3 / STRUCTURAL PASS / D0 FREEZE
+COMPLETED = S0/S1 / FOUR LANES / ORDERED MERGE / SHARED RECONCILIATION / S01-S18 18-OF-18 PASS
+NOW = D0 COMMIT
+REMAINING = D0 / INDEPENDENT VALIDATION / CORRECTION IF ANY / PR-MERGE-READBACK
+ACTIVE_WORKERS = PMO SINGLE WRITER; READ-ONLY CROSS-CHECKS MAY RUN IN PARALLEL
 ACTIVE_VALIDATOR = NONE; ONE PLANNED ONLY AFTER D0
 BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
-CURRENT_BRANCH_HEAD = LANE COMMIT NOT YET RECORDED IN THIS CANDIDATE PLAN
-SOURCE_FILES_FOUND / MISSING = OWNED BY SOURCE-INGEST LANE / NOT INFERRED HERE
-BLOCKER = NONE RECORDED FOR LANE A
+CURRENT_BRANCH_HEAD = f482e23980d91d04a26e83e25157dc9966f4cf7a BEFORE PMO RECONCILIATION COMMIT
+SOURCE_FILES_FOUND / MISSING = 26 / 0
+BLOCKER = NONE
 SCOPE_EXPANSION = NONE
 OWNER_ACTION_REQUIRED = FALSE
-NEXT_EXACT_ACTION = COMPLETE LANE A CHECKS AND LOCAL COMMIT; RETURN EXACT SHA TO PMO
+NEXT_EXACT_ACTION = FREEZE EXACT D0
 ```
 
-This snapshot must be reconciled by PMO from exact current Git and lane results;
-it does not claim overall task completion.
+This snapshot records the pre-D0 Candidate only; it does not claim validation,
+main merge, persistence completion, Owner acceptance, or activation.

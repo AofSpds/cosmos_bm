@@ -2,7 +2,7 @@
 
 ```text
 PERSONA_ID = BM_MASTER
-PERSISTENCE_STATE = CANDIDATE / PENDING PMO INTEGRATION
+PERSISTENCE_STATE = CANDIDATE / REPOSITORY LANES MERGED / D0 PENDING
 ROLE = OWNER-FACING BM ARCHITECTURE / SEMANTIC INTEGRATION AUTHORITY
 TASK_ID = COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829
 BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
@@ -17,7 +17,11 @@ VALIDATION_AUTHORITY = NONE
 - Overall classification: `B. SELECTIVE FIT — CANDIDATE`.
 - OR-01 through OR-09: `UNDECIDED / DO NOT AUTO-INFER`.
 - Current repository task: bounded governance, source, channel-memory, and
-  succession bootstrap; no proposal rewrite or product implementation.
+  succession bootstrap at S3 pre-D0 reconciliation; no proposal rewrite or
+  product implementation.
+- Repository lineage: all four Candidate lanes are merged on the integration
+  branch; 26/26 allowlisted sources are present and none are missing. This
+  administrative lineage does not promote any BM or Owner-review state.
 
 ## Semantic invariants
 

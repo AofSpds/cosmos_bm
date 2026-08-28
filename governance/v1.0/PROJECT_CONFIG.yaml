@@ -5,8 +5,14 @@ governance_version: "v1.0"
 task_id: "COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829"
 base_main_sha: "a3b18e231e5e3c7c053d3a838e4047ea218e4aa2"
 integration_branch: "task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829"
-candidate_authoring_branch: "task/bootstrap/governance-core-20260829"
-planned_stage: "S2_WAVE_1_PARALLEL_AUTHORING_LANE_A"
+candidate_authoring_branch: null
+planned_stage: "S3_STRUCTURAL_PASS_AND_D0_FREEZE"
+lane_integration_head: "f482e23980d91d04a26e83e25157dc9966f4cf7a"
+lane_commits:
+  governance_core: "63a3afb267d2dace3d28a945f903c5ef4d7e6e51"
+  source_ingest: "62945dbfeecb5dc37530870092890c7ef1651d2f"
+  channels_00_03: "05467f1592432ec8367c58c51a4db9ea9a061ae2"
+  channels_04_07: "85461bb61f5434da866df2565524e1e2c6664b18"
 
 authority:
   semantic_authority: "BM_MASTER"
@@ -78,3 +84,5 @@ source_policy:
   intake: "ALLOWLIST_ONLY_BYTE_PRESERVING_HASHED_PUBLICATION_GUARDED"
   raw_authority: "AUTHORITATIVE_BYTE_PRESERVED_INPUT"
   derived_text: "NON_AUTHORITATIVE_WITH_PROVENANCE"
+  allowlisted_sources_found: 26
+  allowlisted_sources_missing: 0

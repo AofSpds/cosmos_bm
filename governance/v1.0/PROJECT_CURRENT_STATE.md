@@ -1,14 +1,14 @@
-# Project Current State — Governance Bootstrap Candidate
+# Project Current State — Pre-D0 Bootstrap Candidate
 
 ```text
 PROJECT = COSMOS HUB BM IMPROVEMENT
 GOVERNANCE_VERSION = v1.0
 TASK_ID = COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829
-STATE = CANDIDATE / PENDING PMO INTEGRATION
-PLANNED_STAGE = S2 / WAVE 1 / LANE A GOVERNANCE CORE
+STATE = CANDIDATE / STRUCTURAL PASS / D0 PENDING
+PLANNED_STAGE = S3 / BOUNDED READBACK AND D0 FREEZE
 BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
 INTEGRATION_BRANCH = task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829
-AUTHORING_BRANCH = task/bootstrap/governance-core-20260829
+LANE_INTEGRATION_HEAD = f482e23980d91d04a26e83e25157dc9966f4cf7a
 CURRENT_PERSONA_LOCK_FOR_TASK = PMO
 SEMANTIC_AUTHORITY = BM_MASTER
 VALIDATION_CLAIM = NONE
@@ -16,25 +16,38 @@ OWNER_ACCEPTED = FALSE
 ACTIVATED = FALSE
 ```
 
-This file is a concise current-state projection for the repository bootstrap.
-It does not replace exact sources, the append-only Owner decision register, or
-Git history. The Lane A result remains a candidate until PMO merges all lanes,
-reconciles exact references, freezes D0, and obtains the task-scoped independent
-validation required by the execution packet.
+This is a compressed current-state projection. Exact sources, the append-only
+Owner decision register, and Git history outrank it. Repository lane merge does
+not mean semantic `INTEGRATED`, Owner acceptance, validation PASS, production
+authorization, or activation.
 
 ## Current program baseline
 
 | Surface | Current classification |
 |---|---|
-| Proposal | **v1.1 CANDIDATE**; independent proposal; not official Hub policy |
+| Proposal | **v1.1 CANDIDATE**; independent; not official Hub policy |
 | Roadmap package | **STEP 3–5 OWNER-REVIEW CANDIDATE** |
 | Overall concept fit | **B. SELECTIVE FIT — CANDIDATE** |
 | OR-01 through OR-09 | **UNDECIDED / DO NOT AUTO-INFER** |
 | Full v1.2 rewrite | **NOT AUTHORIZED** |
 | Production or live routing | **NOT AUTHORIZED** |
-| Commercial SLA or compensation | **NOT AUTHORIZED** |
-| Native module | **NOT AUTHORIZED** |
+| Commercial SLA, compensation, insurance, or guarantee | **NOT AUTHORIZED** |
+| Native module or fifth BM | **NOT AUTHORIZED** |
 | Formal 6G conformity claim | **NOT AUTHORIZED** |
+
+## Repository bootstrap evidence
+
+| Surface | Exact Candidate commit | Repository state |
+|---|---|---|
+| Governance core | `63a3afb267d2dace3d28a945f903c5ef4d7e6e51` | lane merged |
+| Allowlisted sources | `62945dbfeecb5dc37530870092890c7ef1651d2f` | 26/26 imported; 0 missing/held |
+| Channels CH-00–CH-03 | `05467f1592432ec8367c58c51a4db9ea9a061ae2` | four seven-file sets merged |
+| Channels CH-04–CH-07 | `85461bb61f5434da866df2565524e1e2c6664b18` | four seven-file sets merged |
+| Ordered lane merge head | `f482e23980d91d04a26e83e25157dc9966f4cf7a` | local/remote tree matched |
+
+The source manifest records the historical E02 archive/member divergence: E02
+is preserved byte-identically, while corrected standalone C03–C09 files remain
+the current channel packet sources.
 
 ## Four-BM order
 
@@ -43,106 +56,58 @@ validation required by the execution packet.
 3. Enterprise One-Connection Gateway
 4. Asset & Service Registry
 
-The order and count are locked. This bootstrap neither adds a fifth BM nor
-changes the meaning or priority of an existing BM.
+The count, order, and meaning remain locked.
 
 ## Common hard locks
 
 - Thin Core, Rich Edges.
-- No forced Hub toll on base IBC.
-- No Hub customer-principal custody.
-- No mandatory ATOM payment.
-- No Hub-owned DEX, bridge, stablecoin, lending, perp, or proprietary mandatory
-  router.
-- No raw KYC/PII on a public chain.
-- No AI private-key custody.
-- No AI transaction authorization.
-- No AI hard-policy mutation.
-- No AI unilateral compensation decision.
-- No global atomic-revert or principal-guarantee claim.
+- No forced Hub toll on base IBC, Hub customer-principal custody, or mandatory
+  ATOM payment.
+- No Hub-owned DEX, bridge, stablecoin, lending, perp, market making, or
+  proprietary mandatory router.
+- No raw KYC/PII or sensitive institution policy on a public chain.
+- No AI private-key custody, transaction authorization, hard-policy mutation,
+  or unilateral compensation/legal decision.
+- No global atomic-revert, principal-protection, guarantee, insurance, or
+  compliance implication.
 - Open provider competition, switching, and public specification.
-- Contracts, data, and small audited CosmWasm before any native module.
-- No claim of being 6G-compliant, certified, or implemented.
+- Contracts, data, and small audited CosmWasm before any separately authorized
+  native module.
+- No 6G-compliant, certified, or implemented claim.
 
-## Concept portfolio — all candidate state
+## Candidate concept portfolio
 
-### SELECT
+- **SELECT:** normalized observability/evidence; interchain SLO/SLA evidence;
+  structured service intent/capability exposure.
+- **SELECT-LIMITED:** bounded AI control; predictive provider health;
+  sequential failover; deterministic provider-conflict arbitration; draft-only
+  natural-language intent assistance.
+- **EXISTING / ASSESS:** candidate route diversity; Smart-Swap split routing.
+- **WATCH:** replay/simulation; agentic/multi-agent orchestration; redundant or
+  hedged execution.
+- **REJECT:** zero-touch live asset actuation; literal slicing; RAN/PHY/spectrum
+  transfer; Hub-owned proprietary AI router.
 
-- Normalized Observability / Evidence Plane
-- Interchain SLO/SLA Evidence Model
-- Structured Service Intent / Capability Exposure
+Every label remains Candidate.
 
-### SELECT-LIMITED
+## Owner-review boundary
 
-- Bounded AI-assisted Control Loop
-- Predictive Assurance / Provider Health
-- Sequential Failover
-- Provider Conflict Detection / Deterministic Arbitration
-- Draft-only Natural-language Intent Assistant
-
-### EXISTING / ASSESS
-
-- Candidate Route Diversity
-- Smart-Swap Split Routing
-
-### WATCH
-
-- Historical Replay / Simulation
-- Agentic / Multi-agent Orchestration
-- Redundant / Hedged Execution
-
-### REJECT
-
-- Zero-touch Live Asset Actuation
-- Literal Blockchain Slicing
-- RAN / PHY / Spectrum Transfer
-- Hub-owned Proprietary AI Router
-
-These labels are candidate portfolio recommendations, not proof of Owner
-acceptance, implementation, certification, production readiness, or commercial
-service availability.
-
-## Owner-review decision boundary
-
-| Decision | Status |
-|---|---|
-| OR-01 | UNDECIDED |
-| OR-02 | UNDECIDED |
-| OR-03 | UNDECIDED |
-| OR-04 | UNDECIDED |
-| OR-05 | UNDECIDED |
-| OR-06 | UNDECIDED |
-| OR-07 | UNDECIDED |
-| OR-08 | UNDECIDED |
-| OR-09 | UNDECIDED |
-
-The decision questions and evidence belong to the exact STEP 3–5 source
-package. This governance seed intentionally does not reconstruct or answer
-them.
-
-## Explicit Owner authorization currently recorded
-
-The sole seeded Owner decision authorizes this bounded repository/memory
-bootstrap, publication of only the packet's exact source allowlist, four
-isolated authoring lanes, and one task-scoped independent validation lane after
-D0. It preserves all BM, hard-lock, and no-production boundaries. See
-`OWNER_DECISION_REGISTER.jsonl`.
+`OR-01` through `OR-09` are all `UNDECIDED`. The sole Owner register entry
+authorizes only this bounded repository/memory bootstrap, exact-allowlist
+publication, isolated authoring, and post-D0 task-scoped validation. It does
+not answer an OR item or authorize proposal/product promotion.
 
 ## Current execution state
 
-- Genesis base read back: `a3b18e231e5e3c7c053d3a838e4047ea218e4aa2`.
-- Integration target: `task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829`.
-- This candidate is authored on
-  `task/bootstrap/governance-core-20260829`.
-- Current planned stage: S2, Wave 1, Lane A governance-core authoring.
-- Lane A has no authority to write `sources/**`, `channels/**`, `README.md`,
-  validation receipts, completion files, or lane reports.
-- D0 and D1 do not yet exist; validation has not begun; no PASS is claimed.
-- PMO must perform final shared-index reconciliation on the integration branch.
-
-## State-separation rule
+- Four isolated authoring lanes are complete and merged A → B → C → D.
+- Shared pointer, registry, memory index, task state, and all handoffs have been
+  reconciled for the pre-D0 Candidate.
+- Structural checks S01–S18 passed 18/18 on the final pre-freeze tree. D0 freeze
+  is the next gate.
+- D0/D1 do not yet exist; independent validation has not begun.
+- No PR merge, persistence completion, Owner acceptance, or activation is
+  claimed.
 
 Keep `AUTHORING_COMPLETE`, `STRUCTURAL_CHECK_COMPLETE`,
 `VALIDATION_COMPLETE`, `COMMITTED`, `MERGED`, `PERSISTENCE_COMPLETE`,
-`OWNER_ACCEPTED`, and `ACTIVATED` distinct. Progress or a local commit does not
-imply any later state.
+`OWNER_ACCEPTED`, and `ACTIVATED` distinct.

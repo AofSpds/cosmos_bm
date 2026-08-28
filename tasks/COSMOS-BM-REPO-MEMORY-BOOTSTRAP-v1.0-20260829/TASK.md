@@ -5,7 +5,7 @@ PROJECT = COSMOS HUB BM IMPROVEMENT
 TASK_ID = COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829
 TASK_CLASS = FULL-BOUNDED PUBLIC REPOSITORY / MEMORY BOOTSTRAP
 OWNER_DECISION = APPROVE AND EXECUTE EXACT BOUNDED TASK
-TASK_STATE = IN_PROGRESS / S2 WAVE 1 AUTHORING
+TASK_STATE = IN_PROGRESS / S3 STRUCTURAL PASS / D0 PENDING
 CURRENT_PERSONA_LOCK = PMO
 SEMANTIC_AUTHORITY = BM_MASTER
 BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
@@ -58,6 +58,9 @@ write surface. No force push, history rewrite, shared-path race, or direct
 post-genesis main write is authorized.
 
 ## Authoring lanes
+
+Wave 1 authoring is complete. The lane scope descriptions below are retained as
+historical write-boundary evidence.
 
 ### Lane A — Governance core
 
@@ -156,3 +159,15 @@ Keep `AUTHORING_COMPLETE`, `STRUCTURAL_CHECK_COMPLETE`,
 `VALIDATION_COMPLETE`, `COMMITTED`, `MERGED`, `PERSISTENCE_COMPLETE`,
 `OWNER_ACCEPTED`, and `ACTIVATED` separate. At this task state D0/D1, validation
 PASS, persistence completion, Owner acceptance, and activation are all absent.
+
+## Current exact checkpoint
+
+- `AUTHORING_COMPLETE = TRUE` — exact lane commits are recorded in
+  `governance/v1.0/INTEGRATION_STATUS.md`.
+- `STRUCTURAL_CHECK_COMPLETE = TRUE` — final pre-freeze S01–S18 passed 18/18.
+- `VALIDATION_COMPLETE = FALSE`; `D0 = NOT CREATED`; `D1 = NOT CREATED`.
+- `MERGED = FALSE` for main; repository lane merge is only integration-branch
+  lineage.
+- `PERSISTENCE_COMPLETE = FALSE`, `OWNER_ACCEPTED = FALSE`, and
+  `ACTIVATED = FALSE`.
+- Source intake is 26/26 allowlisted files with 0 missing or held.

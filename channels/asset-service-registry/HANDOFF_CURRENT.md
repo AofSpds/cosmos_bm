@@ -4,6 +4,30 @@
 
 Regenerate from current Git, memory, decisions, and open questions after material change. Higher-authority Owner, CH-00, and charter records prevail.
 
+GENERATION_STAGE = `PRE_D0_INTEGRATION_RECONCILIATION`
+TASK_ID = `COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829`
+INTEGRATION_BRANCH = `task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829`
+DERIVED_INPUTS = `MEMORY.md + DECISIONS.jsonl + OPEN_QUESTIONS.md`
+
+FROM_CHANNEL = `CH-06 — ASSET & SERVICE REGISTRY`
+DECISION_ID = `BM4-REG-D-0001`
+STATUS = `CANDIDATE / NOT CHANNEL-SEALED / NO OWNER DECISION`
+QUESTION = How can a factual asset/provider registry support discovery without implying approval, safety, ranking authority, or compliance?
+RECOMMENDED_DECISION = Separate declarations, verification evidence, factual capability records, deterministic eligibility, and model ranking while preserving freshness and revocation.
+ALTERNATIVES_CONSIDERED = Approval badges, eligibility/ranking conflation, closed entry, raw public KYC/PII, and a mandatory operator/router; excluded by hard locks.
+EVIDENCE = Exact CH-06 packet SHA-256 `17cb30af452ec3eb38b878d20503fccc01766b5bed189730f41e317600a7c437`; current source hashes in `SOURCES.md`.
+RATIONALE = Registry facts require source, time, freshness, confidence, missingness, incident, and revocation provenance and cannot create a guarantee.
+IMPACTED_CHANNELS = CH-01 attribution, CH-02 evidence, CH-03 provider health, CH-04 route/failover, CH-05 service mapping, CH-07 competition/data/claims, CH-00 promotion
+IMPACTED_BM = BM4 directly; factual provider interfaces for BM1–BM3
+IMPACTED_TRACK = Pre-PoC asset/provider schema, freshness/revocation, eligibility/ranking, and open-entry evidence
+HARD_LOCK_CHECK = Preserved; factual registry only, no safety/compliance guarantee, raw public PII, closed market, or mandatory router
+DEPENDENCIES = Issuer/provider schema; signature and verification provenance; incident/revocation semantics; deterministic eligibility; public arbitration
+LEGAL_SAFETY_ECONOMIC_EFFECT = None authorized; listing, verification, liability, discrimination, concentration, and fee questions remain unresolved
+CLAIM_CEILING = `C2 — pre-PoC maximum`
+OWNER_ACTION_REQUIRED = `FALSE` now; `TRUE` only when a bounded registry, eligibility, or pilot choice is ready
+PROPOSED_INTEGRATION = None until `BM4-REG-01`–`06` close and a channel-sealed handoff is submitted
+SUPERSEDES = None
+
 ## Identity and read order
 
 - Channel: `CH-06 ASSET & SERVICE REGISTRY`
