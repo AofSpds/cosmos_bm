@@ -10,7 +10,7 @@ VALIDATION_CLAIM = NONE / PMO STRUCTURAL READBACK ONLY
 
 | Check | Result | Scope |
 |---|---|---|
-| S01 | PASS | Four scoped JSON files and nine scoped JSONL records parse |
+| S01 | PASS | Four scoped JSON files and thirteen scoped JSONL records parse |
 | S02 | PASS | Source manifest and project-config YAML parse |
 | S03 | PASS | Nine unique registry entries; exact CH-08 identity |
 | S04 | PASS | CH-08 contains exactly seven required files |
