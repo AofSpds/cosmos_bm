@@ -11,9 +11,9 @@ INTEGRATION_BRANCH = task/governance/register-institutional-ledger-market-access
 ASSIGNED_CHANNEL_ID = CH-08
 CURRENT_PERSONA_LOCK_FOR_TASK = PMO
 SEMANTIC_AUTHORITY = BM_MASTER
-VALIDATION_CLAIM = PASS / EXACT D1 ONLY
-D0 = a37e4fe5562566f59ec3942beae9dd5b73cefd4e
-D1 = c9283fe464a12f59b48b71a500ce3d71189095fa
+VALIDATION_CLAIM = PASS / EXACT DURABLE D1 ONLY
+D0 = 321d8e7ee4936ad1a7d86df214919eeecb1f5014
+D1 = 5230c7ff5ae681006ac9721aeea5f973ce7bdd67
 PR = PENDING
 TASK_CONTENT_MERGE_COMMIT = PENDING
 POST_MERGE_READBACK = PENDING
@@ -125,11 +125,11 @@ OR item or authorizes proposal/product promotion.
   source records; none of the original 26 sources was reimported.
 - CH-08 has exactly seven initialized current files. Shared governance and
   affected-only CH-00 currentization are complete in the validated Candidate.
-- D0 `a37e4fe5562566f59ec3942beae9dd5b73cefd4e` received V1
+- Durable D0 `321d8e7ee4936ad1a7d86df214919eeecb1f5014` received V1
   `PASS_WITH_ADVISORY` and V2/V3 `PASS`. One documentation-only advisory was
   frozen, corrected once, and closed by affected-diff recheck at exact D1
-  `c9283fe464a12f59b48b71a500ce3d71189095fa`.
-- Final task-scoped verdict is `PASS_EXACT_D1_ONLY`; no persistent validator
+  `5230c7ff5ae681006ac9721aeea5f973ce7bdd67`.
+- Final task-scoped verdict is `PASS_EXACT_DURABLE_D1_ONLY`; no persistent validator
   Persona was created and PMO did not self-grant the verdict.
 - PR, merge, fresh-main readback, and final activation closure remain.
 - The previous repository bootstrap remains complete at task-content merge

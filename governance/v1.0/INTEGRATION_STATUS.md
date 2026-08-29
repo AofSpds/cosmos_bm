@@ -7,9 +7,9 @@ BASE_MAIN_SHA = 562850c0639cdf04462f9520166be1e6f9880aab
 INTEGRATION_BRANCH = task/governance/register-institutional-ledger-market-access-20260830
 CURRENT_STAGE = S8 / PR AND MERGE
 ASSIGNED_CHANNEL_ID = CH-08
-D0 = a37e4fe5562566f59ec3942beae9dd5b73cefd4e
-D1 = c9283fe464a12f59b48b71a500ce3d71189095fa
-VALIDATION = PASS / EXACT D1 ONLY
+D0 = 321d8e7ee4936ad1a7d86df214919eeecb1f5014
+D1 = 5230c7ff5ae681006ac9721aeea5f973ce7bdd67
+VALIDATION = PASS / EXACT DURABLE D1 ONLY
 PR = PENDING
 TASK_CONTENT_MERGE_COMMIT = PENDING
 POST_MERGE_READBACK = PENDING
@@ -28,11 +28,11 @@ ACTIVATED = FALSE
   Product Candidate is Channel-Sealed, integrated, Owner-accepted, implemented,
   or activated.
 - The four-BM order and every existing specialist authority remain unchanged.
-- D0 was frozen at `a37e4fe5562566f59ec3942beae9dd5b73cefd4e`.
+- Durable D0 is `321d8e7ee4936ad1a7d86df214919eeecb1f5014`.
   V1 returned one advisory; V2 and V3 returned PASS with no finding. The
   advisory was corrected in one documentation-only D1 batch and closed by an
   affected-diff recheck. Final PASS binds only to exact D1
-  `c9283fe464a12f59b48b71a500ce3d71189095fa`.
+  `5230c7ff5ae681006ac9721aeea5f973ce7bdd67`.
 
 ## Previous bootstrap evidence — preserved history
 

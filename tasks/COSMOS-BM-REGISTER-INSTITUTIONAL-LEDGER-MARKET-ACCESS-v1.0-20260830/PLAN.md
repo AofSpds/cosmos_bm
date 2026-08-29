@@ -10,7 +10,7 @@
 | S5 | D0 freeze and bounded structural checks | COMPLETE — D0 `a37e4fe`; 18/18 pre-freeze PASS |
 | S6 | Three task-scoped review lanes | COMPLETE — V1 advisory; V2/V3 PASS |
 | S7 | Finding freeze and one affected correction batch if needed | COMPLETE — V1-A-001 closed; D1 `c9283fe`; final PASS |
-| S8 | PR and merge | IN PROGRESS — pre-PR durable-state currentization |
+| S8 | PR and merge | IN PROGRESS — durable remote D1 mapped; PR next |
 | S9 | Fresh-main post-merge readback | PENDING |
 | S10 | Final Owner-facing activation packet | PENDING |
 
@@ -36,8 +36,9 @@ only one bounded correction batch and affected-diff recheck are permitted.
 PROGRESS = 82%
 BASE_MAIN_SHA = 562850c0639cdf04462f9520166be1e6f9880aab
 ASSIGNED_CHANNEL_ID = CH-08
-VALIDATION_TARGET = c9283fe464a12f59b48b71a500ce3d71189095fa
-VALIDATION_VERDICT = PASS / EXACT D1 ONLY
+VALIDATION_TARGET = 5230c7ff5ae681006ac9721aeea5f973ce7bdd67
+VALIDATION_TREE = 858a621cb420964d7eac8127b1b10452da05147a
+VALIDATION_VERDICT = PASS / EXACT DURABLE D1 ONLY
 BLOCKER = NONE
 SCOPE_EXPANSION = FALSE
 OWNER_ACTION_REQUIRED = FALSE

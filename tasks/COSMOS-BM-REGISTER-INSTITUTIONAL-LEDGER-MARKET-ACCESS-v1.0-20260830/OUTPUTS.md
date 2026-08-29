@@ -34,13 +34,14 @@
 ## Task-scoped review
 
 - `validation/FINDINGS_FROZEN.md`
+- `validation/DURABLE_GIT_TARGET_MAPPING.md`
 - `validation/V1_STRUCTURE_REVIEW.md`
 - `validation/V2_AUTHORITY_LINEAGE_REVIEW.md`
 - `validation/V3_SEMANTIC_BOUNDARY_REVIEW.md`
 - `validation/VALIDATION_RECEIPT.md`
 
-The final review verdict is `PASS`, bound only to exact D1
-`c9283fe464a12f59b48b71a500ce3d71189095fa`. The single V1 advisory was
+The final review verdict is `PASS`, bound only to durable exact-tree D1
+`5230c7ff5ae681006ac9721aeea5f973ce7bdd67`. The single V1 advisory was
 closed by one bounded documentation-line correction and affected-diff recheck.
 
 All product content remains Candidate or not decided. No CH-01–CH-07 semantic
