@@ -1,11 +1,11 @@
-# Project Current State — Validated CH-08 Registration Candidate
+# Project Current State — CH-08 Registration Persistence Complete
 
 ```text
 PROJECT = COSMOS HUB BM IMPROVEMENT
 GOVERNANCE_VERSION = v1.0
 TASK_ID = COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830
-STATE = OWNER-AUTHORIZED CH-08 REGISTRATION / VALIDATED EXACT D1 / NOT PRODUCT-INTEGRATED
-PLANNED_STAGE = S8 PR AND MERGE
+STATE = OWNER-AUTHORIZED CH-08 REGISTRATION / GIT PERSISTENCE COMPLETE / NOT PRODUCT-INTEGRATED
+PLANNED_STAGE = PERSISTENCE_COMPLETE
 BASE_MAIN_SHA = 562850c0639cdf04462f9520166be1e6f9880aab
 INTEGRATION_BRANCH = task/governance/register-institutional-ledger-market-access-20260830
 ASSIGNED_CHANNEL_ID = CH-08
@@ -14,9 +14,12 @@ SEMANTIC_AUTHORITY = BM_MASTER
 VALIDATION_CLAIM = PASS / EXACT DURABLE D1 ONLY
 D0 = 321d8e7ee4936ad1a7d86df214919eeecb1f5014
 D1 = 5230c7ff5ae681006ac9721aeea5f973ce7bdd67
-PR = PENDING
-TASK_CONTENT_MERGE_COMMIT = PENDING
-POST_MERGE_READBACK = PENDING
+PR = #5 / MERGED
+TASK_CONTENT_MERGE_COMMIT = eeb0f73534630d6f7a61b7acd27b6426c153142a
+TASK_CONTENT_TREE = e4017668cdd73b0fba5a9c287ba6fc0fca6c4e6b
+POST_MERGE_READBACK = PASS / S01-S18 / 18 OF 18
+PERSISTENCE_COMPLETE = TRUE
+ACTIVATION_PACKET = READY / DERIVED CONTEXT ONLY
 OWNER_ACCEPTED = FALSE
 ACTIVATED = FALSE
 ```
@@ -131,7 +134,13 @@ OR item or authorizes proposal/product promotion.
   `5230c7ff5ae681006ac9721aeea5f973ce7bdd67`.
 - Final task-scoped verdict is `PASS_EXACT_DURABLE_D1_ONLY`; no persistent validator
   Persona was created and PMO did not self-grant the verdict.
-- PR, merge, fresh-main readback, and final activation closure remain.
+- PR #5 merged exact head `8b0ad57aa7f86c52a9bb778873098ce082e3267a`
+  as task-content merge `eeb0f73534630d6f7a61b7acd27b6426c153142a`.
+- Fresh-main S01–S18 readback passed 18/18 at tree
+  `e4017668cdd73b0fba5a9c287ba6fc0fca6c4e6b` with a clean worktree.
+- The final Owner-facing activation packet is ready and remains derived context
+  only. It authorizes bounded `INST-01`/`INST-02` research, not product
+  integration, implementation, production, or product activation.
 - The previous repository bootstrap remains complete at task-content merge
   `996d4ce5625047376b3837f98ee986a1a6c4348d`; its historical 8 × 7 readback
   and exact-D0 validation record remain unchanged.

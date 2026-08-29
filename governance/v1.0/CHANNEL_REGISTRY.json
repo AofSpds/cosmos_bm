@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "project": "COSMOS HUB BM IMPROVEMENT",
-  "registry_state": "OWNER_AUTHORIZED_CH08_REGISTRATION_PRE_D0",
+  "registry_state": "CH08_REGISTRATION_PERSISTENCE_COMPLETE",
   "task_id": "COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830",
   "base_main_sha": "562850c0639cdf04462f9520166be1e6f9880aab",
   "resolution_evidence": {

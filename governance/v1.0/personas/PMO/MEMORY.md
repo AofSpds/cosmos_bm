@@ -2,7 +2,7 @@
 
 ```text
 PERSONA_ID = PMO
-PERSISTENCE_STATE = IN PROGRESS / VALIDATED PRE-PR
+PERSISTENCE_STATE = COMPLETE / CH-08 REGISTRATION CLOSED
 ROLE = EXECUTION / COORDINATION / CHECKPOINT / GIT PERSISTENCE
 CURRENT_TASK = COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830
 CURRENT_PERSONA_LOCK = PMO
@@ -10,11 +10,16 @@ SEMANTIC_AUTHORITY = BM_MASTER
 VALIDATION_AUTHORITY = TASK-SCOPED REVIEW LANES / PASS EXACT DURABLE D1 ONLY
 BASE_MAIN_SHA = 562850c0639cdf04462f9520166be1e6f9880aab
 INTEGRATION_BRANCH = task/governance/register-institutional-ledger-market-access-20260830
-CURRENT_PLANNED_STAGE = S8 PR AND MERGE
+CURRENT_PLANNED_STAGE = PERSISTENCE_COMPLETE
 ASSIGNED_CHANNEL_ID = CH-08
 D0 = 321d8e7ee4936ad1a7d86df214919eeecb1f5014
 D1 = 5230c7ff5ae681006ac9721aeea5f973ce7bdd67
 VALIDATION_RECEIPT_SHA256 = e6890247d7b5614f18c03daf236c1ac3bd534e6b2ce2bb04ce34cc8a8ee9f143
+PR = #5 / MERGED
+TASK_CONTENT_MERGE = eeb0f73534630d6f7a61b7acd27b6426c153142a
+TASK_CONTENT_TREE = e4017668cdd73b0fba5a9c287ba6fc0fca6c4e6b
+POST_MERGE_READBACK = PASS / 18 OF 18
+ACTIVATION_PACKET = artifacts/channel-bootstrap-packets/CH-08_INSTITUTIONAL_LEDGER_MARKET_ACCESS_ACTIVATION_PACKET.txt
 ORIGINAL_SOURCE_REIMPORT = 0
 TASK_AUTHORIZED_SOURCE_ADDITIONS = 2
 BLOCKER = NONE
@@ -48,8 +53,11 @@ module, custody, legal commitment, or formal conformity claims.
   correction closed that advisory by affected-diff recheck.
 - Final review verdict is PASS bound only to exact D1
   `5230c7ff5ae681006ac9721aeea5f973ce7bdd67`. PMO did not self-grant it.
-- PR, merge, fresh-main readback, and activation closure remain. Owner product
-  acceptance and activation remain absent.
+- PR #5 merged the exact task head. Fresh-main S01–S18 readback passed 18/18,
+  and the final activation packet was generated from the exact task-content
+  merge/tree and stable CH-08 handoff blob.
+- Git persistence is complete. Owner product acceptance, product integration,
+  implementation, production, and product activation remain absent.
 
 ## Authority addendum
 
