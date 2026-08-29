@@ -13,3 +13,15 @@ Append-only. New entries are added below; existing entries are not rewritten.
 - Registered the portfolio only as `CANDIDATE` and `OR-01`–`OR-09` only as `UNDECIDED`.
 - Created no new Owner decision, integration decision, production authority, proposal rewrite, implementation, or formal 6G claim.
 - State: lane-authored bootstrap candidate; PMO integration and task-scoped independent validation remain separate later stages.
+
+## 2026-08-30 KST — CH-08 registration dependency
+
+- Task: `COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830`
+- Baseline main: `562850c0639cdf04462f9520166be1e6f9880aab`
+- Branch: `task/governance/register-institutional-ledger-market-access-20260830`
+- PMO registered `CH-08 — INSTITUTIONAL LEDGER · MARKET ACCESS` as an
+  Owner-authorized Cross-BM product-incubation channel and recorded its future
+  `INST-10` Channel-Sealed handoff as an upstream CH-00 dependency.
+- The Owner decision covers channel creation and structured handoff operation
+  only. No Product Candidate was integrated, no new OR item was created, and no
+  fifth BM, implementation, production authority, or activation was added.

@@ -1,30 +1,31 @@
-# Project Current State — Persistence-Complete Bootstrap Candidate
+# Project Current State — Validated CH-08 Registration Candidate
 
 ```text
 PROJECT = COSMOS HUB BM IMPROVEMENT
 GOVERNANCE_VERSION = v1.0
-TASK_ID = COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829
-STATE = BOOTSTRAP PERSISTENCE COMPLETE / CANDIDATE
-PLANNED_STAGE = COMPLETE
-BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
-INTEGRATION_BRANCH = task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829
-LANE_INTEGRATION_HEAD = f482e23980d91d04a26e83e25157dc9966f4cf7a
+TASK_ID = COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830
+STATE = OWNER-AUTHORIZED CH-08 REGISTRATION / VALIDATED EXACT D1 / NOT PRODUCT-INTEGRATED
+PLANNED_STAGE = S8 PR AND MERGE
+BASE_MAIN_SHA = 562850c0639cdf04462f9520166be1e6f9880aab
+INTEGRATION_BRANCH = task/governance/register-institutional-ledger-market-access-20260830
+ASSIGNED_CHANNEL_ID = CH-08
 CURRENT_PERSONA_LOCK_FOR_TASK = PMO
 SEMANTIC_AUTHORITY = BM_MASTER
-VALIDATION_CLAIM = PASS / EXACT D0 ONLY
-D0 = 7de27f727582c4626c76728fbdf4196b40007591
-D1 = NOT REQUIRED / NO CORRECTION
-PR = 1 / MERGED
-TASK_CONTENT_MERGE_COMMIT = 996d4ce5625047376b3837f98ee986a1a6c4348d
-POST_MERGE_READBACK = PASS / S01-S18 18 OF 18
+VALIDATION_CLAIM = PASS / EXACT DURABLE D1 ONLY
+D0 = 321d8e7ee4936ad1a7d86df214919eeecb1f5014
+D1 = 5230c7ff5ae681006ac9721aeea5f973ce7bdd67
+PR = PENDING
+TASK_CONTENT_MERGE_COMMIT = PENDING
+POST_MERGE_READBACK = PENDING
 OWNER_ACCEPTED = FALSE
 ACTIVATED = FALSE
 ```
 
 This is a compressed current-state projection. Exact sources, the append-only
-Owner decision register, and Git history outrank it. Repository lane merge does
-not mean semantic `INTEGRATED`, Owner acceptance, validation PASS, production
-authorization, or activation.
+Owner decision register, and Git history outrank it. The Owner authorized CH-08
+channel creation and its structured handoff operating model only. Registration
+does not mean a product Candidate is integrated, Owner-accepted, implemented,
+production-authorized, or activated.
 
 ## Current program baseline
 
@@ -39,6 +40,19 @@ authorization, or activation.
 | Commercial SLA, compensation, insurance, or guarantee | **NOT AUTHORIZED** |
 | Native module or fifth BM | **NOT AUTHORIZED** |
 | Formal 6G conformity claim | **NOT AUTHORIZED** |
+
+## Owner-authorized CH-08 registration
+
+- `CH-08 — INSTITUTIONAL LEDGER · MARKET ACCESS` is registered as a Cross-BM
+  institutional product incubator and demand-side product-architecture channel.
+- It studies institutional segments, Use Cases, Product Bundle Candidates,
+  buyer/payer structure, pricing/WTP Candidates, and mappings into BM1–BM4.
+- It sends structured requirements to existing specialist channels, receives
+  specialist returns, and may prepare a Channel-Sealed Candidate for CH-00.
+- It is not a fifth BM. No segment, Use Case, product, price, pilot, proposal
+  integration, implementation, production state, or activation is selected.
+- Current bounded work is `INST-01` followed by `INST-02`; blocker is none and
+  Owner action is not required for that research.
 
 ## Repository bootstrap evidence
 
@@ -98,27 +112,30 @@ Every label remains Candidate.
 
 ## Owner-review boundary
 
-`OR-01` through `OR-09` are all `UNDECIDED`. The sole Owner register entry
-authorizes only this bounded repository/memory bootstrap, exact-allowlist
-publication, isolated authoring, and post-D0 task-scoped validation. It does
-not answer an OR item or authorize proposal/product promotion.
+`OR-01` through `OR-09` are all `UNDECIDED`. The Owner register preserves the
+completed bootstrap authorization and separately records only CH-08 channel
+creation plus the structured handoff operating model. Neither entry answers an
+OR item or authorizes proposal/product promotion.
 
 ## Current execution state
 
-- Four isolated authoring lanes are complete and merged A → B → C → D.
-- Shared pointer, registry, memory index, task state, and all handoffs have been
-  reconciled for the pre-D0 Candidate.
-- Structural checks S01–S18 passed 18/18 on the final pre-freeze tree. D0 freeze
-  is the next gate.
-- Independent validation returned PASS with no blocking, advisory, or new-scope
-  findings for exact D0 only. No correction was required, so D1 is not created.
-- PR #1 merged exact head `9217fcb0bbcf943b97b3302bde198833f3c72f48`
-  as task content merge `996d4ce5625047376b3837f98ee986a1a6c4348d`.
-- Fresh-main readback matched tree `cd67645b8066f37fd20e18f166557aaf49be9010`,
-  receipt SHA-256, 26/26 sources, 8 × 7 channel files, 2 Personas, and S01–S18
-  PASS. Git persistence is complete.
-- Owner acceptance and activation remain false; no semantic Candidate was
-  promoted by the repository merge.
+- Admission matched baseline `main` `562850c0639cdf04462f9520166be1e6f9880aab`;
+  CH-00–CH-07 were registered and no persisted reservation blocked CH-08.
+- Owner evidence and the full task packet are persisted as two new authorized
+  source records; none of the original 26 sources was reimported.
+- CH-08 has exactly seven initialized current files. Shared governance and
+  affected-only CH-00 currentization are complete in the validated Candidate.
+- Durable D0 `321d8e7ee4936ad1a7d86df214919eeecb1f5014` received V1
+  `PASS_WITH_ADVISORY` and V2/V3 `PASS`. One documentation-only advisory was
+  frozen, corrected once, and closed by affected-diff recheck at exact D1
+  `5230c7ff5ae681006ac9721aeea5f973ce7bdd67`.
+- Final task-scoped verdict is `PASS_EXACT_DURABLE_D1_ONLY`; no persistent validator
+  Persona was created and PMO did not self-grant the verdict.
+- PR, merge, fresh-main readback, and final activation closure remain.
+- The previous repository bootstrap remains complete at task-content merge
+  `996d4ce5625047376b3837f98ee986a1a6c4348d`; its historical 8 × 7 readback
+  and exact-D0 validation record remain unchanged.
+- Owner acceptance of a product and activation remain false.
 
 Keep `AUTHORING_COMPLETE`, `STRUCTURAL_CHECK_COMPLETE`,
 `VALIDATION_COMPLETE`, `COMMITTED`, `MERGED`, `PERSISTENCE_COMPLETE`,

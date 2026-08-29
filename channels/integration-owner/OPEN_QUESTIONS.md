@@ -23,6 +23,11 @@ Only live questions are listed. Recommendations are Candidate inputs, not Owner 
 - Which data, legal, economic, neutrality, or claim gates remain open for each candidate?
 - Which items belong in main text, a technical annex, or a companion research document?
 - Can the Revision Scope Candidate close without silently expanding a fifth BM, Hub authority, production scope, or claim ceiling?
+- When CH-08 eventually submits `INST-10`, does the package contain a genuine
+  Channel Seal, complete specialist returns, preserved hard locks and authority
+  boundaries, a bounded claim ceiling, disclosed residual risks, and an exact
+  Owner-decision queue without treating channel registration as product
+  integration?
 
 ## Owner-action rule
 

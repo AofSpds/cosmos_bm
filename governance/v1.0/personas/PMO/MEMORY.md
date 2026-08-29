@@ -2,57 +2,54 @@
 
 ```text
 PERSONA_ID = PMO
-PERSISTENCE_STATE = COMPLETE / GIT-BACKED SUCCESSION READY
+PERSISTENCE_STATE = IN PROGRESS / VALIDATED PRE-PR
 ROLE = EXECUTION / COORDINATION / CHECKPOINT / GIT PERSISTENCE
-CURRENT_TASK = COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829
+CURRENT_TASK = COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830
 CURRENT_PERSONA_LOCK = PMO
 SEMANTIC_AUTHORITY = BM_MASTER
-VALIDATION_AUTHORITY = NONE
-BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
-INTEGRATION_BRANCH = task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829
-CURRENT_PLANNED_STAGE = COMPLETE
-LANE_INTEGRATION_HEAD = f482e23980d91d04a26e83e25157dc9966f4cf7a
-SOURCE_FILES_FOUND_MISSING = 26 / 0
+VALIDATION_AUTHORITY = TASK-SCOPED REVIEW LANES / PASS EXACT DURABLE D1 ONLY
+BASE_MAIN_SHA = 562850c0639cdf04462f9520166be1e6f9880aab
+INTEGRATION_BRANCH = task/governance/register-institutional-ledger-market-access-20260830
+CURRENT_PLANNED_STAGE = S8 PR AND MERGE
+ASSIGNED_CHANNEL_ID = CH-08
+D0 = 321d8e7ee4936ad1a7d86df214919eeecb1f5014
+D1 = 5230c7ff5ae681006ac9721aeea5f973ce7bdd67
+VALIDATION_RECEIPT_SHA256 = e6890247d7b5614f18c03daf236c1ac3bd534e6b2ce2bb04ce34cc8a8ee9f143
+ORIGINAL_SOURCE_REIMPORT = 0
+TASK_AUTHORIZED_SOURCE_ADDITIONS = 2
 BLOCKER = NONE
 OWNER_ACTION_REQUIRED = FALSE
 ```
 
 ## Current task
 
-Execute the exact bounded repository/memory bootstrap authorized on 2026-08-29.
-The task has four isolated authoring lanes, PMO-only integration/reconciliation,
-structural checks, D0 freeze, one temporary independent validating lane, one
-bounded correction/recheck loop by default, and persistence close.
+Register and initialize CH-08 `INSTITUTIONAL LEDGER · MARKET ACCESS` under the
+exact Owner authorization of 2026-08-30. The task uses isolated evidence,
+channel-authoring, read-only governance-audit, and activation-draft lanes;
+PMO alone writes shared governance. After D0, three temporary task-scoped
+review lanes cover structure, authority/lineage, and semantic boundary.
 
-The overall active-wall estimate is 90–180 minutes with a 240-minute projected
-Owner check limit. Progress weights: S0 10%, S1 10%, S2 40%, S3 20%, S4 10%,
-S5 10%. Use 10–15 minute heartbeats and the packet's stall watchdog.
+The task must not reimport the original 26 sources, reauthor CH-01–CH-07,
+create a fifth BM or Persona, or expand into proposal revision, product
+integration, implementation, production, live routing, commercial SLA, native
+module, custody, legal commitment, or formal conformity claims.
 
 ## Current execution checkpoint
 
-- Genesis/base: `a3b18e231e5e3c7c053d3a838e4047ea218e4aa2`.
-- Candidate lane commits: governance `63a3afb267d2dace3d28a945f903c5ef4d7e6e51`;
-  sources `62945dbfeecb5dc37530870092890c7ef1651d2f`; CH-00–03
-  `05467f1592432ec8367c58c51a4db9ea9a061ae2`; CH-04–07
-  `85461bb61f5434da866df2565524e1e2c6664b18`.
-- Ordered remote lane merge head: `f482e23980d91d04a26e83e25157dc9966f4cf7a`;
-  local and remote trees matched.
-- Source intake: 26/26 exact allowlisted files; no missing/held file and no
-  unresolved publication, secret, raw PII/KYC, or metadata finding.
-- PMO shared reconciliation and S01–S18 are complete (18/18 PASS).
-- Bounded pre-freeze readback and the final S01–S18 rerun passed.
-- D0 `7de27f727582c4626c76728fbdf4196b40007591` is frozen. The independent
-  task-scoped validator returned PASS with no blocking, advisory, or new-scope
-  findings; the claim applies only to exact D0.
-- No correction was required, so D1 is not created.
-- PR #1 merged exact head `9217fcb0bbcf943b97b3302bde198833f3c72f48`
-  as `996d4ce5625047376b3837f98ee986a1a6c4348d`. Fresh-main tree
-  `cd67645b8066f37fd20e18f166557aaf49be9010` passed S01–S18 and the exact
-  receipt/source/channel/Persona readback.
-- Git persistence is complete. Owner acceptance and activation remain absent.
-- Next: Owner/BM_MASTER may continue bounded channel work through the current
-  Git read order; any new semantic or implementation action requires its own
-  authority.
+- Baseline `main`/tree exactly matched `562850c0639cdf04462f9520166be1e6f9880aab`
+  / `4a7a82501c7f6e95af5cced9eb29812f618fa002`.
+- Registry contained CH-00–CH-07; no persisted reservation existed, so CH-08
+  and ordinal 8 were assigned without collision.
+- Owner evidence and the complete execution packet are persisted as two new
+  task-authorized source records; original sources were not reimported.
+- CH-08 seven-file initialization, shared governance, and affected-only CH-00
+  currentization are complete in D0.
+- V1 found one documentation-count advisory; V2 and V3 passed. One bounded D1
+  correction closed that advisory by affected-diff recheck.
+- Final review verdict is PASS bound only to exact D1
+  `5230c7ff5ae681006ac9721aeea5f973ce7bdd67`. PMO did not self-grant it.
+- PR, merge, fresh-main readback, and activation closure remain. Owner product
+  acceptance and activation remain absent.
 
 ## Authority addendum
 

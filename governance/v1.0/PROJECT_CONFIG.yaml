@@ -2,22 +2,36 @@ schema_version: "1.0"
 project: "COSMOS HUB BM IMPROVEMENT"
 repository: "https://github.com/AofSpds/cosmos_bm.git"
 governance_version: "v1.0"
-task_id: "COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829"
-base_main_sha: "a3b18e231e5e3c7c053d3a838e4047ea218e4aa2"
-integration_branch: "task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829"
+task_id: "COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830"
+base_main_sha: "562850c0639cdf04462f9520166be1e6f9880aab"
+integration_branch: "task/governance/register-institutional-ledger-market-access-20260830"
 candidate_authoring_branch: null
-planned_stage: "PERSISTENCE_COMPLETE"
-d0_commit: "7de27f727582c4626c76728fbdf4196b40007591"
-d1_disposition: "NOT_REQUIRED_NO_CORRECTION"
-validation_claim: "PASS_EXACT_D0_ONLY"
-task_content_merge_commit: "996d4ce5625047376b3837f98ee986a1a6c4348d"
-post_merge_readback: "PASS_S01_S18_18_OF_18"
-lane_integration_head: "f482e23980d91d04a26e83e25157dc9966f4cf7a"
-lane_commits:
-  governance_core: "63a3afb267d2dace3d28a945f903c5ef4d7e6e51"
-  source_ingest: "62945dbfeecb5dc37530870092890c7ef1651d2f"
-  channels_00_03: "05467f1592432ec8367c58c51a4db9ea9a061ae2"
-  channels_04_07: "85461bb61f5434da866df2565524e1e2c6664b18"
+planned_stage: "S8_PR_AND_MERGE"
+d0_commit: "321d8e7ee4936ad1a7d86df214919eeecb1f5014"
+d0_tree: "7bba6e50f8ba1c1993b7d9e43b56d17a93f9b7b5"
+d1_commit: "5230c7ff5ae681006ac9721aeea5f973ce7bdd67"
+d1_tree: "858a621cb420964d7eac8127b1b10452da05147a"
+d0_review_origin_local_commit: "a37e4fe5562566f59ec3942beae9dd5b73cefd4e"
+d1_review_origin_local_commit: "c9283fe464a12f59b48b71a500ce3d71189095fa"
+d1_disposition: "ONE_BOUNDED_DOCUMENTATION_CORRECTION_V1_A_001_CLOSED"
+validation_claim: "PASS_EXACT_DURABLE_D1_ONLY"
+validation_receipt_path: "tasks/COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830/validation/VALIDATION_RECEIPT.md"
+validation_receipt_sha256: "e6890247d7b5614f18c03daf236c1ac3bd534e6b2ce2bb04ce34cc8a8ee9f143"
+task_content_merge_commit: null
+post_merge_readback: "PENDING"
+assigned_channel_id: "CH-08"
+assigned_channel_ordinal: 8
+
+previous_bootstrap_evidence:
+  task_id: "COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829"
+  lane_integration_head: "f482e23980d91d04a26e83e25157dc9966f4cf7a"
+  d0_commit: "7de27f727582c4626c76728fbdf4196b40007591"
+  task_content_merge_commit: "996d4ce5625047376b3837f98ee986a1a6c4348d"
+  lane_commits:
+    governance_core: "63a3afb267d2dace3d28a945f903c5ef4d7e6e51"
+    source_ingest: "62945dbfeecb5dc37530870092890c7ef1651d2f"
+    channels_00_03: "05467f1592432ec8367c58c51a4db9ea9a061ae2"
+    channels_04_07: "85461bb61f5434da866df2565524e1e2c6664b18"
 
 authority:
   semantic_authority: "BM_MASTER"
@@ -68,6 +82,8 @@ hard_locks:
 authorizations:
   bounded_repository_memory_bootstrap: true
   exact_allowlisted_source_publication: true
+  institutional_ledger_market_access_channel_registration: true
+  institutional_structured_handoff_operating_model: true
   parallel_authoring_lanes: true
   task_scoped_independent_validation_after_d0: true
   full_v1_2_rewrite: false
@@ -91,3 +107,5 @@ source_policy:
   derived_text: "NON_AUTHORITATIVE_WITH_PROVENANCE"
   allowlisted_sources_found: 26
   allowlisted_sources_missing: 0
+  task_authorized_sources_added: 2
+  manifested_source_total: 28

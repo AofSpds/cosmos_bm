@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
   "project": "COSMOS HUB BM IMPROVEMENT",
-  "registry_state": "CURRENT_TASK_COMPLETE",
-  "as_of_kst_date": "2026-08-29",
-  "base_main_sha": "a3b18e231e5e3c7c053d3a838e4047ea218e4aa2",
+  "registry_state": "CURRENT_TASK_READY_FOR_PR",
+  "as_of_kst_date": "2026-08-30",
+  "base_main_sha": "562850c0639cdf04462f9520166be1e6f9880aab",
   "active_tasks": [
     {
       "task_id": "COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829",
@@ -30,6 +30,36 @@
       "owner_action_required": false,
       "scope_expansion": "NONE",
       "next_exact_action": "Owner/BM_MASTER may continue bounded channel work through Git-backed succession; new authority is required for any semantic promotion or implementation step."
+    },
+    {
+      "task_id": "COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830",
+      "task_class": "BOUNDED_GOVERNANCE_MUTATION_NEW_CROSS_BM_CHANNEL_REGISTRATION",
+      "status": "READY_FOR_PR",
+      "planned_stage": "S8_PR_AND_MERGE",
+      "current_persona_lock": "PMO",
+      "semantic_authority": "BM_MASTER",
+      "integration_branch": "task/governance/register-institutional-ledger-market-access-20260830",
+      "base_main_sha": "562850c0639cdf04462f9520166be1e6f9880aab",
+      "assigned_channel_id": "CH-08",
+      "assigned_ordinal": 8,
+      "task_path": "tasks/COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830/TASK.md",
+      "plan_path": "tasks/COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830/PLAN.md",
+      "blocking_items": [],
+      "blocking_item_count": 0,
+      "remaining_gate_sequence": ["S8_PR_MERGE", "S9_READBACK", "S10_ACTIVATION_PACKET"],
+      "validation_claim": "PASS_EXACT_DURABLE_D1_ONLY",
+      "d0_commit": "321d8e7ee4936ad1a7d86df214919eeecb1f5014",
+      "d0_tree": "7bba6e50f8ba1c1993b7d9e43b56d17a93f9b7b5",
+      "d1_commit": "5230c7ff5ae681006ac9721aeea5f973ce7bdd67",
+      "d1_tree": "858a621cb420964d7eac8127b1b10452da05147a",
+      "d1_disposition": "ONE_BOUNDED_DOCUMENTATION_CORRECTION_V1_A_001_CLOSED",
+      "pr_number": null,
+      "task_content_merge_commit": null,
+      "post_merge_readback": "PENDING",
+      "persistence_complete": false,
+      "owner_action_required": false,
+      "scope_expansion": "NONE",
+      "next_exact_action": "Create and merge the validated task PR, then perform fresh-main post-merge readback."
     }
   ],
   "registry_caution": "Task completion means Git persistence only. It does not imply Owner acceptance, semantic integration, production authorization, or activation."

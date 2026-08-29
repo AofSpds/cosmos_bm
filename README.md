@@ -47,6 +47,7 @@ rewrite, fifth BM, or formal 6G conformity is authorized by this repository.
 | `CH-05` | GATEWAY · INTENT | `channels/enterprise-gateway-structured-intent/` |
 | `CH-06` | REGISTRY · PROVIDERS | `channels/asset-service-registry/` |
 | `CH-07` | LEGAL · GOV · ECON · CLAIMS | `channels/legal-governance-economics/` |
+| `CH-08` | INSTITUTIONAL LEDGER · MARKET ACCESS | `channels/institutional-ledger-market-access/` |
 
 Stable channel IDs and slugs in
 `governance/v1.0/CHANNEL_REGISTRY.json` are canonical; display labels are
@@ -54,8 +55,8 @@ convenience labels only.
 
 ## Source authority
 
-Files under `sources/raw/` and `sources/packages/` are byte-preserved,
-allowlisted inputs recorded in `sources/SOURCE_MANIFEST.yaml` and
+Files under `sources/raw/`, `sources/packages/`, and `sources/owner-evidence/`
+are byte-preserved authorized inputs recorded in `sources/SOURCE_MANIFEST.yaml` and
 `sources/SHA256SUMS.txt`. Any future extraction belongs under
 `sources/derived/`, must identify its source hash and extractor version, and is
 non-authoritative. Derived text never substitutes for a missing original.

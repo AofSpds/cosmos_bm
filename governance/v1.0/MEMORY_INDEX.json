@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
   "project": "COSMOS HUB BM IMPROVEMENT",
-  "index_state": "CANDIDATE_RESOLVED_FOR_D0",
-  "task_id": "COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829",
-  "base_main_sha": "a3b18e231e5e3c7c053d3a838e4047ea218e4aa2",
+  "index_state": "OWNER_AUTHORIZED_CH08_REGISTRATION_PRE_D0",
+  "task_id": "COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830",
+  "base_main_sha": "562850c0639cdf04462f9520166be1e6f9880aab",
   "lane_integration_head": "f482e23980d91d04a26e83e25157dc9966f4cf7a",
   "memory_semantics": "COMPRESSED_CURRENT_STATE",
   "worklog_semantics": "APPEND_ONLY",
@@ -36,7 +36,22 @@
     {"channel_id": "CH-04", "memory_path": "channels/failover-recovery-design/MEMORY.md", "handoff_path": "channels/failover-recovery-design/HANDOFF_CURRENT.md", "resolution_state": "RESOLVED_AT_CHANNEL_LANE_COMMIT", "resolution_commit": "85461bb61f5434da866df2565524e1e2c6664b18"},
     {"channel_id": "CH-05", "memory_path": "channels/enterprise-gateway-structured-intent/MEMORY.md", "handoff_path": "channels/enterprise-gateway-structured-intent/HANDOFF_CURRENT.md", "resolution_state": "RESOLVED_AT_CHANNEL_LANE_COMMIT", "resolution_commit": "85461bb61f5434da866df2565524e1e2c6664b18"},
     {"channel_id": "CH-06", "memory_path": "channels/asset-service-registry/MEMORY.md", "handoff_path": "channels/asset-service-registry/HANDOFF_CURRENT.md", "resolution_state": "RESOLVED_AT_CHANNEL_LANE_COMMIT", "resolution_commit": "85461bb61f5434da866df2565524e1e2c6664b18"},
-    {"channel_id": "CH-07", "memory_path": "channels/legal-governance-economics/MEMORY.md", "handoff_path": "channels/legal-governance-economics/HANDOFF_CURRENT.md", "resolution_state": "RESOLVED_AT_CHANNEL_LANE_COMMIT", "resolution_commit": "85461bb61f5434da866df2565524e1e2c6664b18"}
+    {"channel_id": "CH-07", "memory_path": "channels/legal-governance-economics/MEMORY.md", "handoff_path": "channels/legal-governance-economics/HANDOFF_CURRENT.md", "resolution_state": "RESOLVED_AT_CHANNEL_LANE_COMMIT", "resolution_commit": "85461bb61f5434da866df2565524e1e2c6664b18"},
+    {
+      "channel_id": "CH-08",
+      "root": "channels/institutional-ledger-market-access",
+      "charter": "channels/institutional-ledger-market-access/CHANNEL.md",
+      "memory": "channels/institutional-ledger-market-access/MEMORY.md",
+      "memory_path": "channels/institutional-ledger-market-access/MEMORY.md",
+      "worklog": "channels/institutional-ledger-market-access/WORKLOG.md",
+      "decisions": "channels/institutional-ledger-market-access/DECISIONS.jsonl",
+      "open_questions": "channels/institutional-ledger-market-access/OPEN_QUESTIONS.md",
+      "sources": "channels/institutional-ledger-market-access/SOURCES.md",
+      "handoff": "channels/institutional-ledger-market-access/HANDOFF_CURRENT.md",
+      "handoff_path": "channels/institutional-ledger-market-access/HANDOFF_CURRENT.md",
+      "resolution_state": "REGISTERED_BY_OWNER_AUTHORIZED_CHANNEL_TASK",
+      "resolution_task_id": "COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830"
+    }
   ],
-  "caution": "Resolved paths remain Candidate memory projections. Git current state and exact sources outrank stale memory or handoff content; resolution does not confer validation or Owner authority."
+  "caution": "Resolved paths remain Candidate memory projections. CH-08 is Owner-authorized only as a channel and structured-handoff operating model; resolution does not integrate a product Candidate or confer validation, implementation, production, or activation authority."
 }

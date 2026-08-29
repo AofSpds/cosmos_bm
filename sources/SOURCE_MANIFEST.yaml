@@ -1,17 +1,22 @@
-manifest_version: "1.0"
+manifest_version: "1.1"
 project: "COSMOS HUB BM IMPROVEMENT"
 task_id: "COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829"
 generated_at_kst: "2026-08-29T04:34:21+09:00"
-source_ingest_mode: "ALLOWLIST ONLY / BYTE-PRESERVING / HASHED / PUBLICATION-GUARDED"
-source_count: 26
-imported_count: 26
+last_updated_by_task_id: "COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830"
+last_updated_at_kst: "2026-08-30T07:09:24+09:00"
+source_ingest_mode: "CUMULATIVE AUTHORIZED SOURCES / BYTE-PRESERVING / HASHED / PUBLICATION-GUARDED"
+source_count: 28
+imported_count: 28
+original_allowlisted_source_count: 26
+task_authorized_addition_count: 2
 missing_count: 0
 held_count: 0
 derived_file_count: 0
 scope_note: >-
-  This manifest covers only packet-allowlisted source IDs A01 through E02.
-  The unrelated File Library-root SHA256SUMS.txt is a PMO package manifest and
-  is intentionally not imported or classified as C11.
+  A01 through E02 are the original 26 packet-allowlisted bootstrap sources.
+  F01 and F02 are separately Owner-authorized evidence and policy-packet
+  additions for the CH-08 registration task; no original source was reimported.
+  The unrelated File Library-root SHA256SUMS.txt remains intentionally excluded.
 sources:
   - source_id: "A01"
     title: "Cosmos_Hub_BM_Improvement_Proposal_v1.1_CANDIDATE.docx"
@@ -676,3 +681,49 @@ sources:
       bytes diverge from the corrected standalone C03–C09 sources; the C10
       index member is byte-identical. The archive and its C11 member manifest
       must never overwrite or be used to validate the corrected standalone set.
+
+  - source_id: "F01"
+    title: "INSTITUTIONAL_LEDGER_MARKET_ACCESS_CHANNEL_OWNER_DIRECTION.md"
+    original_filename: "Owner chat direction preserved by the task execution packet"
+    canonical_repo_path: "sources/owner-evidence/2026-08-30/INSTITUTIONAL_LEDGER_MARKET_ACCESS_CHANNEL_OWNER_DIRECTION.md"
+    origin_class: "Owner verbatim evidence"
+    origin_file_id: null
+    sha256: "bb4eb2fb4c3d196d1d91920d598416446d69e06b81b507c79314e27785b0bba0"
+    bytes: 2066
+    mime_type: "text/markdown"
+    source_status: "PRIMARY OWNER EVIDENCE FOR BOUNDED CH-08 CHANNEL REGISTRATION"
+    authority_class: "OWNER_VERBATIM_EVIDENCE_BOUNDED_CHANNEL_SETUP"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS"
+    archive_members: []
+    imported_at_kst: "2026-08-30T07:09:24+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash: []
+    caution: "Authorizes only channel creation and the structured handoff operating model; it approves no product Candidate, fifth BM, implementation, production, commercial SLA, legal commitment, or formal conformity claim."
+
+  - source_id: "F02"
+    title: "08_CH-08_INSTITUTIONAL_LEDGER_MARKET_ACCESS_PACKET.md"
+    original_filename: "Owner-to-PMO single execution packet supplied in chat"
+    canonical_repo_path: "sources/raw/channel-policy-packets/v1.0/08_CH-08_INSTITUTIONAL_LEDGER_MARKET_ACCESS_PACKET.md"
+    origin_class: "Owner-authorized task packet transcription"
+    origin_file_id: null
+    sha256: "b4e4ade35c2e0348cfaf890cea3562aebd67244f6daf0ed89105077f2834a0dd"
+    bytes: 36524
+    mime_type: "text/markdown"
+    source_status: "OWNER-AUTHORIZED CHANNEL-SETUP SOURCE"
+    authority_class: "BOUNDED_PMO_EXECUTION_AUTHORITY"
+    publication_authorized: true
+    secrets_scan: "PASS"
+    pii_metadata_scan: "PASS"
+    archive_members: []
+    imported_at_kst: "2026-08-30T07:09:24+09:00"
+    imported_by: "PMO"
+    raw_or_derived: "raw"
+    derived_from: null
+    missing_reason: null
+    duplicate_by_hash: []
+    caution: "Direct full transcription from the inherited Owner chat because no separate uploaded packet artifact existed; durable byte identity begins at this recorded hash. It is not product approval, proposal integration, implementation authority, production authority, or a fifth BM."

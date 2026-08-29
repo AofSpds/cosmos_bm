@@ -1,26 +1,40 @@
-# Integration Status — Persistence Complete
+# Integration Status — CH-08 Registration Validated Pre-PR
 
 ```text
 PROJECT = COSMOS HUB BM IMPROVEMENT
-TASK_ID = COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829
-BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
-INTEGRATION_BRANCH = task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829
-CURRENT_STAGE = COMPLETE / GIT PERSISTENCE CLOSED
-LANE_INTEGRATION_HEAD = f482e23980d91d04a26e83e25157dc9966f4cf7a
-D0 = 7de27f727582c4626c76728fbdf4196b40007591
-D1 = NOT REQUIRED / NO CORRECTION
-VALIDATION = PASS / EXACT D0 ONLY
-PR = 1 / MERGED
-PRE_MERGE_HEAD = 9217fcb0bbcf943b97b3302bde198833f3c72f48
-TASK_CONTENT_MERGE_COMMIT = 996d4ce5625047376b3837f98ee986a1a6c4348d
-POST_MERGE_TREE = cd67645b8066f37fd20e18f166557aaf49be9010
-POST_MERGE_READBACK = PASS / S01-S18 18 OF 18
-PERSISTENCE_COMPLETE = TRUE
+TASK_ID = COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830
+BASE_MAIN_SHA = 562850c0639cdf04462f9520166be1e6f9880aab
+INTEGRATION_BRANCH = task/governance/register-institutional-ledger-market-access-20260830
+CURRENT_STAGE = S8 / PR AND MERGE
+ASSIGNED_CHANNEL_ID = CH-08
+D0 = 321d8e7ee4936ad1a7d86df214919eeecb1f5014
+D1 = 5230c7ff5ae681006ac9721aeea5f973ce7bdd67
+VALIDATION = PASS / EXACT DURABLE D1 ONLY
+PR = PENDING
+TASK_CONTENT_MERGE_COMMIT = PENDING
+POST_MERGE_READBACK = PENDING
+PERSISTENCE_COMPLETE = FALSE
 OWNER_ACCEPTED = FALSE
 ACTIVATED = FALSE
 ```
 
-## Ordered lane result
+## Current registration result
+
+- Owner evidence and the full execution packet are persisted as new task
+  sources; original A01–E02 sources remain untouched.
+- CH-08 has exactly seven current files and is registered only as an
+  Owner-authorized Cross-BM institutional product incubator.
+- CH-00 recognizes the future `INST-10` upstream dependency. No Institutional
+  Product Candidate is Channel-Sealed, integrated, Owner-accepted, implemented,
+  or activated.
+- The four-BM order and every existing specialist authority remain unchanged.
+- Durable D0 is `321d8e7ee4936ad1a7d86df214919eeecb1f5014`.
+  V1 returned one advisory; V2 and V3 returned PASS with no finding. The
+  advisory was corrected in one documentation-only D1 batch and closed by an
+  affected-diff recheck. Final PASS binds only to exact D1
+  `5230c7ff5ae681006ac9721aeea5f973ce7bdd67`.
+
+## Previous bootstrap evidence — preserved history
 
 | Order | Lane | Exact remote commit | Candidate result |
 |---:|---|---|---|
@@ -29,7 +43,7 @@ ACTIVATED = FALSE
 | 3 | C — CH-00–CH-03 | `05467f1592432ec8367c58c51a4db9ea9a061ae2` | 4 × 7 core files |
 | 4 | D — CH-04–CH-07 | `85461bb61f5434da866df2565524e1e2c6664b18` | 4 × 7 core files |
 
-The remote ordered merge head is
+The previous bootstrap remote ordered merge head is
 `f482e23980d91d04a26e83e25157dc9966f4cf7a`. Its tree
 `3584a9608b1fffe7f613465e3874c22787d002c5` matched the local ordered merge
 tree exactly. No merge conflict or lost update occurred.
@@ -38,7 +52,7 @@ During Lane D, two unneeded nested helper workers were interrupted before they
 wrote any file. Lane D remained the sole writer for its surface. This bounded
 concurrency correction caused no content conflict, scope change, or lost update.
 
-## Source result
+## Previous bootstrap source result
 
 - Manifested sources: 26 allowlisted files.
 - Missing or held: 0.
@@ -54,16 +68,15 @@ concurrency correction caused no content conflict, scope change, or lost update.
 
 ## State separation
 
-The phrase “lane merged” describes repository lineage only. No specialist
-Candidate is `OWNER_DECIDED` or semantically `INTEGRATED`; OR-01–OR-09 remain
-undecided. No validation, production, live routing, commercial promise, native
-module, formal 6G claim, Owner acceptance, or activation follows from this
-status. Independent PASS is bound only to D0 and does not transfer to later
-administrative metadata commits.
+The new Owner decision covers CH-08 creation and the structured handoff
+operating model only. North Star, segments, Use Cases, bundles, BM mappings,
+pricing, WTP, pilots, and product integration remain Candidate or not decided.
+OR-01–OR-09 remain undecided. The previous independent PASS remains bound only
+to the previous bootstrap D0 and does not transfer to this task.
 
 ## Next exact action
 
-Owner/BM_MASTER may continue bounded channel work through the Git-backed read
-order and handoffs. A new semantic decision, Owner choice, pilot,
-implementation, production step, license, or activation requires its own exact
-authority; this completed bootstrap creates none.
+Persist the validation receipt, create and merge the task PR, then perform the
+fresh-main S9 readback and bounded S10 activation closure. No Owner action is
+required unless an enumerated hard blocker or an actual product decision is
+reached.
