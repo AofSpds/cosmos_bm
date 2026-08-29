@@ -7,7 +7,7 @@
 - Channel: `CH-00 — INTEGRATION / OWNER`
 - Slug: `integration-owner`
 - Decision prefix: `CH00-INT-D`
-- Snapshot: `2026-08-29 KST`
+- Snapshot: `2026-08-30 KST`
 
 ## Current state
 
@@ -17,6 +17,10 @@
 - Portfolio classes `SELECT`, `SELECT-LIMITED`, `EXISTING / ASSESS`, `WATCH`, and `REJECT` are candidate recommendations, not Owner decisions.
 - `OR-01`–`OR-09`: `UNDECIDED / DO NOT AUTO-INFER`.
 - No channel-sealed, CH-00-reviewed, Owner-decided, or integrated decision has been created by this bootstrap.
+- `CH-08 — INSTITUTIONAL LEDGER · MARKET ACCESS` is Owner-authorized and
+  registered as a Cross-BM institutional product incubator and structured
+  handoff operating model. It is not a fifth BM, and no Institutional Product
+  Candidate is Channel-Sealed, CH-00-reviewed, or integrated.
 - Current maximum claim ceiling: `C2 — pre-PoC`.
 
 ## Fixed programme frame
@@ -38,5 +42,8 @@ Preserve `Thin Core, Rich Edges`; open untolled base IBC; no Hub custody of cust
 - Register and reconcile specialist Candidates without rewriting their meaning.
 - Maintain shared-object ownership, dependencies, claim ceilings, and independent Kill boundaries.
 - Wait for real specialist `CHANNEL-SEALED` handoffs before integration decisions.
+- Treat a future CH-08 `INST-10` Channel-Sealed handoff as an upstream
+  integration dependency; check its BM mappings, specialist returns, hard
+  locks, claim ceiling, unresolved risks, and exact Owner-decision needs.
 - Next Owner review occurs only when an `OR-01`–`OR-09` choice is actually requested or the Revision Scope Candidate closes.
 - Full v1.2 rewrite, production, live routing/financial execution, commercial SLA/compensation, native module, fifth BM, and formal 6G claim remain unauthorized.

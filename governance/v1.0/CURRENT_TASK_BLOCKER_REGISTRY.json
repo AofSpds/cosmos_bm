@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
   "project": "COSMOS HUB BM IMPROVEMENT",
-  "registry_state": "CURRENT_TASK_COMPLETE",
-  "as_of_kst_date": "2026-08-29",
-  "base_main_sha": "a3b18e231e5e3c7c053d3a838e4047ea218e4aa2",
+  "registry_state": "CURRENT_TASK_IN_PROGRESS_PRE_D0",
+  "as_of_kst_date": "2026-08-30",
+  "base_main_sha": "562850c0639cdf04462f9520166be1e6f9880aab",
   "active_tasks": [
     {
       "task_id": "COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829",
@@ -30,6 +30,33 @@
       "owner_action_required": false,
       "scope_expansion": "NONE",
       "next_exact_action": "Owner/BM_MASTER may continue bounded channel work through Git-backed succession; new authority is required for any semantic promotion or implementation step."
+    },
+    {
+      "task_id": "COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830",
+      "task_class": "BOUNDED_GOVERNANCE_MUTATION_NEW_CROSS_BM_CHANNEL_REGISTRATION",
+      "status": "IN_PROGRESS",
+      "planned_stage": "S3_S4_SHARED_AND_CH00_CURRENTIZATION",
+      "current_persona_lock": "PMO",
+      "semantic_authority": "BM_MASTER",
+      "integration_branch": "task/governance/register-institutional-ledger-market-access-20260830",
+      "base_main_sha": "562850c0639cdf04462f9520166be1e6f9880aab",
+      "assigned_channel_id": "CH-08",
+      "assigned_ordinal": 8,
+      "task_path": "tasks/COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830/TASK.md",
+      "plan_path": "tasks/COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830/PLAN.md",
+      "blocking_items": [],
+      "blocking_item_count": 0,
+      "remaining_gate_sequence": ["S3_S4_CURRENTIZATION", "S5_D0", "S6_REVIEW", "S7_FINDING_FREEZE", "S8_PR_MERGE", "S9_READBACK", "S10_ACTIVATION_PACKET"],
+      "validation_claim": "NONE_PRE_D0",
+      "d0_commit": null,
+      "d1_commit": null,
+      "pr_number": null,
+      "task_content_merge_commit": null,
+      "post_merge_readback": "PENDING",
+      "persistence_complete": false,
+      "owner_action_required": false,
+      "scope_expansion": "NONE",
+      "next_exact_action": "Complete shared-governance and affected CH-00 currentization, then freeze exact D0."
     }
   ],
   "registry_caution": "Task completion means Git persistence only. It does not imply Owner acceptance, semantic integration, production authorization, or activation."

@@ -2,10 +2,10 @@
 
 ```text
 PERSONA_ID = BM_MASTER
-PERSISTENCE_STATE = BOOTSTRAP PERSISTENCE COMPLETE / CANDIDATE
+PERSISTENCE_STATE = CH-08 OWNER-AUTHORIZED REGISTRATION / PRE-D0 CANDIDATE
 ROLE = OWNER-FACING BM ARCHITECTURE / SEMANTIC INTEGRATION AUTHORITY
-TASK_ID = COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829
-BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
+TASK_ID = COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830
+BASE_MAIN_SHA = 562850c0639cdf04462f9520166be1e6f9880aab
 CURRENT_TASK_PERSONA_LOCK = PMO
 VALIDATION_AUTHORITY = NONE
 ```
@@ -16,9 +16,9 @@ VALIDATION_AUTHORITY = NONE
 - Roadmap baseline: STEP 3–5 `OWNER-REVIEW CANDIDATE`.
 - Overall classification: `B. SELECTIVE FIT — CANDIDATE`.
 - OR-01 through OR-09: `UNDECIDED / DO NOT AUTO-INFER`.
-- Current repository task: bounded governance, source, channel-memory, and
-  succession bootstrap at S3 pre-D0 reconciliation; no proposal rewrite or
-  product implementation.
+- Current repository task: bounded registration and initialization of CH-08 as
+  an institutional Cross-BM product incubator; no proposal rewrite, product
+  integration, or implementation.
 - Repository lineage: all four Candidate lanes are merged on the integration
   branch; 26/26 allowlisted sources are present and none are missing. This
   administrative lineage does not promote any BM or Owner-review state.
@@ -28,6 +28,21 @@ VALIDATION_AUTHORITY = NONE
 - Task content merged through PR #1 at
   `996d4ce5625047376b3837f98ee986a1a6c4348d`; post-merge readback passed.
   Git-backed succession is ready without changing any BM semantic state.
+
+## CH-08 current semantic projection
+
+- `INSTITUTIONAL LEDGER · MARKET ACCESS` is Owner-authorized as a separate
+  channel and structured specialist-handoff operating model only.
+- It is not a fifth BM. It develops institutional demand-side Product Bundle
+  Candidates across BM1–BM4 and returns only a future Channel-Sealed Candidate
+  to CH-00 for integration review.
+- `Sovereignty without Isolation`, all nine segments, all twelve Use Cases,
+  product bundles, BM targets, prices/WTP, pilot, and proposal integration are
+  Candidate or not decided.
+- Current bounded work: `INST-01` followed by `INST-02`; blocker none; Owner
+  action not required.
+- CH-05 retains Structured Intent/API authority, CH-07 retains legal/economic/
+  claim gates, and CH-00 retains final integration and Owner-decision routing.
 
 ## Semantic invariants
 

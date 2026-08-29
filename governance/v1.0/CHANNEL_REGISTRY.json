@@ -1,13 +1,21 @@
 {
   "schema_version": "1.0",
   "project": "COSMOS HUB BM IMPROVEMENT",
-  "registry_state": "CANDIDATE_RESOLVED_FOR_D0",
-  "task_id": "COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829",
-  "base_main_sha": "a3b18e231e5e3c7c053d3a838e4047ea218e4aa2",
+  "registry_state": "OWNER_AUTHORIZED_CH08_REGISTRATION_PRE_D0",
+  "task_id": "COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830",
+  "base_main_sha": "562850c0639cdf04462f9520166be1e6f9880aab",
   "resolution_evidence": {
     "channels_00_03_commit": "05467f1592432ec8367c58c51a4db9ea9a061ae2",
     "channels_04_07_commit": "85461bb61f5434da866df2565524e1e2c6664b18",
     "lane_integration_head": "f482e23980d91d04a26e83e25157dc9966f4cf7a"
+  },
+  "registration_evidence": {
+    "assigned_channel_id": "CH-08",
+    "assigned_ordinal": 8,
+    "owner_decision_id": "OWNER-D-20260830-001",
+    "task_branch": "task/governance/register-institutional-ledger-market-access-20260830",
+    "baseline_main_sha": "562850c0639cdf04462f9520166be1e6f9880aab",
+    "resolution_state": "REGISTERED_BY_OWNER_AUTHORIZED_CHANNEL_TASK"
   },
   "channels": [
     {
@@ -113,6 +121,22 @@
       "source_packet_path": "sources/raw/channel-policy-packets/v1.0/07_CH07_LEGAL_GOVERNANCE_ECONOMICS_CLAIMS_PACKET.md",
       "source_packet_sha256": "fc27c08c370ebcd181b23f17300da954e430efa7a8f9b2f933f626e3cc1ab151",
       "resolution_state": "RESOLVED_AT_CHANNEL_LANE_COMMIT"
+    },
+    {
+      "ordinal": 8,
+      "channel_id": "CH-08",
+      "canonical_name": "INSTITUTIONAL LEDGER / MARKET ACCESS",
+      "display_name": "INSTITUTIONAL LEDGER · MARKET ACCESS",
+      "formal_name": "Institutional Ledger Connectivity, Market Access, Interface & Cross-BM Product Incubation",
+      "slug": "institutional-ledger-market-access",
+      "decision_prefix": "INST-ACCESS-D",
+      "path": "channels/institutional-ledger-market-access",
+      "scope_class": "CROSS_BM_INSTITUTIONAL_PRODUCT_INCUBATION",
+      "persona": "BM_MASTER",
+      "not_a_fifth_bm": true,
+      "source_packet_path": "sources/raw/channel-policy-packets/v1.0/08_CH-08_INSTITUTIONAL_LEDGER_MARKET_ACCESS_PACKET.md",
+      "source_packet_sha256": "b4e4ade35c2e0348cfaf890cea3562aebd67244f6daf0ed89105077f2834a0dd",
+      "resolution_state": "REGISTERED_BY_OWNER_AUTHORIZED_CHANNEL_TASK"
     }
   ],
   "required_channel_files": [
@@ -124,5 +148,5 @@
     "SOURCES.md",
     "HANDOFF_CURRENT.md"
   ],
-  "caution": "Resolution means only that the Candidate bootstrap paths and exact source packets exist at the recorded lane commits. It is not an Owner decision, semantic integration, validation PASS, production authorization, or activation."
+  "caution": "CH-08 registration is Owner-decided only for channel creation and the structured handoff operating model. Registry resolution is not product integration, Owner acceptance of any Candidate, validation PASS, implementation, production authorization, or activation."
 }

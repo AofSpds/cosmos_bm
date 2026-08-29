@@ -1,15 +1,15 @@
-# Common Runtime View — Bootstrap Candidate
+# Common Runtime View — CH-08 Registration Candidate
 
 ```text
 PROJECT = COSMOS HUB BM IMPROVEMENT
-TASK_ID = COSMOS-BM-REPO-MEMORY-BOOTSTRAP-v1.0-20260829
-STATE = BOOTSTRAP PERSISTENCE COMPLETE / CANDIDATE
+TASK_ID = COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830
+STATE = OWNER-AUTHORIZED CH-08 REGISTRATION / PRE-D0 / NO PRODUCT INTEGRATION
 CURRENT_TASK_PERSONA_LOCK = PMO
 SEMANTIC_AUTHORITY = BM_MASTER
-BASE_MAIN_SHA = a3b18e231e5e3c7c053d3a838e4047ea218e4aa2
-INTEGRATION_BRANCH = task/governance/cosmos-bm-memory-bootstrap-v1.0-20260829
-LANE_INTEGRATION_HEAD = f482e23980d91d04a26e83e25157dc9966f4cf7a
-VALIDATION_CLAIM = PASS / EXACT D0 ONLY
+BASE_MAIN_SHA = 562850c0639cdf04462f9520166be1e6f9880aab
+INTEGRATION_BRANCH = task/governance/register-institutional-ledger-market-access-20260830
+ASSIGNED_CHANNEL_ID = CH-08
+VALIDATION_CLAIM = NONE / PRE-D0
 OWNER_ACTION_REQUIRED = FALSE
 ```
 
@@ -66,12 +66,14 @@ rerun.
 
 | Item | Current value |
 |---|---|
-| Task class | Full-bounded public repository/memory bootstrap |
-| Authoring lanes | 4 isolated lanes, all repository-merged as Candidate inputs |
-| Planned validation lanes | 1 task-scoped independent lane after D0 |
-| Current planned stage | Complete / Git-backed succession ready |
-| Source intake | 26/26 allowlisted; 0 missing or held |
-| Expected active wall | 90–180 minutes for the overall task |
+| Task class | Bounded governance mutation / new Cross-BM channel registration |
+| Assigned channel | CH-08 / ordinal 8 / no persisted reservation conflict |
+| Authoring lanes | 4 bounded lanes; PMO is sole shared-governance writer |
+| Planned review lanes | 3 task-scoped lanes after D0; no persistent validator Persona |
+| Current planned stage | S3–S4 shared-governance and affected CH-00 currentization |
+| Source change | 2 task-authorized additions; original 26 sources not reimported |
+| Channel effect | 7 new CH-08 files; CH-01–CH-07 semantic reauthoring prohibited |
+| Expected active wall | 35–70 minutes for the overall task |
 | Owner check limit | 240 minutes projected active wall |
 | Default correction loop | One bounded batch plus affected-diff recheck |
 | Current blocker | None |

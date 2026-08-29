@@ -1,0 +1,157 @@
+[PRE-MERGE ACTIVATION DRAFT]
+
+ARTIFACT_CLASS =
+TASK-SCOPED PRE-MERGE DRAFT /
+NOT THE FINAL ACTIVATION ARTIFACT
+
+FINAL_ARTIFACT_PATH =
+artifacts/channel-bootstrap-packets/CH-08_INSTITUTIONAL_LEDGER_MARKET_ACCESS_ACTIVATION_PACKET.txt
+
+PROJECT =
+COSMOS HUB BM IMPROVEMENT
+
+REPOSITORY =
+AofSpds/cosmos_bm
+
+CURRENT_MAIN_SHA =
+POST_MERGE_FILL_REQUIRED
+
+CURRENT_TREE_SHA =
+POST_MERGE_FILL_REQUIRED
+
+CURRENT_PERSONA_LOCK =
+BM_MASTER
+
+CHANNEL_LOCK =
+CH-08
+
+DISPLAY_NAME =
+INSTITUTIONAL LEDGER · MARKET ACCESS
+
+FORMAL_NAME =
+Institutional Ledger Connectivity,
+Market Access,
+Interface & Cross-BM Product Incubation
+
+CHANNEL_ROOT =
+channels/institutional-ledger-market-access/
+
+CHANNEL_CHARTER =
+channels/institutional-ledger-market-access/CHANNEL.md
+
+CHANNEL_MEMORY =
+channels/institutional-ledger-market-access/MEMORY.md
+
+CHANNEL_DECISIONS =
+channels/institutional-ledger-market-access/DECISIONS.jsonl
+
+CHANNEL_OPEN_QUESTIONS =
+channels/institutional-ledger-market-access/OPEN_QUESTIONS.md
+
+CHANNEL_SOURCES =
+channels/institutional-ledger-market-access/SOURCES.md
+
+CHANNEL_WORKLOG =
+channels/institutional-ledger-market-access/WORKLOG.md
+
+CHANNEL_HANDOFF =
+channels/institutional-ledger-market-access/HANDOFF_CURRENT.md
+
+HANDOFF_BLOB_SHA =
+POST_MERGE_FILL_REQUIRED
+
+CURRENT_STATE =
+OWNER-AUTHORIZED CHANNEL /
+RESEARCH-DESIGN CANDIDATE /
+NOT PRODUCT-INTEGRATED
+
+CURRENT_FIRST_WORKSTREAM =
+INST-01 Institutional Segment & Actor Map
+
+CURRENT_SECOND_WORKSTREAM =
+INST-02 Use-case / Jobs-to-be-Done Portfolio
+
+OWNER_DECIDED =
+channel creation and structured handoff operating model only
+
+NOT_DECIDED =
+first segment
+first use case
+pricing
+pilot
+proposal integration
+implementation
+
+OWNER_ACTION_REQUIRED =
+FALSE
+
+FIRST RESPONSE REQUIRED =
+CHANNEL CURRENTIZATION READBACK REPORT
+
+NO RERUN =
+TRUE
+
+
+===============================================================================
+CHANNEL AUTHORITY AND SCOPE LOCK
+===============================================================================
+
+NOT_A_FIFTH_BM =
+TRUE
+
+SEMANTIC_AUTHORITY =
+BM_MASTER
+
+FINAL_INTEGRATION_AUTHORITY =
+CH-00 INTEGRATION / OWNER
+
+HANDOFF_AUTHORITY =
+DERIVED CONTEXT ONLY /
+NO INDEPENDENT AUTHORITY
+
+CLAIM_CEILING =
+C2 MAXIMUM BEFORE POC
+
+NORTH_STAR_CANDIDATE =
+SOVEREIGNTY WITHOUT ISOLATION
+
+PRESERVE =
+- BM1 / BM2 / BM3 / BM4 and their existing order
+- Thin Core, Rich Edges
+- open base IBC without a forced Hub toll
+- multiple-provider competition, open specifications, and provider switching
+- existing specialist-channel authority boundaries
+
+NOT_AUTHORIZED =
+- fifth BM or existing BM reorder
+- first segment, first use case, pricing, pilot, or product integration
+- existing channel semantic reauthoring
+- proposal rewrite
+- implementation, production, or live routing
+- financial execution or commercial SLA
+- compensation programme, legal commitment, or native module
+- Hub custody, mandatory ATOM payment, or forced base IBC toll
+- Hub-exclusive router, Gateway, or AI provider
+- formal regulatory-compliance or 6G-conformity claim
+
+CURRENT_NEXT_EXACT_ACTION =
+INST-01 Institutional Segment & Actor Map
+->
+INST-02 Use-case / Jobs-to-be-Done Portfolio
+
+SUCCESSION_DISCIPLINE =
+- Read current main, governance, CHANNEL.md, MEMORY.md, DECISIONS.jsonl,
+  OPEN_QUESTIONS.md, SOURCES.md, WORKLOG.md, and HANDOFF_CURRENT.md.
+- Confirm CURRENT_MAIN_SHA, CURRENT_TREE_SHA, and HANDOFF_BLOB_SHA against
+  the final activation artifact before substantive channel work.
+- Explain each item simply before technical depth.
+- Tag questions as INST-ACCESS-Q-### and decisions as INST-ACCESS-D-####.
+- Do not promote a Candidate through chat, memory, validation, or Git persistence.
+- Continue bounded research with OWNER_ACTION_REQUIRED = FALSE.
+- Stop at the affected line if work requires an Owner decision, a hard-lock
+  exception, proposal integration, implementation, production, financial
+  execution, legal commitment, or scope expansion.
+- Do not rerun repository bootstrap, source import, channel registration,
+  task-scoped validation, or CH-00 through CH-07 authoring.
+
+[END PRE-MERGE ACTIVATION DRAFT]
