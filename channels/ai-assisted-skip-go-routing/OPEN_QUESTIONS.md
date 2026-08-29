@@ -6,8 +6,25 @@ channel seal is inferred. Detailed topic ownership appears in `TOPIC_INDEX.md`.
 
 ## A. Baseline and data readiness — research may proceed now
 
-- `[RESEARCH-OPEN][T02]` What exact current Skip Go route API and algorithm
-  behavior defines the frozen baseline?
+- `[PARTIAL-CLOSURE][T02]` Current official documentation establishes the broad
+  Skip Go product flow, the narrow IBC origin/unwind/direct-liquidity algorithm,
+  route/quote and operation fields, transaction-message construction,
+  user-signer execution integration, tracking/status and protocol-specific
+  failure behavior. T02 is not frozen because the questions below remain open.
+- `[RESEARCH-OPEN][T02]` Is there a public versioned route-engine or registry
+  release identifier that can be bound to every observation?
+- `[RESEARCH-OPEN][T02]` Which route defaults vary by endpoint, client version,
+  API-key/access tier or server-side configuration?
+- `[RESEARCH-OPEN][T02/T03]` Can Skip Go expose the complete candidate set and
+  rejected candidates, or only the selected route and operations?
+- `[RESEARCH-OPEN][T02/T06-T10]` What historical route, quote, status, failure,
+  recovery and feature-time data are accessible under reproducible terms?
+- `[RESEARCH-OPEN][T02/T17]` Which Smart Relay capabilities and relay mode were
+  active for each historical route observation?
+- `[RESEARCH-OPEN][T02/T06]` Which `/status` fields can be independently
+  corroborated from chain, packet, bridge and indexer evidence?
+- `[CHANNEL-CANDIDATE][T02/T04]` Should the comparator retain both
+  `B0-A SKIP_DEFAULT_AS_SERVED` and `B0-B SKIP_EXPLICIT_FROZEN_CONFIG`?
 - `[RESEARCH-OPEN][T03]` What exact route/leg/candidate representation is needed
   for reproducible comparison?
 - `[RESEARCH-OPEN][T04]` Which of the six mandatory deterministic comparators
