@@ -2,12 +2,15 @@
 
 ```text
 PERSONA_ID = BM_MASTER
-PERSISTENCE_STATE = CH-08 OWNER-AUTHORIZED REGISTRATION / PRE-D0 CANDIDATE
+PERSISTENCE_STATE = CH-08 REGISTRATION PERSISTENCE COMPLETE / NO PRODUCT INTEGRATION
 ROLE = OWNER-FACING BM ARCHITECTURE / SEMANTIC INTEGRATION AUTHORITY
 TASK_ID = COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830
 BASE_MAIN_SHA = 562850c0639cdf04462f9520166be1e6f9880aab
 CURRENT_TASK_PERSONA_LOCK = PMO
-VALIDATION_AUTHORITY = NONE
+VALIDATION_AUTHORITY = TASK-SCOPED PASS / EXACT DURABLE D1 ONLY
+TASK_CONTENT_MERGE = eeb0f73534630d6f7a61b7acd27b6426c153142a
+TASK_CONTENT_TREE = e4017668cdd73b0fba5a9c287ba6fc0fca6c4e6b
+POST_MERGE_READBACK = PASS / 18 OF 18
 ```
 
 ## Current state
@@ -19,15 +22,15 @@ VALIDATION_AUTHORITY = NONE
 - Current repository task: bounded registration and initialization of CH-08 as
   an institutional Cross-BM product incubator; no proposal rewrite, product
   integration, or implementation.
-- Repository lineage: all four Candidate lanes are merged on the integration
-  branch; 26/26 allowlisted sources are present and none are missing. This
-  administrative lineage does not promote any BM or Owner-review state.
-- Independent validation PASS is bound only to D0
-  `7de27f727582c4626c76728fbdf4196b40007591`; it creates no BM semantic
+- Repository bootstrap history remains preserved; the original 26 allowlisted
+  sources were not reimported. Two task-authorized CH-08 source records were
+  appended with exact hashes and bytes.
+- Current task-scoped validation PASS binds only to durable D1
+  `5230c7ff5ae681006ac9721aeea5f973ce7bdd67`; it creates no BM semantic
   promotion, Owner decision, production authorization, or activation.
-- Task content merged through PR #1 at
-  `996d4ce5625047376b3837f98ee986a1a6c4348d`; post-merge readback passed.
-  Git-backed succession is ready without changing any BM semantic state.
+- CH-08 task content merged through PR #5 at
+  `eeb0f73534630d6f7a61b7acd27b6426c153142a`; fresh-main S01–S18 readback
+  passed 18/18. Git-backed succession is ready without changing BM semantics.
 
 ## CH-08 current semantic projection
 

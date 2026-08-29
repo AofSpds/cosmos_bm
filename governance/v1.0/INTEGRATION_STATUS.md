@@ -1,19 +1,20 @@
-# Integration Status — CH-08 Registration Validated Pre-PR
+# Integration Status — CH-08 Registration Persistence Complete
 
 ```text
 PROJECT = COSMOS HUB BM IMPROVEMENT
 TASK_ID = COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830
 BASE_MAIN_SHA = 562850c0639cdf04462f9520166be1e6f9880aab
 INTEGRATION_BRANCH = task/governance/register-institutional-ledger-market-access-20260830
-CURRENT_STAGE = S8 / PR AND MERGE
+CURRENT_STAGE = S10 / PERSISTENCE COMPLETE
 ASSIGNED_CHANNEL_ID = CH-08
 D0 = 321d8e7ee4936ad1a7d86df214919eeecb1f5014
 D1 = 5230c7ff5ae681006ac9721aeea5f973ce7bdd67
 VALIDATION = PASS / EXACT DURABLE D1 ONLY
-PR = PENDING
-TASK_CONTENT_MERGE_COMMIT = PENDING
-POST_MERGE_READBACK = PENDING
-PERSISTENCE_COMPLETE = FALSE
+PR = #5 / MERGED
+TASK_CONTENT_MERGE_COMMIT = eeb0f73534630d6f7a61b7acd27b6426c153142a
+TASK_CONTENT_TREE = e4017668cdd73b0fba5a9c287ba6fc0fca6c4e6b
+POST_MERGE_READBACK = PASS / S01-S18 / 18 OF 18
+PERSISTENCE_COMPLETE = TRUE
 OWNER_ACCEPTED = FALSE
 ACTIVATED = FALSE
 ```
@@ -76,7 +77,7 @@ to the previous bootstrap D0 and does not transfer to this task.
 
 ## Next exact action
 
-Persist the validation receipt, create and merge the task PR, then perform the
-fresh-main S9 readback and bounded S10 activation closure. No Owner action is
-required unless an enumerated hard blocker or an actual product decision is
-reached.
+Paste the final activation packet into the existing Institutional Ledger ·
+Market Access chat, currentize from its exact Git refs, and begin bounded
+`INST-01` followed by `INST-02`. No Owner action is required unless an
+enumerated hard blocker or an actual product decision is reached.

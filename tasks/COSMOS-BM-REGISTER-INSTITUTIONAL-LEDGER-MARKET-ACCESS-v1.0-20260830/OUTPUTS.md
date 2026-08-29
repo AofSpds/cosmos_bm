@@ -1,4 +1,4 @@
-# Task Outputs — Validated Pre-PR Index
+# Task Outputs — Persistence-Complete Index
 
 ## New channel
 
@@ -47,3 +47,14 @@ closed by one bounded documentation-line correction and affected-diff recheck.
 All product content remains Candidate or not decided. No CH-01–CH-07 semantic
 file, original source, fifth BM, persistent Persona, implementation, production
 state, commercial SLA, or activation is created.
+
+## Completion and channel succession
+
+- `COMPLETION.md`
+- `artifacts/channel-bootstrap-packets/CH-08_INSTITUTIONAL_LEDGER_MARKET_ACCESS_ACTIVATION_PACKET.txt`
+
+The final packet binds to task-content merge
+`eeb0f73534630d6f7a61b7acd27b6426c153142a`, tree
+`e4017668cdd73b0fba5a9c287ba6fc0fca6c4e6b`, and CH-08 handoff blob
+`23f522167fc9d35be2796cd126cf87e33ea96109`. Its SHA-256 is
+`4d6a126aec09cca1921ebae13cbc9b304841a68fddf3c9951a3c0c333d5bcbd8`.
