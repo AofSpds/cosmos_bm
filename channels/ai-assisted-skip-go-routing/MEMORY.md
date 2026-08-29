@@ -9,8 +9,9 @@
 - Channel: `CH-03 — AI-ASSISTED SKIP GO ROUTING`
 - Slug: `ai-assisted-skip-go-routing`
 - Decision prefix: `BM2-AI-D`
-- Snapshot: `2026-08-29 KST`
+- Snapshot: `2026-08-30`
 - Detailed durable topic map: `TOPIC_INDEX.md`
+- Active deliverable draft: `BM2-AI-01_CURRENT_SKIP_GO_BASELINE_DRAFT.md`
 
 ## Current state
 
@@ -96,10 +97,40 @@ specification and switching.
 23. net route value and operating economics;
 24. Promotion/Permanent Shadow/Hold/Kill, claims and CH-00 integration.
 
+## T02 current Skip Go baseline — material findings
+
+- T02 is `SOURCE-GROUNDED DRAFT / NOT FROZEN`.
+- Skip Go is an off-chain interoperability/routing service rather than the
+  Cosmos Hub, a blockchain or a user wallet.
+- Its current documented product flow covers chain/asset information,
+  route/quote, transaction-message generation, user-signing integration,
+  submission/tracking and multi-hop status observation.
+- The narrow IBC denom/path algorithm unwinds to asset origin, applies manual
+  overrides, otherwise recommends the most liquid direct IBC path, and returns
+  no recommendation when required direct-path conditions fail.
+- That IBC algorithm is only one sub-baseline. The wider route API composes
+  bridge, transfer and swap operations across multiple ecosystems/protocols.
+- Smart Swap external-router comparison and split routing are existing/partial
+  functions and remain assessment baselines, not AI novelty.
+- Current status/failure semantics are protocol- and leg-specific. Multi-tx
+  failures can leave assets on an intermediate transaction-target chain, so
+  user-controlled intermediate addresses and last-known asset location are
+  mandatory evidence requirements.
+- Skip route/message construction does not create transaction authorization,
+  private-key custody, independent SLA adjudication, global atomic rollback or a
+  route outcome guarantee.
+- Candidate baseline design now distinguishes `B0-A SKIP_DEFAULT_AS_SERVED`
+  from `B0-B SKIP_EXPLICIT_FROZEN_CONFIG`; neither is frozen before T03/T04.
+- Public documentation does not establish the complete proprietary scoring
+  function, complete historical candidate sets, historical label coverage,
+  generalized provider-health probability models or safe arbitrary mid-flight
+  rerouting.
+
 ## Active work and progress
 
-- `BM2-AI-01`: `NOT STARTED` — document current Skip Go and freeze all six
-  mandatory deterministic comparators.
+- `BM2-AI-01`: `ACTIVE` — T02 drafted from current official documentation;
+  T03 route/candidate representation, T04 comparator freeze and T05 objective
+  trade-off remain open.
 - `BM2-AI-02`: `NOT STARTED` — enumerate features, labels, timestamps,
   provenance, freshness, missingness and leakage controls.
 - `BM2-AI-03`: `BLOCKED BY AI-01/02` — Shadow evaluation protocol.
@@ -111,16 +142,17 @@ specification and switching.
 
 ## Owner questions and timing
 
-No immediate Owner answer is required to start `BM2-AI-01` or `BM2-AI-02`.
-Deferred questions are maintained in `TOPIC_INDEX.md` and `OPEN_QUESTIONS.md`:
-service-objective trade-off, bounded route universe, data-readiness threshold,
-calibration/tail threshold, abstention/fallback strictness, provider
-concentration/newcomer policy, added-cost/net-value hurdle, final
-Promotion/Hold/Kill choice and public claim/document placement.
+No immediate Owner answer is required to continue `BM2-AI-01` or begin
+`BM2-AI-02`. Deferred questions are maintained in `TOPIC_INDEX.md` and
+`OPEN_QUESTIONS.md`: service-objective trade-off, bounded route universe,
+data-readiness threshold, calibration/tail threshold, abstention/fallback
+strictness, provider concentration/newcomer policy, added-cost/net-value hurdle,
+final Promotion/Hold/Kill choice and public claim/document placement.
 
 ## Next gate
 
-- Next exact action: `BM2-AI-01 → BM2-AI-02`.
+- Next exact action: T03 route universe/candidate representation, then T04
+  comparator freeze and T05 Pareto/objective analysis to close `BM2-AI-01`.
 - Next Owner review: when the Shadow protocol or `BM2-AI-06` recommendation is
   ready, or earlier only if an activated deferred Owner question blocks work.
 - Current maximum claim ceiling: `C2 — shadow/research, pre-PoC`.
