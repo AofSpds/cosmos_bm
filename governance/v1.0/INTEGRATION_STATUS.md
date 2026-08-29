@@ -1,15 +1,15 @@
-# Integration Status — CH-08 Registration Pre-D0
+# Integration Status — CH-08 Registration Validated Pre-PR
 
 ```text
 PROJECT = COSMOS HUB BM IMPROVEMENT
 TASK_ID = COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830
 BASE_MAIN_SHA = 562850c0639cdf04462f9520166be1e6f9880aab
 INTEGRATION_BRANCH = task/governance/register-institutional-ledger-market-access-20260830
-CURRENT_STAGE = S3-S4 / SHARED GOVERNANCE AND AFFECTED CH-00 CURRENTIZATION
+CURRENT_STAGE = S8 / PR AND MERGE
 ASSIGNED_CHANNEL_ID = CH-08
-D0 = PENDING
-D1 = PENDING FINDING FREEZE
-VALIDATION = NONE / PRE-D0
+D0 = a37e4fe5562566f59ec3942beae9dd5b73cefd4e
+D1 = c9283fe464a12f59b48b71a500ce3d71189095fa
+VALIDATION = PASS / EXACT D1 ONLY
 PR = PENDING
 TASK_CONTENT_MERGE_COMMIT = PENDING
 POST_MERGE_READBACK = PENDING
@@ -28,7 +28,11 @@ ACTIVATED = FALSE
   Product Candidate is Channel-Sealed, integrated, Owner-accepted, implemented,
   or activated.
 - The four-BM order and every existing specialist authority remain unchanged.
-- D0 and the three task-scoped review lanes remain later gates.
+- D0 was frozen at `a37e4fe5562566f59ec3942beae9dd5b73cefd4e`.
+  V1 returned one advisory; V2 and V3 returned PASS with no finding. The
+  advisory was corrected in one documentation-only D1 batch and closed by an
+  affected-diff recheck. Final PASS binds only to exact D1
+  `c9283fe464a12f59b48b71a500ce3d71189095fa`.
 
 ## Previous bootstrap evidence — preserved history
 
@@ -72,7 +76,7 @@ to the previous bootstrap D0 and does not transfer to this task.
 
 ## Next exact action
 
-Complete shared-governance and affected-only CH-00 currentization, freeze an
-exact D0, then dispatch the three task-scoped review lanes. No Owner action is
+Persist the validation receipt, create and merge the task PR, then perform the
+fresh-main S9 readback and bounded S10 activation closure. No Owner action is
 required unless an enumerated hard blocker or an actual product decision is
 reached.

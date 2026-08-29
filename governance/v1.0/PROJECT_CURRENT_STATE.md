@@ -1,19 +1,19 @@
-# Project Current State — CH-08 Registration Candidate
+# Project Current State — Validated CH-08 Registration Candidate
 
 ```text
 PROJECT = COSMOS HUB BM IMPROVEMENT
 GOVERNANCE_VERSION = v1.0
 TASK_ID = COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830
-STATE = OWNER-AUTHORIZED CH-08 REGISTRATION / RESEARCH-DESIGN CANDIDATE / NOT PRODUCT-INTEGRATED
-PLANNED_STAGE = PRE-D0 CURRENTIZATION
+STATE = OWNER-AUTHORIZED CH-08 REGISTRATION / VALIDATED EXACT D1 / NOT PRODUCT-INTEGRATED
+PLANNED_STAGE = S8 PR AND MERGE
 BASE_MAIN_SHA = 562850c0639cdf04462f9520166be1e6f9880aab
 INTEGRATION_BRANCH = task/governance/register-institutional-ledger-market-access-20260830
 ASSIGNED_CHANNEL_ID = CH-08
 CURRENT_PERSONA_LOCK_FOR_TASK = PMO
 SEMANTIC_AUTHORITY = BM_MASTER
-VALIDATION_CLAIM = NONE / PRE-D0
-D0 = PENDING
-D1 = PENDING FINDING FREEZE
+VALIDATION_CLAIM = PASS / EXACT D1 ONLY
+D0 = a37e4fe5562566f59ec3942beae9dd5b73cefd4e
+D1 = c9283fe464a12f59b48b71a500ce3d71189095fa
 PR = PENDING
 TASK_CONTENT_MERGE_COMMIT = PENDING
 POST_MERGE_READBACK = PENDING
@@ -124,8 +124,14 @@ OR item or authorizes proposal/product promotion.
 - Owner evidence and the full task packet are persisted as two new authorized
   source records; none of the original 26 sources was reimported.
 - CH-08 has exactly seven initialized current files. Shared governance and
-  affected-only CH-00 currentization are in progress before D0.
-- No task-scoped review verdict exists yet. PMO cannot self-grant one.
+  affected-only CH-00 currentization are complete in the validated Candidate.
+- D0 `a37e4fe5562566f59ec3942beae9dd5b73cefd4e` received V1
+  `PASS_WITH_ADVISORY` and V2/V3 `PASS`. One documentation-only advisory was
+  frozen, corrected once, and closed by affected-diff recheck at exact D1
+  `c9283fe464a12f59b48b71a500ce3d71189095fa`.
+- Final task-scoped verdict is `PASS_EXACT_D1_ONLY`; no persistent validator
+  Persona was created and PMO did not self-grant the verdict.
+- PR, merge, fresh-main readback, and final activation closure remain.
 - The previous repository bootstrap remains complete at task-content merge
   `996d4ce5625047376b3837f98ee986a1a6c4348d`; its historical 8 × 7 readback
   and exact-D0 validation record remain unchanged.

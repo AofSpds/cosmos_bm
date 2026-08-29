@@ -3,13 +3,13 @@
 ```text
 PROJECT = COSMOS HUB BM IMPROVEMENT
 TASK_ID = COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830
-STATE = OWNER-AUTHORIZED CH-08 REGISTRATION / PRE-D0 / NO PRODUCT INTEGRATION
+STATE = OWNER-AUTHORIZED CH-08 REGISTRATION / VALIDATED PRE-PR / NO PRODUCT INTEGRATION
 CURRENT_TASK_PERSONA_LOCK = PMO
 SEMANTIC_AUTHORITY = BM_MASTER
 BASE_MAIN_SHA = 562850c0639cdf04462f9520166be1e6f9880aab
 INTEGRATION_BRANCH = task/governance/register-institutional-ledger-market-access-20260830
 ASSIGNED_CHANNEL_ID = CH-08
-VALIDATION_CLAIM = NONE / PRE-D0
+VALIDATION_CLAIM = PASS / EXACT D1 c9283fe464a12f59b48b71a500ce3d71189095fa ONLY
 OWNER_ACTION_REQUIRED = FALSE
 ```
 
@@ -69,8 +69,8 @@ rerun.
 | Task class | Bounded governance mutation / new Cross-BM channel registration |
 | Assigned channel | CH-08 / ordinal 8 / no persisted reservation conflict |
 | Authoring lanes | 4 bounded lanes; PMO is sole shared-governance writer |
-| Planned review lanes | 3 task-scoped lanes after D0; no persistent validator Persona |
-| Current planned stage | S3–S4 shared-governance and affected CH-00 currentization |
+| Review result | V1 advisory closed by one D1 correction; V2/V3 PASS; final PASS exact D1 only |
+| Current planned stage | S8 PR and merge |
 | Source change | 2 task-authorized additions; original 26 sources not reimported |
 | Channel effect | 7 new CH-08 files; CH-01–CH-07 semantic reauthoring prohibited |
 | Expected active wall | 35–70 minutes for the overall task |

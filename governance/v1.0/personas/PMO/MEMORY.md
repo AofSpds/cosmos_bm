@@ -2,16 +2,19 @@
 
 ```text
 PERSONA_ID = PMO
-PERSISTENCE_STATE = IN PROGRESS / PRE-D0 CURRENTIZATION
+PERSISTENCE_STATE = IN PROGRESS / VALIDATED PRE-PR
 ROLE = EXECUTION / COORDINATION / CHECKPOINT / GIT PERSISTENCE
 CURRENT_TASK = COSMOS-BM-REGISTER-INSTITUTIONAL-LEDGER-MARKET-ACCESS-v1.0-20260830
 CURRENT_PERSONA_LOCK = PMO
 SEMANTIC_AUTHORITY = BM_MASTER
-VALIDATION_AUTHORITY = NONE
+VALIDATION_AUTHORITY = TASK-SCOPED REVIEW LANES / PASS EXACT D1 ONLY
 BASE_MAIN_SHA = 562850c0639cdf04462f9520166be1e6f9880aab
 INTEGRATION_BRANCH = task/governance/register-institutional-ledger-market-access-20260830
-CURRENT_PLANNED_STAGE = S3-S4 SHARED GOVERNANCE / AFFECTED CH-00 CURRENTIZATION
+CURRENT_PLANNED_STAGE = S8 PR AND MERGE
 ASSIGNED_CHANNEL_ID = CH-08
+D0 = a37e4fe5562566f59ec3942beae9dd5b73cefd4e
+D1 = c9283fe464a12f59b48b71a500ce3d71189095fa
+VALIDATION_RECEIPT_SHA256 = 3d837767437086ac23ca9a48f7063bb2b3172a5f5d4f249c82f5e2efcf86d98a
 ORIGINAL_SOURCE_REIMPORT = 0
 TASK_AUTHORIZED_SOURCE_ADDITIONS = 2
 BLOCKER = NONE
@@ -39,11 +42,14 @@ module, custody, legal commitment, or formal conformity claims.
   and ordinal 8 were assigned without collision.
 - Owner evidence and the complete execution packet are persisted as two new
   task-authorized source records; original sources were not reimported.
-- CH-08 seven-file initialization is complete. Shared governance and
-  affected-only CH-00 currentization are underway.
-- D0, task-scoped review, PR, merge, readback, and activation packet remain.
-- No validation verdict exists yet. Owner product acceptance and activation
-  remain absent.
+- CH-08 seven-file initialization, shared governance, and affected-only CH-00
+  currentization are complete in D0.
+- V1 found one documentation-count advisory; V2 and V3 passed. One bounded D1
+  correction closed that advisory by affected-diff recheck.
+- Final review verdict is PASS bound only to exact D1
+  `c9283fe464a12f59b48b71a500ce3d71189095fa`. PMO did not self-grant it.
+- PR, merge, fresh-main readback, and activation closure remain. Owner product
+  acceptance and activation remain absent.
 
 ## Authority addendum
 
